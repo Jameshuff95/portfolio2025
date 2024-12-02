@@ -5,10 +5,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 11vh;
   font-size: 2rem;
-  width: 98%;
-  margin: 0 auto;
+  width: 96%;
+  margin: 2%;
 }
 
 .bi {
@@ -31,12 +31,15 @@ nav {
 
 #menu.show {
   position: absolute;
-  top: 5rem;
-  left: 1%;
+  top: 14vh;
+  left: 2%;
   display: flex;
   flex-direction: column;
-  width: 98%;
+  justify-content: space-evenly;
+  width: 96%;
+  height: 80%;
   border: 1px solid var(--text-color);
+  border-radius: 5px;
   background-color: var(--bg-color);
   padding: 2%;
   font-size: 1.5rem;
@@ -57,11 +60,6 @@ nav {
 
 /* Media Queries for Larger Screens */
 @media screen and (min-width: 500px) {
-  nav {
-    height: 3rem;
-    padding: 1%;
-  }
-
   .bi-list {
     display: none;
   }
