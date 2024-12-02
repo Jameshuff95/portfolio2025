@@ -7,18 +7,15 @@
 
 /*html*/
 :root {
-  border: 1px solid red;
   overflow-y: hidden;
 }
 
 body {
-  border: 1px solid blue;
   min-height: 100vh;
 }
 
 /*main container within body*/
 #root {
-  border: 1px solid red;
   min-height: 100vh;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }

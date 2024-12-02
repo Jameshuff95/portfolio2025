@@ -7,6 +7,10 @@ nav {
   height: 2rem;
 }
 
+.bi-list {
+  cursor: pointer;
+}
+
 #menu {
   display: none;
 }
@@ -21,4 +25,12 @@ nav {
   border: 1px solid black;
   z-index: 2;
   background-color: #fff;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: red;
 }

@@ -1,6 +1,6 @@
 import '../../index.css';
 import '../../App.css';
-import './SoftSkills.css';
+import './softSkills.css';
 
 const SoftSkills = () => {
   return (
