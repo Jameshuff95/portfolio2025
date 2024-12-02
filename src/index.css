@@ -41,6 +41,7 @@ body {
 }
 
 .page {
-  height: calc(100vh - 2rem);
-  padding: 2%;
+  height: calc(100vh - 4rem);
+  padding: 5%;
+  margin: 2%;
 }
