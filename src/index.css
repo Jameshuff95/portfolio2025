@@ -29,6 +29,7 @@ body.dark {
 
 body {
   min-height: 100vh;
+  min-width: 220px;
   background-color: var(--bg-color);
   color: var(--text-color);
   /*position: relative;*/
@@ -44,4 +45,12 @@ body {
   height: calc(100vh - 5rem);
   padding: 5%;
   margin: 2%;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 500px) {
+  .page {
+    padding: 2%;
+  }
 }

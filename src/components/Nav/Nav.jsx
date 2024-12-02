@@ -31,12 +31,39 @@ const Nav = () => {
 
   useEffect(() => {
     document.body.className = theme;
-    console.log(theme);
   }, [theme]);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const navLinks = document.querySelectorAll('.nav-link');
+      if (window.innerWidth > 500) {
+        navLinks.forEach((link) => {
+          link.onclick = null;
+        });
+        if (showMenu) {
+          setShowMenu(false); // Hide menu when resizing to a larger screen
+        }
+      } else {
+        navLinks.forEach((link) => {
+          link.onclick = toggleMenu;
+        });
+      }
+    };
+
+    // Run the handleResize function initially to set the correct onClick handlers
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [showMenu]);
 
   return (
     <nav>
@@ -48,12 +75,12 @@ const Nav = () => {
       <i className="bi bi-list" onClick={toggleMenu} />
       {/*prettier-ignore*/}
       <div id="menu" className={showMenu ? 'show' : ''}>
-        <NavLink to="/" onClick={toggleMenu} className="nav-link">Home</NavLink>
-        <NavLink to="/Contact" onClick={toggleMenu} className="nav-link">Contact</NavLink>
-        <NavLink to="/Projects" onClick={toggleMenu} className="nav-link">Projects</NavLink>
-        <NavLink to="/Certifications" onClick={toggleMenu} className="nav-link">Certifications</NavLink>
-        <NavLink to="/SoftSkills" onClick={toggleMenu} className="nav-link">Soft Skills</NavLink>
-        <NavLink to="/TechnicalSkills" onClick={toggleMenu} className="nav-link">Technical Skills</NavLink>
+        <NavLink to="/" className="nav-link">Home</NavLink>
+        <NavLink to="/Contact" className="nav-link">Contact</NavLink>
+        <NavLink to="/Projects" className="nav-link">Projects</NavLink>
+        <NavLink to="/Certifications" className="nav-link">Certifications</NavLink>
+        <NavLink to="/SoftSkills" className="nav-link">Soft Skills</NavLink>
+        <NavLink to="/TechnicalSkills" className="nav-link">Technical Skills</NavLink>
       </div>
     </nav>
   );
