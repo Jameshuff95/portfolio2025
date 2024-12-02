@@ -5,7 +5,7 @@ import './Mission.css';
 const Mission = () => {
   return (
     <div className="container">
-      <p id="missionStatement"></p>
+      <p id="missionStatement">My Mission</p>
     </div>
   );
 };
