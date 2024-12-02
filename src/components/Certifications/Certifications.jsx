@@ -1,6 +1,6 @@
 import '../../index.css';
-import '../../App.css';
 import './Certifications.css';
+import '../../components/Nav/Nav.css';
 
 const Certfications = () => {
   return (

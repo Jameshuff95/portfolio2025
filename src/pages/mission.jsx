@@ -1,7 +1,8 @@
-import React from 'react';
+import '../index.css';
+import '../components/Nav/Nav.css';
 
 const mission = () => {
-  return <div>mission</div>;
+  return <div className="page">mission</div>;
 };
 
 export default mission;

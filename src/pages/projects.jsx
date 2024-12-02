@@ -1,7 +1,8 @@
-import React from 'react';
+import '../index.css';
+import '../components/Nav/Nav.css';
 
 const projects = () => {
-  return <div>projects</div>;
+  return <div className="page">projects</div>;
 };
 
 export default projects;

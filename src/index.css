@@ -5,13 +5,33 @@
   user-select: none;
 }
 
+/*themes*/
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --scrollbar-bg: #f1f1f1;
+  --scrollbar-thumb: #888;
+  --scrollbar-thumb-hover: #555;
+}
+
+body.dark {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --scrollbar-bg: #333;
+  --scrollbar-thumb: #888;
+  --scrollbar-thumb-hover: #aaa;
+}
+
 /*html*/
 :root {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 body {
   min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /*position: relative;*/
 }
 
 /*main container within body*/
@@ -20,19 +40,7 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/*themes*/
-.light {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --scrollbar-bg: #f1f1f1; /* Scrollbar track color for light theme */
-  --scrollbar-thumb: #888; /* Scrollbar thumb color for light theme */
-  --scrollbar-thumb-hover: #555; /* Scrollbar thumb hover color for light theme */
-}
-
-.dark {
-  --bg-color: #000000;
-  --text-color: #ffffff;
-  --scrollbar-bg: #333; /* Scrollbar track color for dark theme */
-  --scrollbar-thumb: #888; /* Scrollbar thumb color for dark theme */
-  --scrollbar-thumb-hover: #aaa; /* Scrollbar thumb hover color for dark theme */
+.page {
+  height: calc(100vh - 2rem);
+  padding: 2%;
 }

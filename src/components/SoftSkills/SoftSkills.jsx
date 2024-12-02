@@ -4,7 +4,7 @@ import './softSkills.css';
 
 const SoftSkills = () => {
   return (
-    <div className="container">
+    <div className="page">
       <h2>Soft Skills</h2>
     </div>
   );

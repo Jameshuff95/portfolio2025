@@ -1,5 +1,8 @@
+import '../index.css';
+import '../components/Nav/Nav.css';
+
 const HomePage = () => {
-  return <div>Home</div>;
+  return <div className="page">Home</div>;
 };
 
 export default HomePage;
