@@ -1,9 +1,7 @@
 import Certifications from '../components/Certifications/Certifications.jsx';
 import Mission from '../components/Mission/Mission.jsx';
 import TechnicalSkills from '../components/TechnicalSkills/TechnicalSkills.jsx';
-/*
-import SoftSkills from '../components/SoftSkills/softSkills.jsx';
-*/
+import SoftSkills from '../components/SoftSkills/SoftSkills.jsx';
 
 const About = () => {
   return (
@@ -11,9 +9,7 @@ const About = () => {
       <Certifications />
       <Mission />
       <TechnicalSkills />
-      {/*
-        <SoftSkills />
-      */}
+      <SoftSkills />
     </div>
   );
 };
