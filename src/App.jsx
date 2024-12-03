@@ -1,3 +1,6 @@
+import './index.css';
+import './App.css';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Nav from './components/Nav/Nav.jsx';
@@ -9,9 +12,6 @@ import Portfolio from './pages/portfolio.jsx';
 import Contact from './pages/contact.jsx';
 import Resume from './pages/resume.jsx';
 import Services from './pages/services.jsx';
-
-import './index.css';
-import './App.css';
 
 function App() {
   return (
