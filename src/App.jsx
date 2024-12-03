@@ -2,13 +2,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Nav from './components/Nav/Nav.jsx';
 
-import ContactPage from './pages/contact.jsx';
-import HomePage from './pages/home.jsx';
-import ProjectsPage from './pages/projects.jsx';
-import CertificationsPage from './pages/certifications.jsx';
-import MissionPage from './pages/mission.jsx';
-import SoftSkillsPage from './pages/softSkills.jsx';
-import TechnicalSkillsPage from './pages/technicalSkills.jsx';
+import Home from './pages/home.jsx';
+import About from './pages/about.jsx';
+import Blog from './pages/blog.jsx';
+import Portfolio from './pages/portfolio.jsx';
+import Contact from './pages/contact.jsx';
+import Resume from './pages/resume.jsx';
+import Services from './pages/services.jsx';
 
 import './index.css';
 import './App.css';
@@ -18,13 +18,13 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/certifications" element={<CertificationsPage />} />
-        <Route path="/mission" element={<MissionPage />} />
-        <Route path="/softSkills" element={<SoftSkillsPage />} />
-        <Route path="/technicalSkills" element={<TechnicalSkillsPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </Router>
   );

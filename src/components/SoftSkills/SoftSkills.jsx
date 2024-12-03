@@ -4,7 +4,7 @@ import './softSkills.css';
 
 const SoftSkills = () => {
   return (
-    <div className="page">
+    <div>
       <h2>Soft Skills</h2>
     </div>
   );

@@ -1,8 +1,8 @@
 import '../index.css';
 import '../components/Nav/Nav.css';
 
-const projects = () => {
+const Portfolio = () => {
   return <div className="page">projects</div>;
 };
 
-export default projects;
+export default Portfolio;

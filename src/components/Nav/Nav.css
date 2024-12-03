@@ -31,13 +31,13 @@ nav {
 
 #menu.show {
   position: absolute;
-  top: 14vh;
+  top: 13vh;
   left: 2%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 96%;
-  height: 80%;
+  height: 80vh;
   border: 1px solid var(--text-color);
   border-radius: 5px;
   background-color: var(--bg-color);

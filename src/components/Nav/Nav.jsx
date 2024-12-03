@@ -73,14 +73,29 @@ const Nav = () => {
         ref={themeBtnRef}
       />
       <i className="bi bi-list" onClick={toggleMenu} />
-      {/*prettier-ignore*/}
+
       <div id="menu" className={showMenu ? 'show' : ''}>
-        <NavLink to="/" className="nav-link">Home</NavLink>
-        <NavLink to="/Contact" className="nav-link">Contact</NavLink>
-        <NavLink to="/Projects" className="nav-link">Projects</NavLink>
-        <NavLink to="/Certifications" className="nav-link">Certifications</NavLink>
-        <NavLink to="/SoftSkills" className="nav-link">Soft Skills</NavLink>
-        <NavLink to="/TechnicalSkills" className="nav-link">Technical Skills</NavLink>
+        <NavLink to="/" className="nav-link">
+          Home
+        </NavLink>
+        <NavLink to="/About" className="nav-link">
+          About
+        </NavLink>
+        <NavLink to="/Blog" className="nav-link">
+          Blog
+        </NavLink>
+        <NavLink to="/Contact" className="nav-link">
+          Contact
+        </NavLink>
+        <NavLink to="/Portfolio" className="nav-link">
+          Portfolio
+        </NavLink>
+        <NavLink to="/Resume" className="nav-link">
+          Resume
+        </NavLink>
+        <NavLink to="/Services" className="nav-link">
+          Services
+        </NavLink>
       </div>
     </nav>
   );

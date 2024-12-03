@@ -1,8 +1,8 @@
 import '../index.css';
 import '../components/Nav/Nav.css';
 
-const contact = () => {
+const Contact = () => {
   return <div className="page">contact</div>;
 };
 
-export default contact;
+export default Contact;
