@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   #heroImg {
     height: 15rem;
   }
