@@ -79,5 +79,5 @@ body {
   align-items: center;
   margin: 3% 0;
   border: 1px solid var(--text-color);
-  min-height: 85vh;
+  min-height: 80vh;
 }
