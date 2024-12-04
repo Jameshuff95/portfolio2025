@@ -4,13 +4,13 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  height: calc(100vh - 20vh);
 }
 
 .featuredProject {
   border: 1px solid var(--text-color);
   border-radius: 10px;
   width: 90%;
-  height: 100%;
   gap: 1rem;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
 
 .thumbnail {
   margin: auto;
-  width: 80%;
+  width: 50%;
   border: 1px solid var(--text-color);
   border-radius: 5px;
 }
