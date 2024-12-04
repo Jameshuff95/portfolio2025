@@ -1,3 +1,10 @@
+/*
+
+Provides a more detailed background about you, your journey, your philosophy, and what sets you apart. This helps to build a personal connection.
+
+*/
+
+import './About.css';
 import '../../index.css';
 import '../../globalComponents/Nav/Nav.css';
 
