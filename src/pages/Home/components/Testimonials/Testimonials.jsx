@@ -43,20 +43,23 @@ const Testimonials = () => {
       <h3>Testimonials</h3>
       <div id="testimonial-carousel">
         <i className="bi bi-arrow-left" onClick={prevTestimonial} />
-        <h3 className="author"></h3>
-        <div className="message">
-          <p className="message-top">
-            " {testimonials[currentTestimonial].message} "
-          </p>
-          <div className="message-bottom">
-            <p className="testimonial-author">
-              {testimonials[currentTestimonial].author}
+        <div className="testimonial">
+          <h3 className="author"></h3>
+          <div className="message">
+            <p className="message-top">
+              " {testimonials[currentTestimonial].message} "
             </p>
-            <p className="testimonial-date">
-              {testimonials[currentTestimonial].date}
-            </p>
+            <div className="message-bottom">
+              <p className="testimonial-author">
+                {testimonials[currentTestimonial].author}
+              </p>
+              <p className="testimonial-date">
+                {testimonials[currentTestimonial].date}
+              </p>
+            </div>
           </div>
         </div>
+
         <i className="bi bi-arrow-right" onClick={nextTestimonial} />
       </div>
     </div>

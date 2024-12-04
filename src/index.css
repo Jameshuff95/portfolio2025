@@ -24,7 +24,7 @@ body.dark {
 
 /*html*/
 :root {
-  overflow: hidden;
+  overflow: auto;
 }
 
 body {
@@ -42,49 +42,40 @@ body {
 }
 
 .page {
-  height: 100vh;
+  min-height: 100vh;
   padding: 1%;
-  margin: 2%;
-  /*border: 1px solid var(--text-color);*/
+  margin: 10vh 2% 2%;
   border-radius: 5px;
   min-width: 280px;
   overflow: auto;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 /* Style the entire scrollbar */
 .page::-webkit-scrollbar {
-  width: 1px; /* Set the width of the scrollbar */
+  width: 1px;
   border-radius: 15px;
 }
 
-/* Style the scrollbar track */
 .page::-webkit-scrollbar-track {
   background: var(--bg-color);
-  /* Set the background color of the track */
-  border-radius: 15px; /* Optional: round the corners of the track */
+  border-radius: 15px;
 }
 
-/* Style the draggable part (thumb) */
 .page::-webkit-scrollbar-thumb {
-  background: var(--text-color); /* Set the background color of the thumb */
-  border-radius: 15px; /* Optional: round the corners of the thumb */
+  background: var(--text-color);
+  border-radius: 15px;
 }
 
-/* Style the thumb when hovered */
 .page::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Change the thumb color on hover */
+  background: #555;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*border: 1px solid red;*/
-  height: 100%;
-  border: 1px solid white;
   margin: 3% 0;
 }
