@@ -1,7 +1,6 @@
 #intro-container {
   gap: 1rem;
   height: calc(100vh - 20vh);
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

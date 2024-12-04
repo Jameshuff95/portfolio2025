@@ -1,7 +1,12 @@
+#featured-work-container {
+  border: 1px solid red;
+  height: calc(100vh - 20vh);
+}
+
 #featured-projects-carousel {
   width: 100%;
-  min-height: 60vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -9,7 +14,7 @@
 .featuredProject {
   border: 1px solid var(--text-color);
   border-radius: 10px;
-  width: 70%;
+  width: 90%;
   gap: 1rem;
   display: flex;
   flex-direction: column;
@@ -19,8 +24,8 @@
 
 .thumbnail {
   margin: auto;
-  min-height: 20vh;
-  min-width: 90%;
+  width: 80%;
+  height: 12rem;
   border: 1px solid var(--text-color);
   border-radius: 5px;
 }
@@ -33,5 +38,17 @@
   border-radius: 5px;
   width: 90%;
   margin: 0 auto;
-  min-height: 3rem;
+  min-height: 7rem;
+}
+
+#arrow-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#left-arrow,
+#right-arrow {
+  padding: 5%;
+  margin: 1rem;
 }
