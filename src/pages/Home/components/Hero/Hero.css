@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 3%;
-  min-height: 21rem;
+  min-height: 22rem;
 }
 
 @media screen and (min-width: 500px) {
