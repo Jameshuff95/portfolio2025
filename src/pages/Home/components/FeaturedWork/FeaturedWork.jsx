@@ -47,13 +47,13 @@ const FeaturedWork = () => {
       <div id="featured-projects-carousel">
         <i className="bi bi-arrow-left" onClick={previousProject} />
         <div className="featuredProject" key={currentProject}>
-          <p>Title: {featuredProjects[currentProject].title}</p>
-          <p>Technology: {featuredProjects[currentProject].technology}</p>
           <img
             src={featuredProjects[currentProject].img}
             alt={featuredProjects[currentProject].imgAlt}
             className="thumbnail"
           />
+          <p>Title: {featuredProjects[currentProject].title}</p>
+          <p>Technology: {featuredProjects[currentProject].technology}</p>
           <p className="projectDescription">
             {featuredProjects[currentProject].description}
           </p>
