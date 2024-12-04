@@ -1,23 +1,16 @@
 #featured-work-container {
   border: 1px solid red;
-  height: calc(100vh - 20vh);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-#featured-projects-carousel {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 .featuredProject {
   border: 1px solid var(--text-color);
   border-radius: 10px;
   width: 90%;
+  height: 100%;
   gap: 1rem;
   display: flex;
   flex-direction: column;
@@ -28,7 +21,6 @@
 .thumbnail {
   margin: auto;
   width: 80%;
-  height: 12rem;
   border: 1px solid var(--text-color);
   border-radius: 5px;
 }
@@ -46,12 +38,15 @@
 
 #arrow-container {
   width: 90%;
+  height: 3rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 #left-arrow,
 #right-arrow {
-  padding: 5%;
-  margin: 1rem;
+  display: grid;
+  place-items: center;
+  width: 25%;
+  font-size: 1.5rem;
 }

@@ -46,31 +46,29 @@ const FeaturedWork = () => {
   return (
     <div id="featured-work-container" className="container">
       <h3>Featured Work</h3>
-      <div id="featured-projects-carousel">
-        <div className="featuredProject" key={currentProject}>
-          <img
-            src={featuredProjects[currentProject].img}
-            alt={featuredProjects[currentProject].imgAlt}
-            className="thumbnail"
-          />
-          <p>Title: {featuredProjects[currentProject].title}</p>
-          <p>Technology: {featuredProjects[currentProject].technology}</p>
-          <p className="projectDescription">
-            {featuredProjects[currentProject].description}
-          </p>
-        </div>
-        <div id="arrow-container">
-          <i
-            id="left-arrow"
-            className="bi bi-arrow-left"
-            onClick={previousProject}
-          />
-          <i
-            id="right-arrow"
-            className="bi bi-arrow-right"
-            onClick={nextProject}
-          />
-        </div>
+      <div className="featuredProject" key={currentProject}>
+        <img
+          src={featuredProjects[currentProject].img}
+          alt={featuredProjects[currentProject].imgAlt}
+          className="thumbnail"
+        />
+        <p>Title: {featuredProjects[currentProject].title}</p>
+        <p>Technology: {featuredProjects[currentProject].technology}</p>
+        <p className="projectDescription">
+          {featuredProjects[currentProject].description}
+        </p>
+      </div>
+      <div id="arrow-container">
+        <i
+          id="left-arrow"
+          className="bi bi-arrow-left"
+          onClick={previousProject}
+        />
+        <i
+          id="right-arrow"
+          className="bi bi-arrow-right"
+          onClick={nextProject}
+        />
       </div>
     </div>
   );
