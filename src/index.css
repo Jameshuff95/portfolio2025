@@ -48,6 +48,7 @@ body {
   border: 1px solid var(--text-color);
   border-radius: 5px;
   min-width: 280px;
+  overflow: auto;
 }
 
 @media screen and (max-width: 400px) {

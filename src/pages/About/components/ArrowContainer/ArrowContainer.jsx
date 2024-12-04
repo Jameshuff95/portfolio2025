@@ -1,6 +1,5 @@
-import '../../index.css';
-import '../../App.css';
-
+import '../../../../index.css';
+import '../../../../App.css';
 import './ArrowContainer.css';
 
 const ArrowContainer = () => {

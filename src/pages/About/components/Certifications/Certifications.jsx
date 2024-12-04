@@ -1,6 +1,5 @@
-import '../../index.css';
-import './Certifications.css';
-import '../../components/Nav/Nav.css';
+import '../../../../index.css';
+import '../../../../App.css';
 
 const Certfications = () => {
   return (
