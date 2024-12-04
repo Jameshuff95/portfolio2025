@@ -1,9 +1,18 @@
+#social-links-container {
+  height: calc(100vh - 20vh);
+}
+
 #social-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  height: 100%;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 3rem;
+}
+
+#github {
+  color: purple;
 }
 
 #linkedin {
@@ -18,8 +27,8 @@
   color: hotpink;
 }
 
-#snapchat {
-  color: yellow;
+#reddit {
+  color: orangered;
 }
 
 #x {

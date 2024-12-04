@@ -3,9 +3,13 @@ import './ContactInformation.css';
 
 const ContactInformation = () => {
   return (
-    <div className="container">
-      <h3>Get in touch with me!</h3>
+    <div id="social-links-container" className="container">
+      <h3>Get in touch with me on any of these social media platforms!</h3>
       <div id="social-links">
+        <Link to="#">
+          <i id="github" className="bi bi-github" />
+        </Link>
+
         <Link to="#">
           <i id="linkedin" className="bi bi-linkedin" />
         </Link>
@@ -23,10 +27,9 @@ const ContactInformation = () => {
         </Link>
 
         <Link to="#">
-          <i id="snapchat" className="bi bi-snapchat" />
+          <i id="reddit" className="bi bi-reddit" />
         </Link>
       </div>
-      <p>Feel free to contact me on any of these social media platforms!</p>
     </div>
   );
 };

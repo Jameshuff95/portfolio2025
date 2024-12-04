@@ -1,6 +1,5 @@
 #testimonials-container {
-  border: 1px solid red;
-  height: calc(100vh - 15vh);
+  height: calc(100vh - 10vh);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -52,7 +51,6 @@
   height: 3rem;
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
 }
 
 .bi-arrow-left,
