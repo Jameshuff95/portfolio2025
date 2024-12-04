@@ -2,9 +2,9 @@
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
-  height: calc(100vh - 20vh);
+  height: calc(100vh - 15vh);
 }
 
 .featuredProject {
