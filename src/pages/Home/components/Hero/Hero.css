@@ -1,3 +1,7 @@
+#hero-container {
+  justify-content: space-between;
+}
+
 #heroImg {
   border: 1px solid var(--text-color);
   height: 9rem;
@@ -11,9 +15,9 @@
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
   padding: 3%;
-  min-height: 9rem;
+  min-height: 25rem;
 }
 
 @media screen and (min-width: 500px) {
