@@ -1,0 +1,25 @@
+#heroImg {
+  border: 1px solid var(--text-color);
+  height: 9rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem var(--text-color);
+}
+
+#hero-center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 3%;
+  min-height: 9rem;
+}
+
+@media screen and (min-width: 300px) {
+  #hero-center {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

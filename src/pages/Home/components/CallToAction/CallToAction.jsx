@@ -1,10 +1,14 @@
 import './CallToAction.css';
 
 const CallToAction = () => {
+  const handlePreventDefault = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <>
-      <h2>CallToAction</h2>
-    </>
+    <button id="callToActionBtn" onClick={handlePreventDefault}>
+      View My Work
+    </button>
   );
 };
 

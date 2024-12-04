@@ -42,20 +42,44 @@ body {
 }
 
 .page {
-  height: 75vh;
-  padding: 5%;
+  height: calc(100vh - 8vh);
+  padding: 1%;
   margin: 2%;
-  border: 1px solid var(--text-color);
+  /*border: 1px solid var(--text-color);*/
   border-radius: 5px;
   min-width: 280px;
   overflow: auto;
 }
 
-@media screen and (max-width: 400px) {
+/* Style the entire scrollbar */
+.page::-webkit-scrollbar {
+  width: 1px; /* Set the width of the scrollbar */
+  border-radius: 15px;
 }
 
-@media screen and (min-width: 500px) {
-  .page {
-    padding: 2%;
-  }
+/* Style the scrollbar track */
+.page::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  /* Set the background color of the track */
+  border-radius: 15px; /* Optional: round the corners of the track */
+}
+
+/* Style the draggable part (thumb) */
+.page::-webkit-scrollbar-thumb {
+  background: var(--text-color); /* Set the background color of the thumb */
+  border-radius: 15px; /* Optional: round the corners of the thumb */
+}
+
+/* Style the thumb when hovered */
+.page::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change the thumb color on hover */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /*border: 1px solid red;*/
+  min-height: 100%;
 }

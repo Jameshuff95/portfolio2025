@@ -1,12 +1,12 @@
 /* Base Navigation Styles */
 nav {
   background-color: var(--background-color);
-  padding: 1% 5%;
+  padding: 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 11vh;
-  font-size: 2rem;
+  height: 8vh;
+  font-size: 1.5rem;
   width: 96%;
   margin: 2%;
 }

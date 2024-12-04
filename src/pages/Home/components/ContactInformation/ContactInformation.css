@@ -1,0 +1,27 @@
+#social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#linkedin {
+  color: navy;
+}
+
+#facebook {
+  color: blue;
+}
+
+#instagram {
+  color: hotpink;
+}
+
+#snapchat {
+  color: yellow;
+}
+
+#x {
+  color: var(--text-color);
+}
