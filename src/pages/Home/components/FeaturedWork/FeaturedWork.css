@@ -3,7 +3,7 @@
   height: calc(100vh - 20vh);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 #featured-projects-carousel {
