@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-around;
   border: 1px solid blue;
-  height: calc(100vh - 16vh);
+  height: calc(100vh - 17vh);
 }
 
 #heroImg {
@@ -12,12 +12,6 @@
   height: 12rem;
   border-radius: 50%;
   box-shadow: 0 0 1rem var(--text-color);
-}
-
-@media screen and (max-width: 320px) {
-  #heroImg {
-    height: 15rem;
-  }
 }
 
 @media screen and (min-width: 500px) {
