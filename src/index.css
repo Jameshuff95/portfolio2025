@@ -42,7 +42,7 @@ body {
 }
 
 .page {
-  height: calc(100vh - 8vh);
+  height: 100vh;
   padding: 1%;
   margin: 2%;
   /*border: 1px solid var(--text-color);*/
