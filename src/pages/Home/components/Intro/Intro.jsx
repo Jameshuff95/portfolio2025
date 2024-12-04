@@ -3,7 +3,7 @@ import './Intro.css';
 const Intro = () => {
   return (
     // prettier-ignore
-    <div className="container">
+    <div id="intro-container" className="container">
       <h3>
         Driven by Curiosity, Empowered by MERN: Meet James Huff.
       </h3>
