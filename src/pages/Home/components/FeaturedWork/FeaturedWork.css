@@ -1,6 +1,9 @@
 #featured-work-container {
   border: 1px solid red;
   height: calc(100vh - 20vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #featured-projects-carousel {
