@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-around;
   border: 1px solid blue;
-  height: calc(100vh - 17vh);
+  height: calc(100vh - 20vh);
 }
 
 #heroImg {
