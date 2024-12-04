@@ -8,7 +8,7 @@ import HeroImg from '../../../../assets/logo.png';
 const Hero = () => {
   return (
     <div id="hero-container" className="container">
-      <h2>My name is James Huff.</h2>
+      <h3>My name is James Huff.</h3>
       <div id="hero-center">
         <img src={HeroImg} alt="An image of James." id="heroImg" />
         <p>
