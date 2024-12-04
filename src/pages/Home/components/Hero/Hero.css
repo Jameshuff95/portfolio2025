@@ -16,7 +16,7 @@
   min-height: 9rem;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 500px) {
   #hero-center {
     flex-direction: row;
     justify-content: space-around;
