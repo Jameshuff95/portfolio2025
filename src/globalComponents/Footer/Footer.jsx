@@ -18,28 +18,37 @@ const Footer = () => {
         </div>
 
         <div id="footer-social-links">
-          <Link to="#" className="footer-social-link">
+          <Link to="#">
             <i id="github" className="bi bi-github" />
           </Link>
 
-          <Link to="#" className="footer-social-link">
+          <Link to="#">
             <i id="linkedin" className="bi bi-linkedin" />
           </Link>
 
-          <Link to="#" className="footer-social-link">
+          <Link to="#">
             <i id="facebook" className="bi bi-facebook" />
           </Link>
 
-          <Link to="#" className="footer-social-link">
+          <Link to="#">
             <i id="x2" className="bi bi-twitter-x" />
           </Link>
 
-          <Link to="#" className="footer-social-link">
+          <Link to="#">
             <i id="instagram" className="bi bi-instagram" />
           </Link>
 
-          <Link to="#" className="footer-social-link">
+          <Link to="#">
             <i id="reddit" className="bi bi-reddit" />
+          </Link>
+          <Link to="#">
+            <i id="dribbble" className="bi bi-dribbble" />
+          </Link>
+          <Link to="#">
+            <i id="youtube" className="bi bi-youtube" />
+          </Link>
+          <Link to="#">
+            <i id="stack-overflow" className="bi bi-stack-overflow" />
           </Link>
         </div>
       </div>

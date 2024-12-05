@@ -4,6 +4,7 @@ import './ContactInformation.css';
 const ContactInformation = () => {
   return (
     <div id="social-links-container" className="container">
+      <h3> Contact Me</h3>
       <div id="social-links">
         <Link to="#">
           <i className="bi bi-github" />
@@ -27,6 +28,15 @@ const ContactInformation = () => {
 
         <Link to="#">
           <i id="reddit" className="bi bi-reddit" />
+        </Link>
+        <Link to="#">
+          <i id="dribbble" className="bi bi-dribbble" />
+        </Link>
+        <Link to="#">
+          <i id="youtube" className="bi bi-youtube" />
+        </Link>
+        <Link to="#">
+          <i id="stack-overflow" className="bi bi-stack-overflow" />
         </Link>
       </div>
     </div>

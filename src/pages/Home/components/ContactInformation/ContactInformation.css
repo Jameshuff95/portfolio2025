@@ -38,6 +38,18 @@
   color: orangered;
 }
 
+.bi-youtube {
+  color: red;
+}
+
+.bi-stack-overflow {
+  color: orange;
+}
+
+.bi-dribbble {
+  color: navy;
+}
+
 #x {
   color: var(--text-color);
 }
