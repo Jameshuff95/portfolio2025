@@ -52,8 +52,8 @@ const FeaturedWork = () => {
           alt={featuredProjects[currentProject].imgAlt}
           className="thumbnail"
         />
-        <p>Title: {featuredProjects[currentProject].title}</p>
-        <p>Technology: {featuredProjects[currentProject].technology}</p>
+        <p>{featuredProjects[currentProject].title}</p>
+        <p>{featuredProjects[currentProject].technology}</p>
         <p className="projectDescription">
           {featuredProjects[currentProject].description}
         </p>

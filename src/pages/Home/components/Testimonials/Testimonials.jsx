@@ -1,5 +1,5 @@
 import './Testimonials.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Testimonials = () => {
   const testimonials = [
@@ -25,42 +25,29 @@ const Testimonials = () => {
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  const nextTestimonial = () => {
-    setCurrentTestimonial(
-      (prevTestimonial) => (prevTestimonial + 1) % testimonials.length
-    );
-  };
-
-  const prevTestimonial = () => {
-    setCurrentTestimonial(
-      (prevTestimonial) =>
-        (prevTestimonial - 1 + testimonials.length) % testimonials.length
-    );
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial(
+        (prevTestimonial) => (prevTestimonial + 1) % testimonials.length
+      );
+    }, 3000);
+    return () => clearInterval(interval); // Clean up interval on unmount
+  }, [testimonials.length]);
 
   return (
     <div id="testimonials-container" className="container">
-      <h3>Testimonials</h3>
-
       <div className="testimonial">
-        <h3 className="author"></h3>
         <div className="message">
-          <p className="message-top">
-            " {testimonials[currentTestimonial].message} "
-          </p>
-          <div className="message-bottom">
-            <p className="testimonial-author">
-              {testimonials[currentTestimonial].author}
-            </p>
-            <p className="testimonial-date">
-              {testimonials[currentTestimonial].date}
-            </p>
-          </div>
+          <p>" {testimonials[currentTestimonial].message} "</p>
         </div>
-      </div>
-      <div id="arrow-container">
-        <i className="bi bi-arrow-left" onClick={prevTestimonial} />
-        <i className="bi bi-arrow-right" onClick={nextTestimonial} />
+        <div className="author-date">
+          <p className="testimonial-author">
+            {testimonials[currentTestimonial].author}
+          </p>
+          <p className="testimonial-date">
+            {testimonials[currentTestimonial].date}
+          </p>
+        </div>
       </div>
     </div>
   );

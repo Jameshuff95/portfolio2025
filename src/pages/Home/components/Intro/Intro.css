@@ -4,10 +4,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   border-radius: 10px;
-  padding: 2%;
+  padding: 4%;
   margin: auto;
   background-color: var(--text-color);
   color: var(--bg-color);
+  gap: 1rem;
+
   h3 {
     font-size: 1.5rem;
   }
@@ -15,4 +17,15 @@
   p {
     font-size: 1.3rem;
   }
+}
+
+#intro-name {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 3px double var(--text-color);
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  width: 10rem;
 }

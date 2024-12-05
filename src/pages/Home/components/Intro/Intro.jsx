@@ -5,7 +5,7 @@ const Intro = () => {
     // prettier-ignore
     <div id="intro-container" className="container">
       <h3>
-        Driven by Curiosity, Empowered by MERN: Meet James Huff.
+        Driven by Curiosity, Empowered by MERN: 
       </h3>
       
       <p>
@@ -13,7 +13,10 @@ const Intro = () => {
       </p>
 
       <p>
-        My journey into the world of web development started with a thirst for knowledge and an insatiable curiosity. 
+        My journey into the world of web development started with a thirst for knowledge and an insatiable curiosity.
+      </p>
+
+      <p> 
         Through rigorous self-study and hands-on practice, I have honed my skills in building dynamic, responsive web applications.
       </p>
       
