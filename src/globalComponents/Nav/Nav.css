@@ -1,4 +1,5 @@
 /* Base Navigation Styles */
+
 nav {
   background-color: var(--background-color);
   padding: 3%;
@@ -7,11 +8,11 @@ nav {
   align-items: center;
   height: 10vh;
   font-size: 2rem;
-  width: 96%;
-  margin: 2%;
+  width: 100%;
+  margin: auto;
   position: fixed;
   background-color: var(--bg-color);
-  top: -1rem;
+  top: 0;
 }
 
 .bi {
