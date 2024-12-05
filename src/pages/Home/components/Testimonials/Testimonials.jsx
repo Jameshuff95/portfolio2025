@@ -41,6 +41,7 @@ const Testimonials = () => {
           <p>
             {`"${testimonials[currentTestimonial].message}"`}
             <br />
+            <br />
             {`- ${testimonials[currentTestimonial].author} ${testimonials[currentTestimonial].date}`}
           </p>
         </div>
