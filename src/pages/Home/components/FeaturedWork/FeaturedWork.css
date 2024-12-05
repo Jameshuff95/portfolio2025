@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
+
+  h3 {
+    font-size: 1.75rem;
+  }
 }
 
 .featuredProject {

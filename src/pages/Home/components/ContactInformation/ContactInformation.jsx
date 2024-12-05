@@ -7,7 +7,7 @@ const ContactInformation = () => {
       <h3>Get in touch with me on any of these social media platforms!</h3>
       <div id="social-links">
         <Link to="#">
-          <i id="github" className="bi bi-github" />
+          <i className="bi bi-github" />
         </Link>
 
         <Link to="#">

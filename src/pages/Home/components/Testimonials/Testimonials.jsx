@@ -38,16 +38,13 @@ const Testimonials = () => {
     <div id="testimonials-container" className="container">
       <div className="testimonial">
         <div className="message">
-          <p>" {testimonials[currentTestimonial].message} "</p>
-        </div>
-        <div className="author-date">
-          <p className="testimonial-author">
-            {testimonials[currentTestimonial].author}
-          </p>
-          <p className="testimonial-date">
-            {testimonials[currentTestimonial].date}
+          <p>
+            {`"${testimonials[currentTestimonial].message}"`}
+            <br />
+            {`- ${testimonials[currentTestimonial].author} ${testimonials[currentTestimonial].date}`}
           </p>
         </div>
+        <div className="author-date"></div>
       </div>
     </div>
   );

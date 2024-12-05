@@ -12,14 +12,17 @@ import ContactInformation from './components/ContactInformation/ContactInformati
 
 import Testimonials from './components/Testimonials/Testimonials.jsx';
 
+import Footer from '../../globalComponents/Footer/Footer.jsx';
+
 const Home = () => {
   return (
     <div className="page">
       <Hero />
       <Intro />
       <FeaturedWork />
-      <Testimonials />
       <ContactInformation />
+      <Testimonials />
+      <Footer />
     </div>
   );
 };

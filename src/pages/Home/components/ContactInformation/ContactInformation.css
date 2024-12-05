@@ -1,5 +1,11 @@
 #social-links-container {
-  height: calc(100vh - 10vh);
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 #social-links {
@@ -11,23 +17,23 @@
   font-size: 3rem;
 }
 
-#github {
+.bi-github {
   color: purple;
 }
 
-#linkedin {
+.bi-linkedin {
   color: navy;
 }
 
-#facebook {
+.bi-facebook {
   color: blue;
 }
 
-#instagram {
+.bi-instagram {
   color: hotpink;
 }
 
-#reddit {
+.bi-reddit {
   color: orangered;
 }
 
