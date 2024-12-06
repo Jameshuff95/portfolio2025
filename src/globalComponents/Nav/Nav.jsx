@@ -72,7 +72,7 @@ const Nav = () => {
         className={`bi bi-${theme === 'dark' ? 'moon' : 'sun'}-fill`}
         ref={themeBtnRef}
       />
-      <i className="bi bi-list" onClick={toggleMenu} />
+      <i id="menu-btn" className="bi bi-list" onClick={toggleMenu} />
 
       <div id="menu" className={showMenu ? 'show' : ''}>
         <NavLink to="/" className="nav-link">

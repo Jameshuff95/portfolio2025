@@ -1,7 +1,5 @@
-/* Base Navigation Styles */
-
 nav {
-  background-color: var(--background-color);
+  background-color: var(--scrollbar-thumb);
   padding: 3%;
   display: flex;
   justify-content: space-between;
@@ -11,8 +9,8 @@ nav {
   width: 100%;
   margin: auto;
   position: fixed;
-  background-color: var(--bg-color);
   top: 0;
+  z-index: 10;
 }
 
 .bi {
@@ -26,6 +24,10 @@ nav {
 
 .bi-moon-fill {
   color: lightblue;
+}
+
+#menu-btn {
+  color: var(--text-color);
 }
 
 /* Menu Styles */

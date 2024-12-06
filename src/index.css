@@ -3,23 +3,39 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none !important;
+  -webkit-user-select: none !important; /* Safari */
+  -moz-user-select: none !important; /* Firefox */
+  -ms-user-select: none !important;
+  touch-action: manipulation;
 }
 
-/*themes*/
+/* themes */
 body.light {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --scrollbar-bg: #f1f1f1;
-  --scrollbar-thumb: #888;
-  --scrollbar-thumb-hover: #555;
+  --bg-gradient: linear-gradient(
+    135deg,
+    #e0f7fa,
+    #81d4fa,
+    #4fc3f7,
+    #0288d1
+  ); /* Light blue to deep blue gradient */
+  --text-color: #0d47a1; /* Dark blue text */
+  --scrollbar-bg: #b3e5fc; /* Light blue scrollbar track */
+  --scrollbar-thumb: #0288d1; /* Deep blue scrollbar thumb */
+  --scrollbar-thumb-hover: #01579b; /* Darker blue scrollbar thumb on hover */
 }
 
 body.dark {
-  --bg-color: #000000;
-  --text-color: #ffffff;
-  --scrollbar-bg: #333;
-  --scrollbar-thumb: #888;
-  --scrollbar-thumb-hover: #aaa;
+  --bg-gradient: linear-gradient(
+    135deg,
+    #121212,
+    #3a0ca3,
+    #7209b7,
+    #f72585
+  ); /* Black to purple to magenta */
+  --text-color: #e0e0e0; /* Soft light grey text */
+  --scrollbar-bg: #333333; /* Dark grey scrollbar track */
+  --scrollbar-thumb: #7209b7; /* Purple scrollbar thumb */
+  --scrollbar-thumb-hover: #f72585; /* Magenta scrollbar thumb on hover */
 }
 
 /*html*/
@@ -28,10 +44,11 @@ body.dark {
 }
 
 body {
-  min-height: 100vh;
+  height: calc(100vh -10vh);
   min-width: 220px;
-  background-color: var(--bg-color);
+  background: var(--bg-gradient); /* Apply gradient background */
   color: var(--text-color);
+  z-index: 1;
 }
 
 /*main container within body*/
