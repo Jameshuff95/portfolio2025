@@ -1,19 +1,36 @@
 #testimonials-container {
   display: flex;
   flex-direction: column;
-  height: 10rem;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  margin: auto;
 }
 
 .testimonial {
-  width: 90%;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+}
+
+.testimonial-top {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 15px;
+  height: 13rem;
+}
+
+.testimonial-bottom {
+  height: 3rem;
 }
 
 .message {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  min-height: 8rem;
+  display: grid;
+  place-items: center;
+  width: 90%;
+  background-color: var(--text-color);
+  color: var(--scrollbar-bg);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0.5rem var(--scrollbar-thumb);
+  border: 1px solid var(--scroll-bg);
 }

@@ -16,7 +16,7 @@ import Footer from '../../globalComponents/Footer/Footer.jsx';
 
 const Home = () => {
   return (
-    <div className="page">
+    <div id="home" className="page">
       <Hero />
       <Intro />
       <FeaturedWork />
