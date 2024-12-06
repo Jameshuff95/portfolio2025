@@ -1,5 +1,5 @@
 nav {
-  background-color: var(--scrollbar-thumb);
+  background-color: var(--nav-bg);
   padding: 3%;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@ nav {
 }
 
 #menu-btn {
-  color: var(--text-color);
+  color: var(--scrollbar-bg);
 }
 
 /* Menu Styles */

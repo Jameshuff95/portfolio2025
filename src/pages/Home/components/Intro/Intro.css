@@ -3,19 +3,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border: 1px solid var(--intro-border);
   border-radius: 10px;
   padding: 4%;
   margin: auto;
-  background-color: var(--text-color);
-  color: var(--scrollbar-bg);
+  background-color: var(--nav-bg);
+  color: var(--intro-text);
   gap: 1rem;
-  box-shadow: inset 0 0 0.5rem var(--scrollbar-thumb);
+  box-shadow: inset 0 0 0.5rem var(--hero-btn-text);
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    padding: 1rem;
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }

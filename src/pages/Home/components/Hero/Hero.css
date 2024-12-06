@@ -8,6 +8,7 @@
   justify-content: space-evenly;
   height: calc(100vh - 10vh);
   width: 100%;
+  color: var(--hero-text);
 
   h3 {
     font-size: 2rem;
@@ -20,10 +21,10 @@
 }
 
 #heroImg {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--scrollbar-thumb-hover);
   height: 12rem;
   border-radius: 50%;
-  box-shadow: 0 0 1rem var(--text-color);
+  box-shadow: 0 0 1rem var(--hero-text);
 }
 
 @media screen and (min-width: 500px) {

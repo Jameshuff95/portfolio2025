@@ -1,17 +1,13 @@
 #footer-container {
-  border: 1px solid var(--scrollbar-thumb);
+  border: 1px solid var(--hero-btn-text);
   background-color: var(--text-color);
-  color: var(--scrollbar-bg);
+  color: var(--hero-text);
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
   padding: 2%;
   border-radius: 10px;
-  box-shadow: inset 0 0 0.5rem var(--scrollbar-thumb);
-
-  p {
-    color: var(--scrollbar-bg);
-  }
+  box-shadow: inset 0 0 0.5rem var(--hero-text);
 }
 
 #footer-top {
@@ -29,7 +25,7 @@
 }
 
 .footer-link {
-  color: var(--bg-color);
+  color: var(--testimonial-text);
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -42,7 +38,7 @@
   text-align: center;
 
   legend {
-    color: var(--scrollbar-bg);
+    color: var(--testimonial-text);
   }
 }
 
@@ -57,12 +53,9 @@
   font-size: 2rem;
 }
 
-#x2 {
-  color: var(--bg-color);
-}
-
 #footer-bottom {
   display: flex;
   justify-content: center;
   padding: 5%;
+  color: var(--testimonial-text);
 }

@@ -1,8 +1,8 @@
 #callToActionBtn {
-  border: 5px double var(--bg-color);
-  background: var(--bg-gradient);
+  border: 5px double var(--hero-btn-border);
+  background-color: var(--hero-btn-text);
   box-shadow: inset 0 0 0.25rem var(--text-color);
-  color: var(--text-color);
+  color: var(--hero-text);
   width: 80%;
   height: 5rem;
   border-radius: 10px;

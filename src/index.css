@@ -11,20 +11,45 @@
 }
 
 /* themes */
+/* prettier-ignore */
 body.light {
   --bg-gradient: linear-gradient(
-    135deg,
-    #e0f7fa,
-    #81d4fa,
-    #4fc3f7,
-    #0288d1
-  ); /* Light blue to deep blue gradient */
-  --text-color: #0d47a1; /* Dark blue text */
-  --scrollbar-bg: #b3e5fc; /* Light blue scrollbar track */
-  --scrollbar-thumb: #0288d1; /* Deep blue scrollbar thumb */
-  --scrollbar-thumb-hover: #01579b; /* Darker blue scrollbar thumb on hover */
+      135deg, 
+      #e0f7fa, 
+      #81d4fa, 
+      #4fc3f7, 
+      #0288d1
+    );
+
+  /* Nav */
+  --nav-bg: #01579b;
+
+  /* Hero */
+  --hero-text: #01579b;
+  --hero-btn-border: #01579b;
+  --hero-btn-text: #b3e5fc;
+
+  /* Intro */
+  --intro-border: #01579b;
+  --intro-text: #b3e5fc;
+
+  /* Featured */
+  --featured-inner-text: #b3e5fc;
+
+  /* Testimonials */
+  --testimonial-text: #b3e5fc;
+
+  /* Other */
+  --text-color-light: #b3e5fc;
+  --text-color: #0288d1; 
+
+  /* scrollbar */
+  --scrollbar-bg: #b3e5fc; 
+  --scrollbar-thumb: #0288d1; 
+  --scrollbar-thumb-hover: #01579b; 
 }
 
+/*prettier-ignore*/
 body.dark {
   --bg-gradient: linear-gradient(
     135deg,
@@ -32,11 +57,33 @@ body.dark {
     #3a0ca3,
     #7209b7,
     #f72585
-  ); /* Black to purple to magenta */
-  --text-color: #e0e0e0; /* Soft light grey text */
-  --scrollbar-bg: #333333; /* Dark grey scrollbar track */
-  --scrollbar-thumb: #7209b7; /* Purple scrollbar thumb */
-  --scrollbar-thumb-hover: #f72585; /* Magenta scrollbar thumb on hover */
+  ); 
+
+    /* Nav */
+  --nav-bg: #7209b7;
+
+  /* Hero */
+  --hero-text: #e0e0e0;
+  --hero-btn-border: #e0e0e0;
+  --hero-btn-text: #01579b;
+
+  /* Intro */
+  --intro-border: #e0e0e0;
+  --intro-text: #e0e0e0;
+
+  /* Featured */
+  --featured-inner-text: #e0e0e0;
+
+  /* Testimonials */
+  --testimonial-text: #e0e0e0;
+
+  /* Other */
+  --text-color-light: #e0e0e0;
+  --text-color-dark: #01579b;
+  --text-color: #7209b7; 
+  --scrollbar-bg: #e0e0e0; 
+  --scrollbar-thumb: #7209b7; 
+  --scrollbar-thumb-hover: #e0e0e0; 
 }
 
 /*html*/

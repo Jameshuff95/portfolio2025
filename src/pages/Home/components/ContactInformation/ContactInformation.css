@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  color: var(--hero-text);
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -26,7 +27,7 @@
   width: 5rem;
 
   legend {
-    color: var(--scrollbar-bg);
+    color: var(--hero-text);
     font-size: 1rem;
   }
 }
@@ -63,6 +64,6 @@
   color: navy;
 }
 
-#x {
-  color: var(--text-color);
+#x2 {
+  color: var(--hero-text);
 }

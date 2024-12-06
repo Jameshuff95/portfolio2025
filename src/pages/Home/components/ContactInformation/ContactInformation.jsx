@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './ContactInformation.css';
 import '../../../../globalComponents/Footer/Footer.css';
+import '../../../../index.css';
 
 const ContactInformation = () => {
   return (
