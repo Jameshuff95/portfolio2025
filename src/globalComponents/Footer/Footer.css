@@ -1,19 +1,29 @@
 #footer-container {
   border: 1px solid var(--scrollbar-thumb);
   background-color: var(--text-color);
-  color: var(--scrollbar-thumb);
+  color: var(--scrollbar-bg);
   display: flex;
+  flex-direction: column;
   margin: 1rem 0;
   padding: 2%;
   border-radius: 10px;
   box-shadow: inset 0 0 0.5rem var(--scrollbar-thumb);
+
+  p {
+    color: var(--scrollbar-bg);
+  }
+}
+
+#footer-top {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #site-map {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 40%;
+  width: 30%;
   padding: 2%;
   gap: 1rem;
 }
@@ -24,8 +34,20 @@
   font-size: 1.2rem;
 }
 
+.footer-social {
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  text-decoration: none;
+  text-align: center;
+
+  legend {
+    color: var(--scrollbar-bg);
+  }
+}
+
 #footer-social-links {
-  width: 60%;
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
@@ -37,4 +59,10 @@
 
 #x2 {
   color: var(--bg-color);
+}
+
+#footer-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
 }
