@@ -31,13 +31,13 @@ nav {
   color: var(--scrollbar-bg);
 }
 
-/* Menu Styles */
+/* Menu Styles 
 #menu {
-  display: none; /* Initially hidden */
+  display: none; /* Initially hidden 
 }
 
 #menu.show {
-  display: flex; /* Ensure this is correct */
+  display: flex; /* Ensure this is correct 
   position: absolute;
   top: 0;
   left: 2%;
@@ -53,10 +53,10 @@ nav {
   gap: 0.25rem;
   z-index: 11;
 }
-
+*/
 .modal-header {
-  color: var(--hero-text);
-  background-color: var(--nav-bg) !important;
+  color: var(--modal-header-text);
+  background-color: var(--modal-header-bg) !important;
 }
 
 .modal-body {
@@ -69,14 +69,8 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: var(--nav-bg) !important;
+  color: var(--modal-text) !important;
   padding: 1%;
-}
-
-.nav-link:hover {
-  background-color: var(--nav-bg) !important;
-  color: var(--text-color) !important;
-  border-radius: 5px;
 }
 
 .btn-secondary {

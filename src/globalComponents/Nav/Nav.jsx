@@ -69,7 +69,7 @@ const Nav = () => {
         dialogClassName={`modal-${theme}`} // Dynamically set className for theme
       >
         <Modal.Header closeButton>
-          <Modal.Title>Menu</Modal.Title>
+          <Modal.Title>Explore my website!</Modal.Title>
         </Modal.Header>
         <Modal.Body className={`modal-${theme}`}>
           <NavLink to="/" className="nav-link" onClick={toggleMenu}>
