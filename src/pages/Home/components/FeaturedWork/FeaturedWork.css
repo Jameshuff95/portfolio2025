@@ -40,7 +40,7 @@
   margin: 0 auto;
   min-height: 7rem;
   background-color: var(--hero-btn-text);
-  color: var(--hero-text);
+  color: var(--featured-description-text);
 }
 
 #arrow-container {
