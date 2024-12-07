@@ -10,64 +10,8 @@ const Footer = () => {
   return (
     <footer id="footer-container">
       <Container>
-        <Row id="footer-top">
-          <Row id="site-map">
-            <Nav id="site-map-nav">
-              <Col className="flex-column">
-                <Nav.Link 
-                  as={Link} 
-                  to="/" 
-                  className="footer-link">
-                    Home
-                </Nav.Link>
-
-                <Nav.Link 
-                  as={Link} 
-                  to="/about" 
-                  className="footer-link">
-                    About
-                </Nav.Link>
-
-                <Nav.Link 
-                  as={Link} 
-                  to="/blog" 
-                  className="footer-link">
-                    Blog
-                </Nav.Link>
-
-                <Nav.Link 
-                  as={Link} 
-                  to="/services" 
-                  className="footer-link">
-                    Services
-                </Nav.Link>
-              </Col>
-              <Col className="flex-column">
-                <Nav.Link 
-                  as={Link} 
-                  to="/contact"   
-                  className="footer-link">
-                    Contact
-                </Nav.Link>
-
-                <Nav.Link 
-                  as={Link} 
-                  to="/portfolio" 
-                  className="footer-link">
-                    Portfolio
-                </Nav.Link>
-
-                <Nav.Link 
-                  as={Link} 
-                  to="/resume" 
-                  className="footer-link">
-                    Resume
-                </Nav.Link>
-              </Col>
-            </Nav>
-          </Row>
-        </Row>
         <Row>
+        <h3 className="">Dont forget to reach out!</h3>
           <Nav id="footer-socials-nav">
             <Col md={6} className="footer-social-column">
               <Nav.Link 
@@ -94,16 +38,17 @@ const Footer = () => {
 
             <Col md={6} className="footer-social-column">
               <Nav.Link href="#" className="footer-social">
-                <i id="x2" className="bi bi-twitter-x" />
-                <legend>X</legend>
-              </Nav.Link>
-              <Nav.Link href="#" className="footer-social">
                 <i id="instagram" className="bi bi-instagram" />
                 <legend>Instagram</legend>
               </Nav.Link>
               <Nav.Link href="#" className="footer-social">
                 <i id="reddit" className="bi bi-reddit" />
                 <legend>Reddit</legend>
+              </Nav.Link>
+
+              <Nav.Link href="#" className="footer-social">
+                <i id="stack-overflow" className="bi bi-stack-overflow" /> 
+                <legend>Stack Overflow</legend>
               </Nav.Link>
             </Col>
 
@@ -117,8 +62,8 @@ const Footer = () => {
               </Nav.Link>
 
               <Nav.Link href="#" className="footer-social">
-                <i id="stack-overflow" className="bi bi-stack-overflow" /> 
-                <legend>Stack Overflow</legend>
+                <i id="x2" className="bi bi-twitter-x" />
+                <legend>X</legend>
               </Nav.Link>
             </Col>
 
