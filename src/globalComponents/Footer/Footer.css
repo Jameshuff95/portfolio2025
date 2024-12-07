@@ -1,13 +1,12 @@
 #footer-container {
-  border: 1px solid var(--hero-btn-text);
-  background-color: var(--text-color);
+  background-color: var(--nav-bg);
   color: var(--hero-text);
-  display: flex;
-  flex-direction: column;
   margin: 1rem 0;
+  align-self: center;
   padding: 2%;
   border-radius: 10px;
   box-shadow: inset 0 0 0.5rem var(--hero-text);
+  width: 95%;
 }
 
 #site-map {
@@ -21,11 +20,15 @@
 #site-map-nav {
   margin: 0;
   padding: 0;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 #footer-top {
   display: flex;
+}
+
+#footer-title {
+  color: var(--footer-title-text);
 }
 
 .footer-link {
@@ -33,7 +36,7 @@
   text-decoration: none;
   font-size: 1.2rem;
   text-align: center;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .footer-social {
@@ -44,8 +47,8 @@
   text-align: center;
 
   legend {
-    color: var(--testimonial-text);
-    font-size: .8rem;
+    color: var(--footer-title-text);
+    font-size: 0.8rem;
   }
 }
 
@@ -64,6 +67,7 @@
   justify-content: center;
   padding: 5%;
   color: var(--testimonial-text);
+  background-color: var(--footer-title-text);
 }
 
 .footer-social-column {
@@ -72,4 +76,20 @@
 
 #footer-socials-nav {
   padding: 0;
+}
+
+#footer-bottom.row {
+  color: var(--footer-title-text);
+  background: var(--nav-bg);
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  p {
+    margin: 0;
+  }
+
+  * {
+    padding: 0;
+  }
 }

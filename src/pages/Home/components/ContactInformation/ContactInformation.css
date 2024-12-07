@@ -1,21 +1,35 @@
 #social-links-container {
-  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   color: var(--hero-text);
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  width: 95%;
+}
 
-  h3 {
-    font-size: 1.75rem;
-  }
+#contact-body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#contact-title {
+  color: var(--contact-title-color);
 }
 
 #social-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
   font-size: 3rem;
 }
 
@@ -27,13 +41,14 @@
   width: 5rem;
 
   legend {
-    color: var(--hero-text);
+    color: var(--contact-legend-color);
     font-size: 1rem;
   }
 }
 
+/* individual social icon colors*/
 .bi-github {
-  color: var--(featured-inner-text);
+  color: var(--hero-btn-text);
 }
 
 .bi-linkedin {
@@ -65,5 +80,5 @@
 }
 
 #x2 {
-  color: var(--hero-text);
+  color: var(--hero-btn-text);
 }

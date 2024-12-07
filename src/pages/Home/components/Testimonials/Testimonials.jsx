@@ -43,18 +43,33 @@ const Testimonials = () => {
 
   return (
     <div id="testimonials-container" className="container">
-      <h3 className="container-title">Testimonials</h3>
-      <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)}>
+      <h3 className="container-title">
+        Testimonials
+      </h3>
+      <Carousel 
+        activeIndex={currentTestimonial} 
+        onSelect={(selectedIndex) => 
+          setCurrentTestimonial(selectedIndex)}
+        >
         {testimonials.map((testimonial, index) => (
           <Carousel.Item key={index}>
-            <Card className="text-center">
-              <Card.Body>
-                <Card.Text className="testimonial-message">
-                  {`"${testimonial.message}"`}
-                </Card.Text>
-                <Card.Footer className="testimonial-author">
-                  <small className="text-muted author-text">{`- ${testimonial.author}`}</small> <br />
-                  <small className="text-muted author-text">{testimonial.date}</small>
+            <Card 
+              id="testimonial-card" 
+              className="text-center border-0">
+                <Card.Body className="testimonial-body">
+                  <Card.Text className="testimonial-message">
+                    {`"${testimonial.message}"`}
+                  </Card.Text>
+                  <Card.Footer className="testimonial-author border-0">
+                  <small 
+                    className="author-text">
+                      {`- ${testimonial.author}`}
+                  </small> 
+                  <br />
+                  <small 
+                    className="author-text">
+                      {testimonial.date}
+                  </small>
                 </Card.Footer>
               </Card.Body>
             </Card>

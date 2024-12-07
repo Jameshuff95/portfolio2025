@@ -4,7 +4,7 @@
 
 #hero-container {
   color: var(--hero-text);
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 #hero {
@@ -23,6 +23,17 @@
   width: 60%;
 }
 
+#hero-body {
+  background: transparent;
+}
+
+#hero-title {
+  font-size: 2rem;
+  padding: 2%;
+  color: var(--hero-text);
+  text-align: center;
+}
+
 #intro-statement {
   display: flex;
   justify-content: space-evenly;
@@ -30,16 +41,11 @@
   text-align: center;
   background: transparent;
   border: none;
-  color: var(--intro-border);
-}
-
-#hero-title {
-  font-size: 2rem;
-  padding: 2%;
+  color: var(--hero-text);
 }
 
 @media screen and (min-width: 500px) {
-  #hero-center {
+  #hero {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;

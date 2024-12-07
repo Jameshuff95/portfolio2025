@@ -35,17 +35,35 @@ const FeaturedWork = () => {
 
   return (
     <div id="featured-work-container" className="container">
-      <h3>Featured Work</h3>
-      <Carousel activeIndex={currentProject} onSelect={(selectedIndex) => setCurrentProject(selectedIndex)}>
+      <h3 className="container-title">
+        Featured Work
+      </h3>
+      <Carousel 
+        activeIndex={currentProject} 
+        onSelect={(selectedIndex) => 
+          setCurrentProject(selectedIndex)
+        }>
         {featuredProjects.map((project, index) => (
           <Carousel.Item key={index}>
-            <Card className="text-center">
-              <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
-              <Card.Body>
-                <Card.Title className="card-title">{project.title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted card-title">{project.technology}</Card.Subtitle>
-                <Card.Text className="project-description">{project.description}</Card.Text>
-                <Button variant="primary">Learn More</Button>
+            <Card className="project-card text-center border-0">
+              <Card.Img 
+                variant="top" 
+                src={project.img} 
+                alt={project.imgAlt} 
+              />
+              <Card.Body className="featured-item-body border-0">
+                <Card.Title className="featured-title border-0">
+                  {project.title}
+                </Card.Title>
+                <Card.Subtitle className="mb-2 card-technology border-0">
+                  {project.technology}
+                </Card.Subtitle>
+                <Card.Text className="project-description border-0">
+                  {project.description}
+                </Card.Text>
+                <Button variant="primary" className="learn-more border-0">
+                  Learn More
+                </Button>
               </Card.Body>
             </Card>
           </Carousel.Item>

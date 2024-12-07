@@ -10,93 +10,121 @@
   overflow-x: hidden;
 }
 
-/* themes */
-/* prettier-ignore */
+/* body themes */
+
 body.light {
-  --bg-gradient: linear-gradient(
-      135deg, 
-      #e0f7fa, 
-      #81d4fa, 
-      #4fc3f7, 
-      #0288d1
-    );
+  --bg-gradient: linear-gradient(135deg, #e0f7fa, #81d4fa, #4fc3f7, #0288d1);
 
   /* Nav */
   --nav-bg: #01579b;
+
+  /* Container */
+  --container-title: #01579b;
+  --container-title-alt: #b3e5fc;
 
   /* Hero */
   --hero-text: #01579b;
   --hero-btn-border: #01579b;
   --hero-btn-text: #b3e5fc;
+  --hero-text: #01579b;
 
   /* Intro */
   --intro-border: #01579b;
   --intro-text: #b3e5fc;
 
   /* Featured */
+  --featured-card-border: 0;
+  --featured-bs-target: #01579b;
   --featured-inner-text: #b3e5fc;
   --featured-description-text: #01579b;
+  --featured-description-bg: #b3e5fc;
+  --featured-description-border: #b3e5fc;
+  --featured-card-text: #b3e5fc;
+  --featured-item-body: #01579b;
+  --featured-btn-bg: #b3e5fc;
+  --featured-btn-color: #01579b;
+  --featured-btn-border: #b3e5fc;
 
   /* Testimonials */
-  --testimonial-text: #b3e5fc;
+  --carousel-indicators: #01579b;
+  --carousel-indicators-alt: #e0f7fa;
+  --testimonial-text: #01579b;
+
+  /* Contact */
+  --contact-title-color: #01579b;
+  --contact-legend-color: #01579b;
+
+  /*Footer*/
+  --footer-title-text: #b3e5fc;
 
   /* Other */
   --text-color-light: #b3e5fc;
-  --text-color: #0288d1; 
+  --text-color: #0288d1;
 
   /* scrollbar */
-  --scrollbar-bg: #b3e5fc; 
-  --scrollbar-thumb: #0288d1; 
-  --scrollbar-thumb-hover: #01579b; 
+  --scrollbar-bg: #b3e5fc;
+  --scrollbar-thumb: #0288d1;
+  --scrollbar-thumb-hover: #01579b;
 }
 
-/*prettier-ignore*/
 body.dark {
-  --bg-gradient: linear-gradient(
-    135deg,
-    #121212,
-    #3a0ca3,
-    #7209b7,
-    #f72585
-  ); 
+  --bg-gradient: linear-gradient(135deg, #121212, #3a0ca3, #7209b7, #f72585);
 
-    /* Nav */
+  /* Nav */
   --nav-bg: #7209b7;
 
+  /* Container */
+  --container-title: #e0e0e0;
+  --container-title-alt: #e0e0e0;
+
   /* Hero */
-  --hero-text: #e0e0e0;
-  --hero-btn-border: #e0e0e0;
   --hero-btn-text: #e0e0e0;
+  --hero-btn-border: #e0e0e0;
+  --hero-text: #e0e0e0;
 
   /* Intro */
   --intro-border: #e0e0e0;
   --intro-text: #e0e0e0;
 
   /* Featured */
+  --featured-card-border: 0;
+  --featured-bs-target: #7209b7;
   --featured-inner-text: #e0e0e0;
   --featured-description-text: #7209b7;
+  --featured-description-bg: #e0e0e0;
+  --featured-description-border: 0;
+  --featured-card-text: #e0e0e0;
+  --featured-item-body: #7209b7;
+  --featured-btn-bg: #e0e0e0;
+  --featured-btn-color: #7209b7;
+  --featured-btn-border: #e0e0e0;
+
+  /* Contact */
+  --contact-title-color: #e0e0e0;
+  --contact-legend-color: #e0e0e0;
 
   /* Testimonials */
-  --testimonial-text: #e0e0e0;
+  --carousel-indicators: #7209b7;
+  --carousel-indicators-alt: #e0e0e0;
+  --testimonial-text: #7209b7;
 
-  /* Other */
-  --text-color-light: #e0e0e0;
-  --text-color-dark: #01579b;
-  --text-color: #7209b7; 
-  --scrollbar-bg: #e0e0e0; 
-  --scrollbar-thumb: #7209b7; 
-  --scrollbar-thumb-hover: #e0e0e0; 
+  /*Footer*/
+  --footer-title-text: #e0e0e0;
+
+  /* Scrollbar */
+  --scrollbar-bg: #e0e0e0;
+  --scrollbar-thumb: #7209b7;
+  --scrollbar-thumb-hover: #e0e0e0;
 }
 
-/* themes */
-/* prettier-ignore */
+/* modal themes */
+
 .modal-light {
   --modal-header-bg: #01579b;
   --modal-header-text: #b3e5fc;
   --modal-text: #01579b;
 }
 
-/*prettier-ignore*/
 .modal-dark {
   --modal-header-bg: #7209b7;
   --modal-header-text: #e0e0e0;
@@ -128,18 +156,34 @@ h3,
 p {
   text-align: center;
 }
+.container {
+  width: 95%;
+  margin: auto;
+}
 
 .container:not(:first-of-type) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3% 0;
+}
+
+.container-title {
+  font-size: 2rem;
+  color: var(--hero-text);
+  overflow: hidden;
+  text-align: center;
+}
+
+.container-title-alt {
+  font-size: 2rem;
+  color: var(--hero-btn-text);
+  overflow: hidden;
+  text-align: center;
 }
 
 .page {
   padding: 1%;
   border-radius: 5px;
-  min-width: 320px;
   overflow: auto;
   display: flex;
   flex-direction: column;
