@@ -70,3 +70,30 @@
   transform: scale(0.99);
   box-shadow: inset 0 0 0.5rem var(--hero-text);
 }
+
+.carousel-indicators {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.carousel-indicators [data-bs-target]{
+  height: 1rem;
+  background-color: var(--nav-bg);
+}
+
+.card-title {
+  overflow: hidden;
+}
+
+.project-description {
+  text-align: left;
+  height: 5rem;
+}
+
+.card-body > button {
+  background: var(--nav-bg);
+  color: var(--hero-btn-text);
+  width: 75%;
+}

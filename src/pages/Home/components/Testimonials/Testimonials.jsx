@@ -1,6 +1,9 @@
+
 import './Testimonials.css';
 import '../../../../index.css';
 import { useState, useEffect } from 'react';
+import { Carousel, Card } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Testimonials = () => {
   const testimonials = [
@@ -34,25 +37,30 @@ const Testimonials = () => {
       setCurrentTestimonial(
         (prevTestimonial) => (prevTestimonial + 1) % testimonials.length
       );
-    }, 2000);
+    }, 5000); // Changed to 5 seconds for better readability
     return () => clearInterval(interval); // Clean up interval on unmount
   }, [testimonials.length]);
 
   return (
     <div id="testimonials-container" className="container">
-      <div className="testimonial">
-        <div className="message">
-          {/*prettier-ignore*/}
-          <p className="testimonial-top">
-            {`"${testimonials[currentTestimonial].message}"`}
-          </p>
-          <p className="testimonial-bottom">
-            {`- ${testimonials[currentTestimonial].author}`} <br />
-            {`${testimonials[currentTestimonial].date}`}
-          </p>
-        </div>
-        <div className="author-date"></div>
-      </div>
+      <h3 className="container-title">Testimonials</h3>
+      <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)}>
+        {testimonials.map((testimonial, index) => (
+          <Carousel.Item key={index}>
+            <Card className="text-center">
+              <Card.Body>
+                <Card.Text className="testimonial-message">
+                  {`"${testimonial.message}"`}
+                </Card.Text>
+                <Card.Footer className="testimonial-author">
+                  <small className="text-muted author-text">{`- ${testimonial.author}`}</small> <br />
+                  <small className="text-muted author-text">{testimonial.date}</small>
+                </Card.Footer>
+              </Card.Body>
+            </Card>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </div>
   );
 };

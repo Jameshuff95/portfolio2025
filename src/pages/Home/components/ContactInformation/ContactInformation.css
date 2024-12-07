@@ -33,7 +33,7 @@
 }
 
 .bi-github {
-  color: purple;
+  color: var--(featured-inner-text);
 }
 
 .bi-linkedin {

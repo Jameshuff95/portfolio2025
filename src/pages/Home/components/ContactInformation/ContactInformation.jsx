@@ -6,7 +6,7 @@ import '../../../../index.css';
 const ContactInformation = () => {
   return (
     <div id="social-links-container" className="container">
-      <h3> Contact Me</h3>
+      <h3 className="card-title">Contact Me</h3>
       <div id="social-links">
         <Link to="#" className="contact-social">
           <i id="github" className="bi bi-github" />
@@ -24,11 +24,6 @@ const ContactInformation = () => {
         </Link>
 
         <Link to="#" className="contact-social">
-          <i id="x2" className="bi bi-twitter-x" />
-          <legend>X</legend>
-        </Link>
-
-        <Link to="#" className="contact-social">
           <i id="instagram" className="bi bi-instagram" />
           <legend>Instagram</legend>
         </Link>
@@ -37,18 +32,27 @@ const ContactInformation = () => {
           <i id="reddit" className="bi bi-reddit" />
           <legend>Reddit</legend>
         </Link>
+
         <Link to="#" className="contact-social">
           <i id="dribbble" className="bi bi-dribbble" />
           <legend>Dribbble</legend>
         </Link>
+
         <Link to="#" className="contact-social">
           <i id="youtube" className="bi bi-youtube" />
           <legend>Youtube</legend>
         </Link>
+
         <Link to="#" className="contact-social">
           <i id="stack-overflow" className="bi bi-stack-overflow" />
           <legend>Stack Overflow</legend>
         </Link>
+
+        <Link to="#" className="contact-social">
+          <i id="x2" className="bi bi-twitter-x" />
+          <legend>X</legend>
+        </Link>
+        
       </div>
     </div>
   );
