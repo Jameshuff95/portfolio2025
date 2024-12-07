@@ -1,3 +1,4 @@
+/* Base Nav Styles */
 nav {
   background-color: var(--nav-bg);
   padding: 3%;
@@ -32,14 +33,14 @@ nav {
 
 /* Menu Styles */
 #menu {
-  display: none;
+  display: none; /* Initially hidden */
 }
 
 #menu.show {
+  display: flex; /* Ensure this is correct */
   position: absolute;
-  top: 13vh;
+  top: 0;
   left: 2%;
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 96%;
@@ -50,18 +51,36 @@ nav {
   padding: 2%;
   font-size: 1.5rem;
   gap: 0.25rem;
+  z-index: 11;
+}
+
+.modal-header {
+  color: var(--hero-text);
+  background-color: var(--nav-bg) !important;
+}
+
+.modal-body {
+  height: calc(100vh - 25vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
 }
 
 .nav-link {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--nav-bg) !important;
   padding: 1%;
 }
 
 .nav-link:hover {
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: var(--nav-bg) !important;
+  color: var(--text-color) !important;
   border-radius: 5px;
+}
+
+.btn-secondary {
+  background-color: var(--nav-bg) !important;
 }
 
 /* Media Queries for Larger Screens */

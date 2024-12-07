@@ -4,6 +4,8 @@ import './Nav.css';
 
 import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -39,23 +41,10 @@ const Nav = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const navLinks = document.querySelectorAll('.nav-link');
       if (window.innerWidth > 500) {
-        navLinks.forEach((link) => {
-          link.onclick = null;
-        });
-        if (showMenu) {
-          setShowMenu(false); // Hide menu when resizing to a larger screen
-        }
-      } else {
-        navLinks.forEach((link) => {
-          link.onclick = toggleMenu;
-        });
+        setShowMenu(false); // Hide menu when resizing to a larger screen
       }
     };
-
-    // Run the handleResize function initially to set the correct onClick handlers
-    handleResize();
 
     window.addEventListener('resize', handleResize);
 
@@ -63,7 +52,7 @@ const Nav = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [showMenu]);
+  }, []);
 
   return (
     <nav>
@@ -74,29 +63,43 @@ const Nav = () => {
       />
       <i id="menu-btn" className="bi bi-list" onClick={toggleMenu} />
 
-      <div id="menu" className={showMenu ? 'show' : ''}>
-        <NavLink to="/" className="nav-link">
-          Home
-        </NavLink>
-        <NavLink to="/About" className="nav-link">
-          About
-        </NavLink>
-        <NavLink to="/Blog" className="nav-link">
-          Blog
-        </NavLink>
-        <NavLink to="/Contact" className="nav-link">
-          Contact
-        </NavLink>
-        <NavLink to="/Portfolio" className="nav-link">
-          Portfolio
-        </NavLink>
-        <NavLink to="/Resume" className="nav-link">
-          Resume
-        </NavLink>
-        <NavLink to="/Services" className="nav-link">
-          Services
-        </NavLink>
-      </div>
+      <Modal
+        show={showMenu}
+        onHide={toggleMenu}
+        dialogClassName={`modal-${theme}`} // Dynamically set className for theme
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Menu</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className={`modal-${theme}`}>
+          <NavLink to="/" className="nav-link" onClick={toggleMenu}>
+            Home
+          </NavLink>
+          <NavLink to="/About" className="nav-link" onClick={toggleMenu}>
+            About
+          </NavLink>
+          <NavLink to="/Blog" className="nav-link" onClick={toggleMenu}>
+            Blog
+          </NavLink>
+          <NavLink to="/Contact" className="nav-link" onClick={toggleMenu}>
+            Contact
+          </NavLink>
+          <NavLink to="/Portfolio" className="nav-link" onClick={toggleMenu}>
+            Portfolio
+          </NavLink>
+          <NavLink to="/Resume" className="nav-link" onClick={toggleMenu}>
+            Resume
+          </NavLink>
+          <NavLink to="/Services" className="nav-link" onClick={toggleMenu}>
+            Services
+          </NavLink>
+        </Modal.Body>
+        <Modal.Footer className={`modal-${theme}`}>
+          <Button variant="secondary" onClick={toggleMenu}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </nav>
   );
 };
