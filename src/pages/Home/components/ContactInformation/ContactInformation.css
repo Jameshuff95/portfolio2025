@@ -30,6 +30,8 @@
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   width: 100%;
+  border: 1px solid red;
+  height: 90vh;
 
   i {
     font-size: 3rem;
