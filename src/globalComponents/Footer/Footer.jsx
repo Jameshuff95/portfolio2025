@@ -9,7 +9,9 @@ const Footer = () => {
   return (
     <Container id="footer-container" className="border-0 flex-column">
       <Row className="border-0">
-        <h3 id="footer-title">Dont forget to reach out!</h3>
+        <h3 id="footer-title" className="container-title">
+          Dont forget to reach out!
+        </h3>
         <Nav id="footer-socials-nav">
           <Col md={6} className="footer-social-column">
             <Nav.Link href="#" className="footer-social">

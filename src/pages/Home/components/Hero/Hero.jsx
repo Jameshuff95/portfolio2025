@@ -1,7 +1,5 @@
-import CallToAction from '../CallToAction/CallToAction';
 import './Hero.css';
 import '../../../../index.css';
-import HeroImg from '../../../../assets/logo.png';
 import MeImg from '../../../../assets/me.png';
 import { Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,7 +21,6 @@ const Hero = () => {
             offer a more straightforward and effective approach compared to the
             unnecessary complications of complexity.
           </Card.Text>
-          <CallToAction />
         </Card.Body>
       </Card>
     </div>

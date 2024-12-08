@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { Carousel, Card, Button } from 'react-bootstrap';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './FeaturedWork.css';
+
+// import CallToAction from '../CallToAction/CallToAction';
 
 import FeaturedImg1 from '../../../../assets/logo-1.png';
 import FeaturedImg2 from '../../../../assets/logo-2.png';
@@ -63,6 +66,7 @@ const FeaturedWork = () => {
           </Carousel.Item>
         ))}
       </Carousel>
+      {/*<CallToAction */}
     </div>
   );
 };
