@@ -22,6 +22,7 @@
   background-color: var(--nav-bg);
   border: 1px solid var(--nav-bg);
   box-shadow: 0 0 1rem var(--hero-text);
+  margin: 1rem;
 }
 
 #hero-body {

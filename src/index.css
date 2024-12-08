@@ -172,6 +172,7 @@ p {
   color: var(--hero-text);
   overflow: hidden;
   text-align: center;
+  margin: 0;
 }
 
 .container-title-alt {
