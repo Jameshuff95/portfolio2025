@@ -3,7 +3,6 @@ import { Carousel, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './FeaturedWork.css';
 
-import Img from '../../../../assets/logo.png';
 import FeaturedImg1 from '../../../../assets/logo-1.png';
 import FeaturedImg2 from '../../../../assets/logo-2.png';
 import FeaturedImg3 from '../../../../assets/logo-3.png';
@@ -44,7 +43,7 @@ const FeaturedWork = () => {
       >
         {featuredProjects.map((project, index) => (
           <Carousel.Item key={index}>
-            <Card className="project-card text-center border-0">
+            <Card className="project-card text-center">
               <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
               <Card.Body className="featured-item-body border-0">
                 <Card.Title className="featured-title border-0">

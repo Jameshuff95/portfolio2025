@@ -33,7 +33,7 @@ body.light {
   --intro-text: #b3e5fc;
 
   /* Featured */
-  --featured-card-border: 0;
+  --featured-card-border: #01579b;
   --featured-bs-target: #01579b;
   --featured-inner-text: #b3e5fc;
   --featured-description-text: #01579b;
@@ -87,7 +87,7 @@ body.dark {
   --intro-text: #e0e0e0;
 
   /* Featured */
-  --featured-card-border: 0;
+  --featured-card-border: #e0e0e0;
   --featured-bs-target: #7209b7;
   --featured-inner-text: #e0e0e0;
   --featured-description-text: #7209b7;

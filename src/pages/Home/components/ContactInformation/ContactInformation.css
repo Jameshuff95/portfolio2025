@@ -17,6 +17,7 @@
   background: transparent;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #contact-title {
@@ -28,6 +29,10 @@
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   width: 100%;
+
+  i {
+    font-size: 4rem;
+  }
 }
 
 .contact-social {
@@ -35,7 +40,6 @@
   place-items: center;
   text-decoration: none;
   text-align: center;
-  width: 5rem;
 
   legend {
     color: var(--contact-legend-color);
