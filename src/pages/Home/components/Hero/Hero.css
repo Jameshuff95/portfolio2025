@@ -4,7 +4,7 @@
 
 #hero-container {
   color: var(--hero-text);
-  margin-top: 5vh;
+  margin: 5vh 0 0 0;
   padding: 0;
 }
 
@@ -16,7 +16,7 @@
   padding: 5% 0 0 0;
   background-color: transparent;
   width: 100%;
-  margin: 0;
+  margin: 5vh 0 0 0;
 }
 
 #heroImg {

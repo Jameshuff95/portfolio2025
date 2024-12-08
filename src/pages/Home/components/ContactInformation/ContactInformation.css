@@ -3,22 +3,21 @@
   flex-direction: column;
   justify-content: space-evenly;
   color: var(--hero-text);
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background: transparent;
-  width: 95%;
+  width: 100%;
 }
 
 #contact-body {
-  width: 95%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 1px solid red;
+  height: 60vh;
 }
 
 #contact-title {
