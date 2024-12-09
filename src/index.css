@@ -156,9 +156,9 @@ h3,
 p {
   text-align: center;
 }
+
 .container {
   width: 95%;
-  margin: auto;
 }
 
 .container:not(:first-of-type) {
@@ -185,9 +185,11 @@ p {
 .page {
   padding: 1%;
   border-radius: 5px;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  margin-top: 2rem;
 }
 
 .page::-webkit-scrollbar {

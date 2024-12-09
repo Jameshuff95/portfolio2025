@@ -15,7 +15,7 @@ import SoftSkills from './components/SoftSkills/SoftSkills.jsx';
 
 const About = () => {
   return (
-    <div className="page">
+    <div id="about" className="page">
       <Certifications />
       <Mission />
       <TechnicalSkills />
