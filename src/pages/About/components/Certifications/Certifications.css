@@ -1,3 +1,12 @@
 #certifications {
-  border: 1px solid gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 95%;
+  align-self: center;
+}
+
+#certification-card {
+  border: 1px solid var(--featured-card-border);
 }

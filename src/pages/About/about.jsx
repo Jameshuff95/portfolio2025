@@ -7,19 +7,35 @@ Provides a more detailed background about you, your journey, your philosophy, an
 import './About.css';
 import '../../index.css';
 import '../../globalComponents/Nav/Nav.css';
+import '../../globalComponents/Footer/Footer.css';
+
+import Achievements from './components/Achievements/Achievements.jsx';
 
 import Certifications from './components/Certifications/Certifications.jsx';
+
+import Education from './components/Education/Education.jsx';
+
+import Experience from './components/Experience/Experience.jsx';
+
+import Intro from './components/Intro/Intro.jsx';
+
 import Mission from './components/Mission/Mission.jsx';
-import TechnicalSkills from './components/TechnicalSkills/TechnicalSkills.jsx';
-import SoftSkills from './components/SoftSkills/SoftSkills.jsx';
+
+import PersonalInterests from './components/PersonalInterests/PersonalInterests.jsx';
+
+import Footer from '../../globalComponents/Footer/Footer.jsx';
 
 const About = () => {
   return (
     <div id="about" className="page">
-      <Certifications />
+      <Intro />
       <Mission />
-      <TechnicalSkills />
-      <SoftSkills />
+      <Experience />
+      <Certifications />
+      <Achievements />
+      <Education />
+      <PersonalInterests />
+      <Footer />
     </div>
   );
 };
