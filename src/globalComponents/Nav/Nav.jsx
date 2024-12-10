@@ -58,11 +58,11 @@ const Nav = () => {
       case '/':
         return 'Home';
       case '/About':
-        return 'About';
+        return 'About Me';
       case '/Blog':
-        return 'Blog';
+        return 'My Blog';
       case '/Contact':
-        return 'Contact';
+        return 'Contact Me';
       case '/Portfolio':
         return 'Portfolio';
       case '/Resume':
@@ -83,7 +83,7 @@ const Nav = () => {
         className={`bi bi-${theme === 'dark' ? 'moon' : 'sun'}-fill`}
         ref={themeBtnRef}
       />
-      {currentPage}
+      <h3 id="page-title">{currentPage}</h3>
       <i id="menu-btn" className="bi bi-list" onClick={toggleMenu} />
       <Modal
         show={showMenu}

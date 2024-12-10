@@ -18,7 +18,6 @@ const Contact = () => {
   return (
     <Container className="page">
       <Card className="text-center">
-        <Card.Title>Contact Me</Card.Title>
         <Card>
           <Card.Body>
             <Form>
