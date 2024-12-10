@@ -3,7 +3,7 @@ import '../../App.css';
 import './Nav.css';
 
 import { useState, useEffect, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -42,17 +42,39 @@ const Nav = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 500) {
-        setShowMenu(false); // Hide menu when resizing to a larger screen
+        setShowMenu(false);
       }
     };
 
     window.addEventListener('resize', handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const getPageName = (path) => {
+    switch (path) {
+      case '/':
+        return 'Home';
+      case '/About':
+        return 'About';
+      case '/Blog':
+        return 'Blog';
+      case '/Contact':
+        return 'Contact';
+      case '/Portfolio':
+        return 'Portfolio';
+      case '/Resume':
+        return 'Resume';
+      case '/Services':
+        return 'Services';
+      default:
+        return 'Page';
+    }
+  };
+
+  const currentPage = getPageName(location.pathname);
 
   return (
     <nav>
@@ -61,12 +83,12 @@ const Nav = () => {
         className={`bi bi-${theme === 'dark' ? 'moon' : 'sun'}-fill`}
         ref={themeBtnRef}
       />
+      {currentPage}
       <i id="menu-btn" className="bi bi-list" onClick={toggleMenu} />
-
       <Modal
         show={showMenu}
         onHide={toggleMenu}
-        dialogClassName={`modal-${theme}`} // Dynamically set className for theme
+        dialogClassName={`modal-${theme}`}
       >
         <Modal.Header closeButton>
           <Modal.Title>Explore my website!</Modal.Title>
