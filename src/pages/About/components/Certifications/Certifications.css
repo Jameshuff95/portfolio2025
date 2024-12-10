@@ -1,12 +1,17 @@
-#certifications {
+#certifications-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 2rem;
-  width: 95%;
-  align-self: center;
+  background: transparent;
 }
 
 #certification-card {
   border: 1px solid var(--featured-card-border);
+  background: transparent;
+}
+
+.certification-body {
+  width: 95%;
+  padding: 0;
+  margin: auto;
 }

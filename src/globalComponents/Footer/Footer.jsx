@@ -1,75 +1,96 @@
-import './Footer.css';
 import '../../index.css';
 import '../../pages/Home/components/ContactInformation/ContactInformation.css';
+import React from 'react';
+import { Container, Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <Container id="footer-container" className="border-0 flex-column">
-      <Row className="border-0">
-        <h3 id="footer-title" className="container-title">
-          Dont forget to reach out!
-        </h3>
-        <Nav id="footer-socials-nav">
-          <Col md={6} className="footer-social-column">
-            <Nav.Link href="#" className="footer-social">
-              <i id="github" className="bi bi-github" />
-              <legend>Github</legend>
-            </Nav.Link>
-
-            <Nav.Link href="#" className="footer-social">
-              <i id="linkedin" className="bi bi-linkedin" />
-              <legend>Linkedin</legend>
-            </Nav.Link>
-
-            <Nav.Link href="#" className="footer-social">
-              <i id="facebook" className="bi bi-facebook" />
-              <legend>Facebook</legend>
-            </Nav.Link>
-          </Col>
-
-          <Col md={6} className="footer-social-column">
-            <Nav.Link href="#" className="footer-social">
-              <i id="instagram" className="bi bi-instagram" />
-              <legend>Instagram</legend>
-            </Nav.Link>
-            <Nav.Link href="#" className="footer-social">
-              <i id="reddit" className="bi bi-reddit" />
-              <legend>Reddit</legend>
-            </Nav.Link>
-
-            <Nav.Link href="#" className="footer-social">
-              <i id="stack-overflow" className="bi bi-stack-overflow" />
-              <legend>Stack Overflow</legend>
-            </Nav.Link>
-          </Col>
-
-          <Col md={6} className="footer-social-column">
-            <Nav.Link href="#" className="footer-social">
-              <i id="dribbble" className="bi bi-dribbble" />{' '}
-              <legend>Dribbble</legend>
-            </Nav.Link>
-
-            <Nav.Link href="#" className="footer-social">
-              <i id="youtube" className="bi bi-youtube" />
-              <legend>Youtube</legend>
-            </Nav.Link>
-
-            <Nav.Link href="#" className="footer-social">
-              <i id="x2" className="bi bi-twitter-x" />
-              <legend>X</legend>
-            </Nav.Link>
-          </Col>
-        </Nav>
-      </Row>
-
-      <Row id="footer-bottom">
-        <Col className="text-center">
-          <p>© James Huff 2024. All rights reserved.</p>
-        </Col>
-      </Row>
+    <Container id="footer-container" className="mt-4">
+      <Card id="footer-card">
+        <Card.Body id="footer-card-body">
+          <Row id="footer-top" className="mb-3">
+            <Col>
+              <Card.Title id="footer-contact-title">Contact</Card.Title>
+              <Card.Text>
+                <i className="bi bi-email" />
+                jameshuffdev@example.com
+              </Card.Text>
+              <Card.Text>
+                <i className="bi bi-phone" />
+                Phone: (859) 377-0700
+              </Card.Text>
+            </Col>
+            <Col>
+              <Card.Title>Quick Links</Card.Title>
+              <ul className="list-unstyled">
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/services">Services</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
+            </Col>
+            <Col>
+              <Card.Title>Follow Me</Card.Title>
+              <ul className="list-unstyled">
+                <li>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="text-center">
+              <Card.Text>&copy; 2024 Your Name. All rights reserved.</Card.Text>
+              <Link to="/privacy-policy">Privacy Policy</Link> |{' '}
+              <Link to="/terms-of-service">Terms of Service</Link>
+            </Col>
+          </Row>
+        </Card.Body>
+      </Card>
     </Container>
   );
 };

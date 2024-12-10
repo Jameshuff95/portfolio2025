@@ -11,11 +11,9 @@ import test from '../../../../assets/logo.png';
 
 const Achievements = () => {
   return (
-    <>
-      <Card>
-        <h3 className=" container-title">Achievements</h3>;
-      </Card>
-    </>
+    <Card>
+      <Card.Title className="container-title">Achievements</Card.Title>
+    </Card>
   );
 };
 

@@ -8,8 +8,23 @@ import './Blog.css';
 import '../../index.css';
 import '../../globalComponents/Nav/Nav.css';
 
-const blog = () => {
-  return <div className="page">blog</div>;
+import { useState, useEffect } from 'react';
+import { Card, Container, Button } from 'react-bootstrap';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import FeaturedPosts from './FeaturedPosts/FeaturedPosts';
+
+const Blog = () => {
+  return (
+    <Container className="page">
+      <Card>
+        <Card.Title>Blog</Card.Title>
+        <FeaturedPosts />
+      </Card>
+      {/* Add more BlogPost components here */}
+    </Container>
+  );
 };
 
-export default blog;
+export default Blog;

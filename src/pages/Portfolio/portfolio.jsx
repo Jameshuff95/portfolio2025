@@ -6,8 +6,44 @@ import './Portfolio.css';
 import '../../index.css';
 import '../../globalComponents/Nav/Nav.css';
 
+import { useState, useEffect } from 'react';
+import { Card, Container, Button } from 'react-bootstrap';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Portfolio = () => {
-  return <div className="page">projects</div>;
+  // prettier-ignore
+  const projects = [
+    {
+      name: 'Project 1',
+      technology: 'Technology 1',
+      description: 'Description 1'
+    },
+    {
+      name: 'Project 2',
+      technology: 'Technology 2',
+      description: 'Description 2'
+    },
+    {
+      name: 'Project 3',
+      technology: 'Technology 3',
+      description: 'Description 3'
+    },
+  ];
+
+  return (
+    <Container className="page">
+      {projects.map((project, index) => (
+        <Card key={index}>
+          <Card.Body>
+            <Card.Title>{project.name}</Card.Title>
+            <Card.Text>Price: {project.technology}</Card.Text>
+            <Card.Text>Price: {project.description}</Card.Text>
+          </Card.Body>
+        </Card>
+      ))}
+    </Container>
+  );
 };
 
 export default Portfolio;

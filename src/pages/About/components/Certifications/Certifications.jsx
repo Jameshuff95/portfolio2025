@@ -40,8 +40,8 @@ const Certfications = () => {
   }, [certifications.length]);
 
   return (
-    <div id="certifications" className="container">
-      <h3 className="container-title">Certifications</h3>
+    <Card id="certifications-container">
+      <Card.Title className="container-title">Certifications</Card.Title>
       <Carousel
         activeIndex={currentCertification}
         onSelect={(selectedIndex) => setCurrentCertification(selectedIndex)}
@@ -49,24 +49,20 @@ const Certfications = () => {
         {certifications.map((certification, index) => (
           <Carousel.Item key={index}>
             <Card id="certification-card" className="text-center border-0">
-              <Card.Body className="certfication-body">
+              <Card.Body className="certification-body">
                 <Card.Img
                   variant="top"
                   src={certification.img}
                   alt={certification.alt}
                 />
-                <Card.Title className=" featured-title border-0 ">
-                  {`${certification.title}`}
-                </Card.Title>
-                <Button variant="primary" className="learn-more border-0">
-                  View pdf
-                </Button>
+                <Card.Title>{certification.title}</Card.Title>
+                <Button variant="primary">View pdf</Button>
               </Card.Body>
             </Card>
           </Carousel.Item>
         ))}
       </Carousel>
-    </div>
+    </Card>
   );
 };
 

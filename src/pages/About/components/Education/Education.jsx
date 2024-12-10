@@ -10,7 +10,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import test from '../../../../assets/logo.png';
 
 const Education = () => {
-  return <div>Education</div>;
+  return (
+    <Card>
+      <Card.Title>Education</Card.Title>
+    </Card>
+  );
 };
 
 export default Education;
