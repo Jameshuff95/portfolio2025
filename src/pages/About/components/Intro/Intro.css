@@ -1,0 +1,6 @@
+#intro-card {
+  padding: 2%;
+  text-align: center;
+  background: transparent;
+  color: vaR(--hero-text);
+}

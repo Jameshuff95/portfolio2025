@@ -1,3 +1,4 @@
 #about {
   height: calc(100vh -10vh);
+  gap: 1rem;
 }

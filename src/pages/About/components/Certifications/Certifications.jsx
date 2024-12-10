@@ -40,7 +40,7 @@ const Certfications = () => {
   }, [certifications.length]);
 
   return (
-    <Card id="certifications-container">
+    <Card id="certifications-container" className="border-0">
       <Card.Title className="container-title">Certifications</Card.Title>
       <Carousel
         activeIndex={currentCertification}
@@ -55,7 +55,9 @@ const Certfications = () => {
                   src={certification.img}
                   alt={certification.alt}
                 />
-                <Card.Title>{certification.title}</Card.Title>
+                <Card.Title className="container-title">
+                  {certification.title}
+                </Card.Title>
                 <Button variant="primary">View pdf</Button>
               </Card.Body>
             </Card>
