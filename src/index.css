@@ -11,7 +11,6 @@
 }
 
 /* body themes */
-
 body.light {
   --bg-gradient: linear-gradient(135deg, #e0f7fa, #81d4fa, #4fc3f7, #0288d1);
 
@@ -53,6 +52,9 @@ body.light {
   /* Contact */
   --contact-title-color: #01579b;
   --contact-legend-color: #01579b;
+
+  /* Certifications */
+  --certifications-title: #01579b;
 
   /*Footer*/
   --footer-title-text: #b3e5fc;
@@ -112,6 +114,9 @@ body.dark {
   --carousel-indicators-alt: #e0e0e0;
   --testimonial-text: #7209b7;
 
+  /* Certifications */
+  --certifications-title: #7209b7;
+
   /*Footer*/
   --footer-title-text: #e0e0e0;
 
@@ -126,7 +131,6 @@ body.dark {
 }
 
 /* modal themes */
-
 .modal-light {
   --modal-header-bg: #01579b;
   --modal-header-text: #b3e5fc;
@@ -148,7 +152,7 @@ body.dark {
 body {
   height: calc(100vh -10vh);
   min-width: 220px;
-  background: var(--bg-gradient); /* Apply gradient background */
+  background: var(--bg-gradient);
   color: var(--text-color);
   z-index: 1;
 }

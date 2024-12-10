@@ -1,68 +1,69 @@
-/*main container within body*/
+#root,
+.page,
+#page-title,
+.container-title,
+.container-title-alt {
+  overflow: hidden;
+}
+
+.card,
+.container {
+  width: 100%;
+}
+
+.container-title,
+.container-title-alt,
+.card {
+  text-align: center;
+}
+
+.container-title,
+.container-title-alt,
+.card,
+.page {
+  padding: 2%;
+}
+
+.container-title,
+.container-title-alt {
+  font-size: 2rem;
+  margin: 0;
+}
+
 #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  overflow: hidden;
   margin-top: 10vh;
 }
 
-.container {
-  width: 100%;
-  padding: 0 !important;
-}
-
-.container:not(:first-of-type) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container-title {
-  font-size: 2rem;
-  overflow: hidden;
-  text-align: center;
-  margin: 0;
-  padding: 2%;
-  color: var(--hero-text) !important;
-}
-
-.container-title-alt {
-  font-size: 2rem;
-  color: var(--hero-btn-text);
-  overflow: hidden;
-  text-align: center;
-}
-
 .page {
-  padding: 1%;
-  border-radius: 5px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: sticky;
+  height: calc(100vh -10vh);
 }
 
 #page-title {
   color: var(--hero-btn-text);
   margin: 0 auto;
-  overflow: hidden;
   font-size: 1.5rem;
 }
 
-.page::-webkit-scrollbar {
-  width: 1px;
-  border-radius: 15px;
+.container {
+  background: transparent;
+  padding: 0;
+  border: none;
 }
 
-.page::-webkit-scrollbar-track {
-  background: var(--bg-color);
-  border-radius: 15px;
+.container-title {
+  color: var(--container-title);
 }
 
-.page::-webkit-scrollbar-thumb {
-  background: var(--text-color);
-  border-radius: 15px;
+.container-title-alt {
+  color: var(--container-title-alt);
 }
 
-.page::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.card {
+  margin: 1rem 0;
+  background: var(--achievement-card-bg);
+  color: var(--achievement-card-text);
 }

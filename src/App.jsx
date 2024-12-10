@@ -3,15 +3,15 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Nav from './globalComponents/Nav/Nav.jsx';
+import Nav from './Components/Nav.jsx';
 
-import Home from './pages/Home/home.jsx';
-import About from './pages/About/about.jsx';
-import Blog from './pages/Blog/blog.jsx';
-import Portfolio from './pages/Portfolio/portfolio.jsx';
-import Contact from './pages/Contact/contact.jsx';
-import Resume from './pages/Resume/resume.jsx';
-import Services from './pages/Services/services.jsx';
+import Home from './pages/home.jsx';
+import About from './pages/about.jsx';
+import Blog from './pages/blog.jsx';
+import Portfolio from './pages/portfolio.jsx';
+import Contact from './pages/contact.jsx';
+import Resume from './pages/resume.jsx';
+import Services from './pages/services.jsx';
 
 function App() {
   return (
