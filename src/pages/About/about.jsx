@@ -31,10 +31,10 @@ const About = () => {
     <div id="about" className="page">
       <Intro />
       <Mission />
-      <Experience />
+      <Education />
       <Certifications />
       <Achievements />
-      <Education />
+      <Experience />
       <PersonalInterests />
       <Footer />
     </div>

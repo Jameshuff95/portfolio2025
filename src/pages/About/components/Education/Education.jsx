@@ -26,12 +26,12 @@ const Education = () => {
   ];
 
   return (
-    <Card>
-      <Card.Body>
+    <Card id="education-container" className="border-0">
+      <Card.Body id="education-body">
         <Card.Title className="container-title-alt">Education</Card.Title>
         {schools.map((school, index) => {
           return (
-            <Card key={index}>
+            <Card key={index} className="education-card">
               <Card.Title>{school.name}</Card.Title>
               <Card.Subtitle>{school.name}</Card.Subtitle>
               <Card.Text>

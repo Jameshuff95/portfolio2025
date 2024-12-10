@@ -65,6 +65,10 @@ body.light {
   --scrollbar-bg: #b3e5fc;
   --scrollbar-thumb: #0288d1;
   --scrollbar-thumb-hover: #01579b;
+
+  /* Achievements */
+  --achievement-card-bg: #01579b;
+  --achievement-card-text: #b3e5fc;
 }
 
 body.dark {
@@ -115,6 +119,10 @@ body.dark {
   --scrollbar-bg: #e0e0e0;
   --scrollbar-thumb: #7209b7;
   --scrollbar-thumb-hover: #e0e0e0;
+
+  /* Achievements */
+  --achievement-card-bg: #e0e0e0;
+  --achievement-card-text: #7209b7;
 }
 
 /* modal themes */

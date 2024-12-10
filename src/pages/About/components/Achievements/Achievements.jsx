@@ -12,34 +12,31 @@ import test from '../../../../assets/logo.png';
 const Achievements = () => {
   const achievements = [
     {
-      title: 'Achievement 1',
-      date: '01-01-2024',
-      description: 'Description 1',
+      title: 'Developed a Personal Portfolio Website',
+      description:
+        'Created a professional and visually appealing personal portfolio website using HTML, CSS, and JavaScript. Showcased various projects, skills, and experience, effectively demonstrating my capabilities to potential employers.',
     },
     {
-      title: 'Achievement 2',
-      date: '01-01-2024',
-      description: 'Description 2',
+      title: 'Managing GitHub Repositories',
+      description:
+        'Maintained several active repositories on GitHub, contributing to open-source projects and collaborating with other developers. Implemented version control practices, resolved issues, and regularly updated documentation to ensure project clarity and continuity.',
     },
     {
-      title: 'Achievement 3',
-      date: '01-01-2024',
-      description: 'Description 3',
+      title: 'Obtained Certifications',
+      description:
+        'Earned industry-recognized certifications from platforms like Coursera and Udemy, covering front-end and back-end technologies. Demonstrated commitment to continuous learning and staying current with the latest web development trends and practices.',
     },
   ];
   return (
-    <Card>
-      <Card.Body>
-        <Card.Title className="container-title-alt">Achievements</Card.Title>
-        {achievements.map((achievement, index) => {
-          return (
-            <Card key={index} className="border-0">
-              <Card.Title>{achievement.title}</Card.Title>
-              <Card.Text>{achievement.date}</Card.Text>
-              <Card.Text>{achievement.description}</Card.Text>
-            </Card>
-          );
-        })}
+    <Card id="achievements-container" className="container border-0">
+      <Card.Body id="achievement-body">
+        <Card.Title className="container-title">Achievements</Card.Title>
+        {achievements.map((achievement, index) => (
+          <Card key={index} className="achievement-card">
+            <Card.Title>{achievement.title}</Card.Title>
+            <Card.Text>{achievement.description}</Card.Text>
+          </Card>
+        ))}
       </Card.Body>
     </Card>
   );

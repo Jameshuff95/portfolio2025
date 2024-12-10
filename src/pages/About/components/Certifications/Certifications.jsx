@@ -8,22 +8,25 @@ import './Certifications.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import test from '../../../../assets/logo.png';
+import cert1 from '../../../../assets/cert1.png';
+import cert2 from '../../../../assets/cert2.png';
+import cert3 from '../../../../assets/cert3.png';
 
 const Certfications = () => {
   const certifications = [
     {
       title: 'certification 1',
-      img: test,
+      img: cert1,
       alt: 'image alt 1',
     },
     {
       title: 'certification 2',
-      img: test,
+      img: cert2,
       alt: 'image alt 2',
     },
     {
       title: 'certification 3',
-      img: test,
+      img: cert3,
       alt: 'image alt 3',
     },
   ];

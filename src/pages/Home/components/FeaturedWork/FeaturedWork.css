@@ -8,9 +8,6 @@
 }
 
 .project-card {
-  /*
-  placeholder for structure
-  */
   border: 1px solid var(--featured-card-border);
 }
 

@@ -26,14 +26,12 @@ const PersonalInterests = () => {
   ];
 
   return (
-    <Card>
-      <Card.Body>
-        <Card.Title className="container-title-alt">
-          Personal Interests
-        </Card.Title>
+    <Card id="hobby-container" className="border-0">
+      <Card.Body id="hobby-body">
+        <Card.Title className="container-title">Personal Interests</Card.Title>
         {interests.map((interest, index) => {
           return (
-            <Card key={index}>
+            <Card key={index} className="hobby-card">
               <Card.Title>{interest.name}</Card.Title>
               <Card.Subtitle>{interest.description}</Card.Subtitle>
             </Card>
