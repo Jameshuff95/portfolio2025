@@ -1,4 +1,5 @@
 import '../../index.css';
+import '../../App.css';
 import '../../globalComponents/Nav/Nav.jsx';
 
 import { useState, useEffect } from 'react';

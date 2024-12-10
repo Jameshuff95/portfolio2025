@@ -6,6 +6,7 @@
 
 import './Blog.css';
 import '../../index.css';
+import '../../App.css';
 import '../../globalComponents/Nav/Nav.css';
 
 import { useState, useEffect } from 'react';

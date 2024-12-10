@@ -6,6 +6,7 @@ Provides a more detailed background about you, your journey, your philosophy, an
 
 import './About.css';
 import '../../index.css';
+import '../../App.css';
 import '../../globalComponents/Nav/Nav.css';
 import '../../globalComponents/Footer/Footer.css';
 

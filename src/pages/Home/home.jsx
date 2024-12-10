@@ -1,5 +1,6 @@
 import './Home.css';
 import '../../index.css';
+import '../../App.css';
 import '../../globalComponents/Nav/Nav.css';
 
 import Hero from './components/Hero/Hero.jsx';

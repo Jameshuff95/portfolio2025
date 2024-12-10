@@ -6,6 +6,7 @@
 
 import './Contact.css';
 import '../../index.css';
+import '../../App.css';
 import '../../globalComponents/Nav/Nav.css';
 
 import { Container, Card, Form, Button } from 'react-bootstrap';
