@@ -14,6 +14,7 @@ import { Card, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import FeaturedPosts from './FeaturedPosts/FeaturedPosts';
+import Footer from '../../globalComponents/Footer/Footer.jsx';
 
 const Blog = () => {
   return (
@@ -23,6 +24,7 @@ const Blog = () => {
         <FeaturedPosts />
       </Card>
       {/* Add more BlogPost components here */}
+      <Footer />
     </Container>
   );
 };

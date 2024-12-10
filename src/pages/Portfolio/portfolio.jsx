@@ -11,6 +11,8 @@ import { Card, Container, Button } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Footer from '../../globalComponents/Footer/Footer.jsx';
+
 const Portfolio = () => {
   // prettier-ignore
   const projects = [
@@ -42,6 +44,7 @@ const Portfolio = () => {
           </Card.Body>
         </Card>
       ))}
+      <Footer />
     </Container>
   );
 };

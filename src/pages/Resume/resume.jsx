@@ -13,6 +13,8 @@ import { Card, Container, Button } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Footer from '../../globalComponents/Footer/Footer.jsx';
+
 const resume = () => {
   return (
     //prettier-ignore
@@ -110,6 +112,7 @@ const resume = () => {
         </Card.Body>
 
         </Card>
+        <Footer />
     </Container>
   );
 };
