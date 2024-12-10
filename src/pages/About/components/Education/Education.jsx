@@ -28,7 +28,7 @@ const Education = () => {
   return (
     <Card id="education-container" className="border-0">
       <Card.Body id="education-body">
-        <Card.Title className="container-title-alt">Education</Card.Title>
+        <Card.Title className="container-title">Education</Card.Title>
         {schools.map((school, index) => {
           return (
             <Card key={index} className="education-card">
