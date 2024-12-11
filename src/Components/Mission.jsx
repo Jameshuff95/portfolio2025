@@ -1,15 +1,16 @@
+import { Card } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../index.css';
 import '../App.css';
-
-import { Card } from 'react-bootstrap';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Mission = () => {
   return (
     //prettier-ignore
     <Card className="card">
-      <Card.Title className="container-title">My Mission</Card.Title>
+      <Card.Title className="container-title">
+        My Mission
+      </Card.Title>
       <Card.Text>
         My mission is to create innovative and impactful solutions that blend creativity with technology.
       </Card.Text>

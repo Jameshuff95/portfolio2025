@@ -1,0 +1,43 @@
+#heroImg {
+  width: 60%;
+  border-radius: 50%;
+  background-color: var(--nav-bg);
+  border: 1px solid var(--nav-bg);
+  box-shadow: 0 0 1rem var(--card-text);
+  margin: auto;
+}
+
+.carousel-indicators {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 1rem;
+  background-color: var(--featured-bs-target);
+}
+
+.contact-grid {
+  display: grid;
+  place-items: center;
+}
+
+.home-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32%;
+
+  i {
+    font-size: 2rem;
+  }
+
+  legend {
+    font-size: 1rem;
+    color: var(--card-text);
+  }
+}

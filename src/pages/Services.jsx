@@ -1,12 +1,10 @@
-import '../index.css';
-import '../App.css';
-import '../Components/Nav.jsx';
 import Footer from '../Components/Footer.jsx';
 
-import { useState, useEffect } from 'react';
-import { Card, Container, Button } from 'react-bootstrap';
-
+import { Card, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import '../index.css';
+import '../App.css';
 
 const Services = () => {
   // prettier-ignore

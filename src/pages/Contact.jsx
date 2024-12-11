@@ -1,17 +1,10 @@
-/*
-
-  Provides a dedicated space for visitors to reach out, whether through a contact form, email, or social media links. It makes it easy for potential clients or collaborators to get in touch.
-  
-*/
-
-import '../index.css';
-import '../App.css';
-import '../Components/Nav.jsx';
-
 import { Container, Card, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from '../Components/Footer.jsx';
+
+import '../index.css';
+import '../App.css';
 
 const Contact = () => {
   return (

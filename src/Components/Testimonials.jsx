@@ -1,7 +1,8 @@
-import '../index.css';
 import { useState, useEffect } from 'react';
-import { Carousel, Card } from 'react-bootstrap';
+import { Carousel, Card, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import '../index.css';
 
 const Testimonials = () => {
   const testimonials = [
@@ -40,7 +41,7 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <div id="testimonials-container" className="container">
+    <Card className="container">
       <h3 className="container-title">Testimonials</h3>
       <Carousel
         activeIndex={currentTestimonial}
@@ -48,24 +49,19 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, index) => (
           <Carousel.Item key={index}>
-            <Card id="testimonial-card" className="text-center border-0">
-              <Card.Body className="testimonial-body">
-                <Card.Text className="testimonial-message">
-                  {`"${testimonial.message}"`}
-                </Card.Text>
-                <Card.Footer className="testimonial-author border-0">
-                  <small className="author-text">
-                    {`- ${testimonial.author}`}
-                  </small>
-                  <br />
-                  <small className="author-text">{testimonial.date}</small>
+            <Card className="card">
+              <Card.Body className="container">
+                <Card.Text>{`"${testimonial.message}"`}</Card.Text>
+                <Card.Footer className="border-0">
+                  <Card.Text>{testimonial.author}</Card.Text>
+                  <Card.Text>{`- ${testimonial.date}`}</Card.Text>
                 </Card.Footer>
               </Card.Body>
             </Card>
           </Carousel.Item>
         ))}
       </Carousel>
-    </div>
+    </Card>
   );
 };
 

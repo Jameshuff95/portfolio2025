@@ -1,25 +1,40 @@
-/*
-
-  If you have one, it's a space to share your thoughts, expertise, and updates. It keeps your content fresh and can improve your site's SEO.
-  
-*/
-
 import { Card, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Footer from '../Components/Footer.jsx';
 
 import '../index.css';
 import '../App.css';
 import '../css/Nav.css';
 
-import FeaturedPosts from '../Components/FeaturedPosts.jsx';
-import Footer from '../Components/Footer.jsx';
-
 const Blog = () => {
+  const highlightedPosts = [
+    {
+      title: 'featured-1',
+      text: 'Text 1',
+    },
+    {
+      title: 'featured-2',
+      text: 'Text 2',
+    },
+    {
+      title: 'featured-3',
+      text: 'Text 3',
+    },
+  ];
+
   return (
     <Container className="page">
       <Card>
         <Card.Title>Blog</Card.Title>
-        <FeaturedPosts />
+        {highlightedPosts.map((post, index) => (
+          <Card key={index}>
+            <Card.Body>
+              <Card.Title>{post.title}</Card.Title>
+              <Card.Text>{post.text}</Card.Text>
+            </Card.Body>
+          </Card>
+        ))}
       </Card>
       {/* Add more BlogPost components here */}
       <Footer />

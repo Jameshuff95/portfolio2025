@@ -9,6 +9,9 @@
 .card,
 .container {
   width: 100%;
+  padding: 0 !important;
+  background: transparent;
+  border: none;
 }
 
 .container-title,
@@ -43,15 +46,9 @@
 }
 
 #page-title {
-  color: var(--hero-btn-text);
+  color: var(--card-text-alt);
   margin: 0 auto;
   font-size: 1.5rem;
-}
-
-.container {
-  background: transparent;
-  padding: 0;
-  border: none;
 }
 
 .container-title {
@@ -63,7 +60,30 @@
 }
 
 .card {
-  margin: 1rem 0;
-  background: var(--achievement-card-bg);
-  color: var(--achievement-card-text);
+  padding-top: 1rem !important;
+}
+
+.card-alt {
+  background: var(--card-bg-alt);
+  padding-top: 1rem !important;
+  color: var(--card-text-color);
+}
+
+.card-alt-2 {
+  background: var(--card-bg-alt-2);
+  text-align: left;
+  margin: 1rem auto;
+  height: 7rem;
+}
+
+.card-text {
+  color: var(--card-text);
+}
+
+.card-text-alt {
+  color: var(--card-text-alt);
+}
+
+.card-text-alt-2 {
+  color: var(--card-text-alt-2);
 }

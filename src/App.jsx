@@ -1,10 +1,6 @@
-import './index.css';
-import './App.css';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Nav from './Components/Nav.jsx';
-
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Blog from './pages/Blog.jsx';
@@ -12,6 +8,9 @@ import Portfolio from './pages/Portfolio.jsx';
 import Contact from './pages/Contact.jsx';
 import Resume from './pages/Resume.jsx';
 import Services from './pages/Services.jsx';
+
+import './index.css';
+import './App.css';
 
 function App() {
   return (

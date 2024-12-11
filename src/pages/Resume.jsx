@@ -1,16 +1,11 @@
-/*
+import { Card, Container, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-  A more formal presentation of your professional experience, skills, and qualifications. Useful for potential employers or *clients who want to see your full professional background.
-  
-*/
-import '../index.css';
-import '../App.css';
 import '../Components/Nav.jsx';
 import Footer from '../Components/Footer.jsx';
 
-import { Card, Container, Button } from 'react-bootstrap';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../index.css';
+import '../App.css';
 
 const resume = () => {
   return (

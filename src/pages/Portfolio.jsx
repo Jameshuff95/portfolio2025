@@ -1,16 +1,10 @@
-/*
-  Showcases your work in-depth. Here, you can provide detailed case studies, more images, and descriptions of your projects, including challenges and achievements.
-*/
-
-import '../index.css';
-import '../App.css';
-import '../Components/Nav.jsx';
-
 import { Card, Container } from 'react-bootstrap';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from '../Components/Footer.jsx';
+
+import '../index.css';
+import '../App.css';
 
 const Portfolio = () => {
   // prettier-ignore

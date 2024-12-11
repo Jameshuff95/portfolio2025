@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Carousel, Card, Button } from 'react-bootstrap';
 
+import { Carousel, Card, Button, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import CallToAction from '../CallToAction/CallToAction';
+import '../App.css';
+import '../index.css';
 
 import FeaturedImg1 from '../assets/logo-1.png';
 import FeaturedImg2 from '../assets/logo-2.png';
@@ -37,36 +38,36 @@ const FeaturedWork = () => {
   const [currentProject, setCurrentProject] = useState(0);
 
   return (
-    <div id="featured-work-container" className="container">
-      <h3 className="container-title">Featured Work</h3>
+    <Container className="container-alt">
+      <Card.Title className="container-title">Featured Work</Card.Title>
       <Carousel
         activeIndex={currentProject}
         onSelect={(selectedIndex) => setCurrentProject(selectedIndex)}
       >
         {featuredProjects.map((project, index) => (
           <Carousel.Item key={index}>
-            <Card className="project-card text-center">
+            <Card>
               <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
-              <Card.Body className="featured-item-body border-0">
-                <Card.Title className="featured-title border-0">
+              <Card.Body>
+                <Card.Title className="container-title">
                   {project.title}
                 </Card.Title>
-                <Card.Subtitle className="mb-2 card-technology border-0">
+                <Card.Subtitle className="container-title">
                   {project.technology}
                 </Card.Subtitle>
-                <Card.Text className="project-description border-0">
-                  {project.description}
-                </Card.Text>
-                <Button variant="primary" className="learn-more border-0">
-                  Learn More
-                </Button>
+                <Card className="card-alt-2">
+                  <Card.Text className="card-text-alt-2">
+                    {project.description}
+                  </Card.Text>
+                </Card>
+                <Button variant="primary">Learn More</Button>
               </Card.Body>
             </Card>
           </Carousel.Item>
         ))}
       </Carousel>
       {/*<CallToAction */}
-    </div>
+    </Container>
   );
 };
 

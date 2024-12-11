@@ -1,11 +1,11 @@
+import { useState, useEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../index.css';
 import '../App.css';
 import '../Components/Nav.jsx';
-
-import { useState, useEffect, useRef } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import { Modal, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -66,7 +66,7 @@ const Nav = () => {
       case '/Portfolio':
         return 'Portfolio';
       case '/Resume':
-        return 'Resume';
+        return 'Resumé';
       case '/Services':
         return 'Services';
       default:
@@ -110,7 +110,7 @@ const Nav = () => {
             Portfolio
           </NavLink>
           <NavLink to="/Resume" className="nav-link" onClick={toggleMenu}>
-            Resume
+            Resumé
           </NavLink>
           <NavLink to="/Services" className="nav-link" onClick={toggleMenu}>
             Services
