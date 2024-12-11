@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Carousel, Card, Container } from 'react-bootstrap';
+import { Carousel, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../index.css';
@@ -49,7 +49,7 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, index) => (
           <Carousel.Item key={index}>
-            <Card className="card">
+            <Card className="card testimonial-card">
               <Card.Body className="container">
                 <Card.Text>{`"${testimonial.message}"`}</Card.Text>
                 <Card.Footer className="border-0">

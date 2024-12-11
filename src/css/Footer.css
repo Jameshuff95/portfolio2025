@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   margin: 1rem;
-  font-size: 2rem;
 
   i {
     width: 25%;
+    font-size: 1.5rem;
   }
 
   .footer-contact-text {
@@ -16,16 +16,24 @@
   }
 }
 
-.footer-quick-links-col,
-.footer-follow-me-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+#footer-socials {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 2rem;
+  place-items: center;
   gap: 1rem;
+  margin: auto;
+}
+
+#footer-nav-link-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
   a {
-    color: var(--card-text-alt);
     text-decoration: none;
-    padding: 1rem;
+    margin: 1rem 0;
+    color: var(--card-text-alt);
+    font-size: 1.25rem;
   }
 }
