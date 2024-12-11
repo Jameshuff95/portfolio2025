@@ -3,6 +3,7 @@ import { Carousel, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../index.css';
+import '../css/About.css';
 
 const Testimonials = () => {
   const testimonials = [
@@ -41,8 +42,8 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <Card className="container">
-      <h3 className="container-title">Testimonials</h3>
+    <Card className="card">
+      <Card.Title className="container-title">Testimonials</Card.Title>
       <Carousel
         activeIndex={currentTestimonial}
         onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)}
@@ -50,13 +51,9 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <Carousel.Item key={index}>
             <Card className="card testimonial-card">
-              <Card.Body className="container">
-                <Card.Text>{`"${testimonial.message}"`}</Card.Text>
-                <Card.Footer className="border-0">
-                  <Card.Text>{testimonial.author}</Card.Text>
-                  <Card.Text>{`- ${testimonial.date}`}</Card.Text>
-                </Card.Footer>
-              </Card.Body>
+              <Card.Text>{`"${testimonial.message}"`}</Card.Text>
+              <Card.Text>{testimonial.author}</Card.Text>
+              <Card.Text>{`- ${testimonial.date}`}</Card.Text>
             </Card>
           </Carousel.Item>
         ))}

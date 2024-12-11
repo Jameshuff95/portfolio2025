@@ -38,15 +38,15 @@ const FeaturedWork = () => {
   const [currentProject, setCurrentProject] = useState(0);
 
   return (
-    <Container className="container-alt">
-      <Card.Title className="container-title">Featured Work</Card.Title>
+    <Card className="card">
+      <Card.Title className="container-title-alt">Featured Work</Card.Title>
       <Carousel
         activeIndex={currentProject}
         onSelect={(selectedIndex) => setCurrentProject(selectedIndex)}
       >
         {featuredProjects.map((project, index) => (
           <Carousel.Item key={index}>
-            <Card>
+            <Card className="card-alt">
               <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
               <Card.Body>
                 <Card.Title className="container-title">
@@ -67,7 +67,7 @@ const FeaturedWork = () => {
         ))}
       </Carousel>
       {/*<CallToAction */}
-    </Container>
+    </Card>
   );
 };
 
