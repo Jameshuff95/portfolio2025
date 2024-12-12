@@ -11,7 +11,7 @@ const Footer = () => {
       <Card className="card">
         <Col className="footer-contact-row">
           <i className="bi bi-envelope" />
-          <Card.Text className="card-text-alt">
+          <Card.Text className="card-text-alt footer-text">
             jameshuffdev@gmail.com
           </Card.Text>
         </Col>
@@ -19,7 +19,9 @@ const Footer = () => {
       <Card className="card">
         <Col className="footer-contact-row">
           <i className="bi bi-phone" />
-          <Card.Text className="card-text-alt">+1-859-377-0700</Card.Text>
+          <Card.Text className="card-text-alt footer-text">
+            +1-859-377-0700
+          </Card.Text>
         </Col>
       </Card>
       <Col id="footer-nav-link-container">
