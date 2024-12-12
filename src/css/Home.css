@@ -43,4 +43,5 @@
   height: 18rem;
   background: var(--card-bg-alt);
   color: var(--card-text-alt-2);
+  border: 1px solid var(--card-text-alt);
 }
