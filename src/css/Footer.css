@@ -25,10 +25,11 @@
 #footer-nav-link-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   a {
     text-decoration: none;
     margin: 1rem 0;
-    color: var(--card-text-alt);
+    color: var(--card-text);
     font-size: 1.25rem;
     text-align: center;
   }

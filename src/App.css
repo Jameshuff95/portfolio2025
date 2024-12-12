@@ -1,41 +1,11 @@
-#root,
-.page,
-#page-title,
-.container-title,
-.container-title-alt {
-  overflow: hidden;
-}
-
-.card,
 .container {
-  width: 100%;
-  padding: 0 !important;
   background: transparent;
-  border: none;
-}
-
-.container-title,
-.container-title-alt,
-.card {
-  text-align: center;
-}
-
-.container-title,
-.container-title-alt,
-.card,
-.page {
-  padding: 2%;
-}
-
-.container-title,
-.container-title-alt {
-  font-size: 2rem;
-  margin: 0;
 }
 
 #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin-top: 10vh;
+  overflow: hidden;
 }
 
 .page {
@@ -49,18 +19,32 @@
   color: var(--card-text-alt);
   margin: 0 auto;
   font-size: 1.5rem;
+  padding: 2%;
 }
 
 .container-title {
   color: var(--container-title);
+  font-size: 2rem;
+  margin: 0;
+  padding: 2%;
+  text-align: center;
+  overflow: hidden;
 }
 
 .container-title-alt {
   color: var(--container-title-alt);
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
 }
 
 .card {
-  padding-top: 1rem !important;
+  padding-top: 1rem;
+  padding: 2%;
+  text-align: center;
+  background: transparent;
+  border: none;
 }
 
 .card-alt {

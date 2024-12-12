@@ -39,7 +39,7 @@ const FeaturedWork = () => {
 
   return (
     <Card className="card">
-      <Card.Title className="container-title-alt">Featured Work</Card.Title>
+      <Card.Title className="container-title">Featured Work</Card.Title>
       <Carousel
         activeIndex={currentProject}
         onSelect={(selectedIndex) => setCurrentProject(selectedIndex)}
@@ -49,14 +49,14 @@ const FeaturedWork = () => {
             <Card className="card-alt">
               <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
               <Card.Body>
-                <Card.Title className="container-title">
+                <Card.Title className="container-title-alt">
                   {project.title}
                 </Card.Title>
-                <Card.Subtitle className="container-title">
+                <Card.Subtitle className="container-title-alt">
                   {project.technology}
                 </Card.Subtitle>
-                <Card className="card-alt-2">
-                  <Card.Text className="card-text-alt-2">
+                <Card className="card">
+                  <Card.Text className="card-text-alt-2 featured-message">
                     {project.description}
                   </Card.Text>
                 </Card>

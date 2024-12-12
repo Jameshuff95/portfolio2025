@@ -44,7 +44,9 @@ const Footer = () => {
       </Col>
 
       <Row>
-        <Card.Text>&copy; 2024 James Huff. All rights reserved.</Card.Text>
+        <Card.Text className="text-center">
+          &copy; 2024 James Huff. All rights reserved.
+        </Card.Text>
       </Row>
     </Container>
   );
