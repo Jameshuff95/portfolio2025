@@ -25,7 +25,7 @@
 .container-title {
   color: var(--container-title);
   font-size: 2rem;
-  margin: 0;
+  margin: 0.5rem;
   padding: 2%;
   text-align: center;
   overflow: hidden;
