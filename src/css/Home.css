@@ -24,6 +24,11 @@
   margin: 0 0.5rem;
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -76,11 +81,12 @@
 }
 
 .featured-project {
-  height: 33rem;
+  gap: 1rem;
 
   button {
     width: 85%;
-    margin-bottom: 0.25rem;
+    height: 4rem;
+    margin-bottom: 0.125rem;
     background: var(--card-bg-alt-2);
     color: var(--card-text-alt-2);
     border: none;
