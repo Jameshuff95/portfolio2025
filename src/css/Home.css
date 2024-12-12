@@ -42,6 +42,7 @@
   margin-top: 2rem;
   height: 18rem;
   background: var(--card-bg-alt);
+  box-shadow: inset 0 0 0.5rem var(--card-text-alt);
   color: var(--card-text-alt-2);
   border: 1px solid var(--card-text-alt);
 }
