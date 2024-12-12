@@ -17,9 +17,9 @@ const Home = () => {
     <Container className="page">
       <Hero />
       <HomeIntro />
-      <Testimonials />
       <FeaturedWork />
       <ContactInformation />
+      <Testimonials />
       <Footer />
     </Container>
   );

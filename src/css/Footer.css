@@ -1,5 +1,6 @@
 #footer {
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+  border-radius: 5px;
 }
 
 .footer-contact-row {
