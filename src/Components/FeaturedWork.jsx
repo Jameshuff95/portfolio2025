@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-import { Carousel, Card, Button, Container } from 'react-bootstrap';
+import { Carousel, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../App.css';
@@ -37,38 +37,43 @@ const FeaturedWork = () => {
 
   const [currentProject, setCurrentProject] = useState(0);
 
-  return (
-    <Container className="container">
-      <Card.Title className="container-title">Featured Work</Card.Title>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentProject(
+        (prevProject) => (prevProject + 1) % featuredProjects.length
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [featuredProjects.length]);
 
-      <Card className="card-alt">
-        <Carousel
-          activeIndex={currentProject}
-          onSelect={(selectedIndex) => setCurrentProject(selectedIndex)}
-        >
-          {featuredProjects.map((project, index) => (
-            <Carousel.Item key={index}>
+  return (
+    <Card className="card">
+      <Card.Title className="container-title">Featured Work</Card.Title>
+      <Carousel
+        activeIndex={currentProject}
+        onSelect={(selectedIndex) => setCurrentProject(selectedIndex)}
+      >
+        {featuredProjects.map((project, index) => (
+          <Carousel.Item key={index}>
+            <Card className="featured-project">
               <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
-              <Card.Body>
-                <Card.Title className="container-title-alt">
-                  {project.title}
-                </Card.Title>
-                <Card.Subtitle className="container-title-alt">
-                  {project.technology}
-                </Card.Subtitle>
-                <Card className="card">
-                  <Card.Text className="card-text-alt-2 featured-message">
-                    {project.description}
-                  </Card.Text>
-                </Card>
-                <Button variant="primary">Learn More</Button>
-              </Card.Body>
-            </Carousel.Item>
-          ))}
-        </Carousel>
-        {/*<CallToAction */}
-      </Card>
-    </Container>
+              <Card.Title className="container-title-alt">
+                {project.title}
+              </Card.Title>
+              <Card.Subtitle className="container-title-alt">
+                {project.technology}
+              </Card.Subtitle>
+              <Card className="card featured-description">
+                <Card.Text className="card-text-alt-2 featured-message">
+                  {project.description}
+                </Card.Text>
+              </Card>
+              <Button variant="primary">Learn More</Button>
+            </Card>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </Card>
   );
 };
 

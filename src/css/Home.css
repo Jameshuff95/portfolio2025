@@ -7,6 +7,23 @@
   margin: 0.5rem auto;
 }
 
+.carousel-indicators {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  height: 3rem;
+  display: flex;
+  align-items: start;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 1rem;
+  background-color: var(--card-text);
+  margin: 0 0.5rem;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,15 +51,28 @@
   }
 }
 
-.testimonial-card {
+.testimonial-card,
+.featured-project {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  height: 30rem;
+  height: 33rem;
   background: var(--card-bg-alt);
   box-shadow: inset 0 0 0.5rem var(--card-text-alt);
   color: var(--card-text-alt-2);
   border: 1px solid var(--card-text-alt);
+}
+
+.featured-message {
+  min-width: 100%;
+  height: 7rem;
+  color: var(--card-bg-alt) !important;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.featured-description {
+  width: 100%;
 }
