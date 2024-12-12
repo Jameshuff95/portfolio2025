@@ -8,10 +8,10 @@ import '../css/ContactInformation.css';
 
 const ContactInformation = () => {
   return (
-    <Card className="card">
+    <Card className="card-general">
       <Card.Title className="container-title">Contact Me</Card.Title>
 
-      <Card className=" card contact-grid">
+      <Card className="contact-grid">
         <Link to="#" className="home-social">
           <i id="github" className="bi bi-github" />
           <legend>Github</legend>

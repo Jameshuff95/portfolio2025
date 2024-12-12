@@ -55,16 +55,16 @@ const FeaturedWork = () => {
       >
         {featuredProjects.map((project, index) => (
           <Carousel.Item key={index}>
-            <Card className="featured-project">
+            <Card className="card-alt featured-project">
               <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
-              <Card.Title className="container-title">
+              <Card.Title className="card-title-alt">
                 {project.title}
               </Card.Title>
-              <Card.Subtitle className="card-title">
+              <Card.Subtitle className="card-title-alt">
                 {project.technology}
               </Card.Subtitle>
-              <Card className="card featured-description">
-                <Card.Text className="card-text-alt-2 featured-message">
+              <Card className="card-general featured-description">
+                <Card.Text className="featured-description">
                   {project.description}
                 </Card.Text>
               </Card>

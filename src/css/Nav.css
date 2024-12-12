@@ -29,7 +29,7 @@ nav {
 }
 
 #menu-btn {
-  color: var(--card-bg);
+  color: var(--card-text-alt);
 }
 
 .modal-header {

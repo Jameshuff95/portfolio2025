@@ -49,8 +49,8 @@ const Testimonials = () => {
         onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)}
       >
         {testimonials.map((testimonial, index) => (
-          <Carousel.Item key={index} className="carousel-item">
-            <Card className="testimonial-card">
+          <Carousel.Item key={index} className="carousel-item text-center">
+            <Card className="card-alt testimonial-card">
               <Card.Text className="card-text-alt">{`"${testimonial.message}"`}</Card.Text>
               <Card.Text className="card-text-alt">
                 {testimonial.author}

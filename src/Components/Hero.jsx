@@ -8,7 +8,7 @@ import '../index.css';
 
 const Hero = () => {
   return (
-    <Card className="card">
+    <Card className="card-general card">
       <Card.Img
         variant="top"
         src={MeImg}
@@ -19,7 +19,7 @@ const Hero = () => {
         <Card.Title className="container-title">
           My name is James Huff.
         </Card.Title>
-        <Card.Text className="card-text">
+        <Card.Text className="card-text-general">
           I am inclined to prioritize functionality and simplicity, as they
           offer a more straightforward and effective approach compared to the
           unnecessary complications of complexity.
