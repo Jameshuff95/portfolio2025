@@ -38,7 +38,7 @@ const FeaturedWork = () => {
   const [currentProject, setCurrentProject] = useState(0);
 
   return (
-    <Card className="card">
+    <Card className="card-alt">
       <Card.Title className="container-title">Featured Work</Card.Title>
       <Carousel
         activeIndex={currentProject}
@@ -46,23 +46,21 @@ const FeaturedWork = () => {
       >
         {featuredProjects.map((project, index) => (
           <Carousel.Item key={index}>
-            <Card className="card-alt">
-              <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
-              <Card.Body>
-                <Card.Title className="container-title-alt">
-                  {project.title}
-                </Card.Title>
-                <Card.Subtitle className="container-title-alt">
-                  {project.technology}
-                </Card.Subtitle>
-                <Card className="card">
-                  <Card.Text className="card-text-alt-2 featured-message">
-                    {project.description}
-                  </Card.Text>
-                </Card>
-                <Button variant="primary">Learn More</Button>
-              </Card.Body>
-            </Card>
+            <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
+            <Card.Body>
+              <Card.Title className="container-title-alt">
+                {project.title}
+              </Card.Title>
+              <Card.Subtitle className="container-title-alt">
+                {project.technology}
+              </Card.Subtitle>
+              <Card className="card">
+                <Card.Text className="card-text-alt-2 featured-message">
+                  {project.description}
+                </Card.Text>
+              </Card>
+              <Button variant="primary">Learn More</Button>
+            </Card.Body>
           </Carousel.Item>
         ))}
       </Carousel>

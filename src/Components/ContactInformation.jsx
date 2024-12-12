@@ -8,7 +8,7 @@ import '../css/ContactInformation.css';
 
 const ContactInformation = () => {
   return (
-    <Container className="container">
+    <Card className="card">
       <Card.Title className="container-title">Contact Me</Card.Title>
 
       <Card className=" card contact-grid">
@@ -55,7 +55,7 @@ const ContactInformation = () => {
           <legend>X</legend>
         </Link>
       </Card>
-    </Container>
+    </Card>
   );
 };
 
