@@ -23,12 +23,14 @@
   height: 7rem;
 
   i {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    overflow: hidden;
   }
 
   legend {
     font-size: 1.25rem;
     color: var(--card-text);
+    overflow: hidden;
   }
 }
 
