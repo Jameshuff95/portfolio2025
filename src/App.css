@@ -67,6 +67,7 @@
 
 .card-text {
   color: var(--card-text);
+  overflow: hidden;
 }
 
 .card-text-alt {

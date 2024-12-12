@@ -41,7 +41,7 @@ const Certfications = () => {
 
   return (
     <Card className="container">
-      <Card.Title className="container-title-alt">Certifications</Card.Title>
+      <Card.Title className="container-title">Certifications</Card.Title>
       <Carousel
         activeIndex={currentCertification}
         onSelect={(selectedIndex) => setCurrentCertification(selectedIndex)}
@@ -49,17 +49,15 @@ const Certfications = () => {
         {certifications.map((certification, index) => (
           <Carousel.Item key={index}>
             <Card>
-              <Card.Body className="body">
-                <Card.Img
-                  variant="top"
-                  src={certification.img}
-                  alt={certification.alt}
-                />
-                <Card.Title className="container-title">
-                  {certification.title}
-                </Card.Title>
-                <Button variant="primary">View pdf</Button>
-              </Card.Body>
+              <Card.Img
+                variant="top"
+                src={certification.img}
+                alt={certification.alt}
+              />
+              <Card.Title className="container-title">
+                {certification.title}
+              </Card.Title>
+              <Button variant="primary">View pdf</Button>
             </Card>
           </Carousel.Item>
         ))}

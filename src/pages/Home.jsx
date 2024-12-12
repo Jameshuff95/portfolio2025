@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import '../index.css';
 import '../App.css';
 import '../Components/Nav.jsx';
+import '../css/Home.css';
 
 import Hero from '../Components/Hero.jsx';
 import HomeIntro from '../Components/HomeIntro.jsx';

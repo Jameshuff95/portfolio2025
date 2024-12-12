@@ -23,16 +23,16 @@ const Achievements = () => {
     },
   ];
   return (
-    <Card className="about-container">
-      <Card.Body id="about-body">
-        <Card.Title className="container-title">Achievements</Card.Title>
-        {achievements.map((achievement, index) => (
-          <Card key={index} className="card">
-            <Card.Title>{achievement.title}</Card.Title>
-            <Card.Text>{achievement.description}</Card.Text>
-          </Card>
-        ))}
-      </Card.Body>
+    <Card>
+      <Card.Title className="container-title">Achievements</Card.Title>
+      {achievements.map((achievement, index) => (
+        <Card key={index} className="card-alt">
+          <Card.Title className="card-text-alt">{achievement.title}</Card.Title>
+          <Card.Text className="card-text-alt">
+            {achievement.description}
+          </Card.Text>
+        </Card>
+      ))}
     </Card>
   );
 };

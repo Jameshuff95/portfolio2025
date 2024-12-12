@@ -1,0 +1,43 @@
+#heroImg {
+  width: 60%;
+  border-radius: 50%;
+  background-color: var(--nav-bg);
+  border: 1px solid var(--nav-bg);
+  box-shadow: 0 0 1rem var(--card-text);
+  margin: 0.5rem auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2%;
+  margin: 1rem 0;
+}
+
+.home-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  height: 7rem;
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  legend {
+    font-size: 1.25rem;
+    color: var(--card-text);
+  }
+}
+
+.testimonial-card {
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}

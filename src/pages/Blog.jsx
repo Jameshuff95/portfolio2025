@@ -1,4 +1,5 @@
-import { Card, Container } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
+import { Card, Container, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from '../Components/Footer.jsx';
@@ -6,6 +7,7 @@ import Footer from '../Components/Footer.jsx';
 import '../index.css';
 import '../App.css';
 import '../css/Nav.css';
+import '../css/Blog.css';
 
 const Blog = () => {
   const highlightedPosts = [
@@ -23,18 +25,36 @@ const Blog = () => {
     },
   ];
 
+  const [currentFeaturedPost, setCurrentFeaturedPost] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentFeaturedPost(
+        (prevFeaturedPost) => (prevFeaturedPost + 1) % highlightedPosts.length
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [highlightedPosts.length]);
+
   return (
     <Container className="page">
-      <Card>
-        <Card.Title>Blog</Card.Title>
-        {highlightedPosts.map((post, index) => (
-          <Card key={index}>
-            <Card.Body>
-              <Card.Title>{post.title}</Card.Title>
-              <Card.Text>{post.text}</Card.Text>
-            </Card.Body>
-          </Card>
-        ))}
+      <Card className="card">
+        <Card.Title className="container-title">Blog</Card.Title>
+        <Carousel
+          activeIndex={currentFeaturedPost}
+          onSelect={(selectedIndex) => setCurrentFeaturedPost(selectedIndex)}
+        >
+          {highlightedPosts.map((post, index) => (
+            <Carousel.Item key={index}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>{post.title}</Card.Title>
+                  <Card.Text>{post.text}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </Card>
       {/* Add more BlogPost components here */}
       <Footer />

@@ -29,7 +29,7 @@ nav {
 }
 
 #menu-btn {
-  color: var(--scrollbar-bg);
+  color: var(--card-bg);
 }
 
 .modal-header {

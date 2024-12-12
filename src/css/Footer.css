@@ -1,13 +1,8 @@
-#footer-container {
-  margin: 0 !important;
-  padding: 0 !important;
-  background: var(--card-text-alt-2);
-}
-
 .footer-contact-row {
   display: flex;
   align-items: center;
-  margin: 1rem;
+  color: var(--card-text-alt);
+  width: 100%;
 
   i {
     width: 25%;
@@ -29,7 +24,7 @@
   a {
     text-decoration: none;
     margin: 1rem 0;
-    color: var(--card-text);
+    color: var(--card-text-alt);
     font-size: 1.25rem;
     text-align: center;
   }

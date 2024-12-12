@@ -7,27 +7,21 @@ import '../css/Footer.css';
 
 const Footer = () => {
   return (
-    <Container id="footer-container">
-      <Row className="footer-contact-row">
-        <i className="bi bi-envelope" />
-        <Card.Text className="footer-contact-text">
-          jameshuffdev@gmail.com
-        </Card.Text>
-      </Row>
-      <Row className="footer-contact-row">
-        <i className="bi bi-phone" />
-        <Card.Text className="footer-contact-text">+1-859-377-0700</Card.Text>
-      </Row>
-      {/*
-          <Row id="footer-socials">
-            <i className="bi bi-linkedin" />
-            <i className="bi bi-twitter-x" />
-            <i className="bi bi-github" />
-            <i className="bi bi-reddit" />
-            <i className="bi bi-youtube" />
-            <i className="bi bi-instagram" />
-          </Row>
-          */}
+    <Container className="card-alt">
+      <Card className="card">
+        <Col className="footer-contact-row">
+          <i className="bi bi-envelope" />
+          <Card.Text className="card-text-alt">
+            jameshuffdev@gmail.com
+          </Card.Text>
+        </Col>
+      </Card>
+      <Card className="card">
+        <Col className="footer-contact-row">
+          <i className="bi bi-phone" />
+          <Card.Text className="card-text-alt">+1-859-377-0700</Card.Text>
+        </Col>
+      </Card>
       <Col id="footer-nav-link-container">
         <Row>
           <Link to="/">Home</Link>
@@ -42,9 +36,8 @@ const Footer = () => {
           <Link to="/services">Services</Link>
         </Row>
       </Col>
-
       <Row>
-        <Card.Text className="text-center">
+        <Card.Text className="card-text-alt text-center">
           &copy; 2024 James Huff. All rights reserved.
         </Card.Text>
       </Row>

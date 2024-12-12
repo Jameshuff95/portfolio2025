@@ -22,20 +22,18 @@ const Education = () => {
 
   return (
     <Card className="container">
-      <Card.Body className="body">
-        <Card.Title className="container-title">Education</Card.Title>
-        {schools.map((school, index) => {
-          return (
-            <Card key={index} className="card">
-              <Card.Title>{school.name}</Card.Title>
-              <Card.Subtitle>{school.name}</Card.Subtitle>
-              <Card.Text>
-                {school.start} - {school.end}
-              </Card.Text>
-            </Card>
-          );
-        })}
-      </Card.Body>
+      <Card.Title className="container-title">Education</Card.Title>
+      {schools.map((school, index) => {
+        return (
+          <Card key={index} className="card">
+            <Card.Title className="card-text">{school.name}</Card.Title>
+            <Card.Subtitle className="card-text">{school.name}</Card.Subtitle>
+            <Card.Text className="card-text">
+              {school.start} - {school.end}
+            </Card.Text>
+          </Card>
+        );
+      })}
     </Card>
   );
 };
