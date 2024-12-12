@@ -48,6 +48,14 @@
   border: none;
 }
 
+.card-title {
+  color: var(--container-title);
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 2%;
+  text-align: center;
+  overflow: hidden;
+}
 .card-alt {
   background: var(--card-bg-alt);
   padding-top: 1rem !important;

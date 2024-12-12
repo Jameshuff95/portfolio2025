@@ -57,10 +57,10 @@ const FeaturedWork = () => {
           <Carousel.Item key={index}>
             <Card className="featured-project">
               <Card.Img variant="top" src={project.img} alt={project.imgAlt} />
-              <Card.Title className="container-title-alt">
+              <Card.Title className="container-title">
                 {project.title}
               </Card.Title>
-              <Card.Subtitle className="container-title-alt">
+              <Card.Subtitle className="card-title">
                 {project.technology}
               </Card.Subtitle>
               <Card className="card featured-description">
