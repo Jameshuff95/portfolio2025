@@ -51,9 +51,11 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <Carousel.Item key={index}>
             <Card className="card testimonial-card">
-              <Card.Text>{`"${testimonial.message}"`}</Card.Text>
-              <Card.Text>{testimonial.author}</Card.Text>
-              <Card.Text>{`- ${testimonial.date}`}</Card.Text>
+              <Card.Text className="card-text-alt">{`"${testimonial.message}"`}</Card.Text>
+              <Card.Text className="card-text-alt">
+                {testimonial.author}
+              </Card.Text>
+              <Card.Text className="card-text-alt">{`- ${testimonial.date}`}</Card.Text>
             </Card>
           </Carousel.Item>
         ))}

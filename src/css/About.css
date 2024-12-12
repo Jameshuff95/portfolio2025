@@ -6,10 +6,11 @@
   top: 0;
   height: 3rem;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .carousel-indicators [data-bs-target] {
   height: 1rem;
   background-color: var(--card-text);
+  margin: 0 0.5rem;
 }

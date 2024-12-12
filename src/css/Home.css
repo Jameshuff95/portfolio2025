@@ -41,4 +41,6 @@
   justify-content: center;
   margin-top: 2rem;
   height: 18rem;
+  background: var(--card-bg-alt);
+  color: var(--card-text-alt-2);
 }
