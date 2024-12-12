@@ -7,7 +7,7 @@ import '../css/Footer.css';
 
 const Footer = () => {
   return (
-    <Container className="card-alt">
+    <Container id="footer" className="card-alt">
       <Card className="card">
         <Col className="footer-contact-row">
           <i className="bi bi-envelope" />
