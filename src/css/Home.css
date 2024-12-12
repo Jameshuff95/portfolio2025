@@ -82,7 +82,7 @@
 .featured-project {
   img {
     width: 90%;
-    height: 15rem;
+    height: 20rem;
     border-radius: 5px;
   }
 
@@ -104,7 +104,7 @@
   width: 100%;
   color: var(--card-text-alt-2) !important;
   background: var(--card-bg-alt-2) !important;
-  height: 10rem;
+  height: 8rem;
   border-radius: 5px;
   text-align: left;
   padding: 0.5%;
