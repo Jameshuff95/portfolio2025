@@ -4,7 +4,7 @@
   background-color: var(--nav-bg);
   border: 1px solid var(--nav-bg);
   box-shadow: 0 0 1rem var(--card-text);
-  margin: 0.5rem auto;
+  margin: 1rem auto;
 }
 
 .carousel-indicators {

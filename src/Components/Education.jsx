@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import { Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,13 +23,15 @@ const Education = () => {
   ];
 
   return (
-    <Card className="container">
+    <Card id="education-container">
       <Card.Title className="container-title">Education</Card.Title>
       {schools.map((school, index) => {
         return (
-          <Card key={index} className="card">
-            <Card.Title className="card-text">{school.name}</Card.Title>
-            <Card.Subtitle className="card-text">{school.name}</Card.Subtitle>
+          <Card key={index} className="card-general card-alt">
+            <Card.Title className="card-title-general">
+              {school.degree}
+            </Card.Title>
+            <Card.Subtitle className="card-title">{school.name}</Card.Subtitle>
             <Card.Text className="card-text">
               {school.start} - {school.end}
             </Card.Text>

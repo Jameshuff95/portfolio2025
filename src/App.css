@@ -21,6 +21,7 @@
 .container {
   background: transparent;
   padding: 0;
+  margin: 0 !important;
 }
 
 .container-title {
@@ -74,7 +75,7 @@
 
 .card-title-general {
   font-size: 1.5rem;
-  margin: 0.5rem;
+  margin: 0.5rem auto;
   padding: 2%;
   text-align: center;
   overflow: hidden;
@@ -113,4 +114,62 @@
 
 .card-text-alt-2 {
   color: var(--card-text-alt-2);
+}
+
+#footer {
+  width: 100%;
+  border: 0 !important;
+  background: var(--card-bg-alt);
+  margin: 0;
+  padding: 0.25rem 0.75rem;
+
+  a,
+  hr {
+    color: var(--card-text-alt);
+  }
+
+  hr {
+    height: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  #footer-top {
+    min-width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1.2rem;
+  }
+
+  .footer-top-section {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+  }
+
+  i {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    width: 85%;
+    text-align: flex-start;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
 }
