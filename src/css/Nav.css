@@ -35,11 +35,11 @@ nav {
 
 .modal-header {
   color: var(--modal-header-text);
-  background-color: var(--modal-header-bg) !important;
+  background-color: var(--modal-header-bg);
 }
 
 .modal-body {
-  height: calc(100vh - 30vh);
+  height: calc(100vh - 25vh);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -54,10 +54,11 @@ nav {
 }
 
 .btn-secondary {
-  background-color: var(--nav-bg) !important;
+  background: var(--modal-text);
 }
 
-/* Media Queries for Larger Screens */
+/*
+/* Media Queries for Larger Screens 
 @media screen and (min-width: 500px) {
   .bi-list {
     display: none;
@@ -79,3 +80,4 @@ nav {
     gap: 5px;
   }
 }
+*/

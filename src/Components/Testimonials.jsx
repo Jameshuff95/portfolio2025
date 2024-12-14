@@ -42,20 +42,26 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <Card className="card">
-      <Card.Title className="container-title">Testimonials</Card.Title>
+    <Card>
+      <Card.Title>Testimonials</Card.Title>
       <Carousel
         activeIndex={currentTestimonial}
         onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)}
       >
         {testimonials.map((testimonial, index) => (
-          <Carousel.Item key={index} className="carousel-item text-center">
-            <Card className="card-alt testimonial-card">
-              <Card.Text className="card-text-general card-text-alt">{`"${testimonial.message}"`}</Card.Text>
-              <Card.Text className="card-text-alt">
-                {testimonial.author}
-              </Card.Text>
-              <Card.Text className="card-text-alt">{`- ${testimonial.date}`}</Card.Text>
+          <Carousel.Item key={index}>
+            <Card
+              className="card-alt"
+              style={{
+                marginTop: '2rem',
+                height: '20rem',
+                display: 'grid',
+                placeItems: 'center',
+              }}
+            >
+              <Card.Text>{`"${testimonial.message}"`}</Card.Text>
+              <Card.Text>{testimonial.author}</Card.Text>
+              <Card.Text>{`- ${testimonial.date}`}</Card.Text>
             </Card>
           </Carousel.Item>
         ))}

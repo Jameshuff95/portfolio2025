@@ -1,12 +1,15 @@
+// React-Bootstrap Imports
 import { Card, Container, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// React Hooks
 import { useState } from 'react';
-import Footer from '../Components/Footer.jsx';
 
+// CSS
 import '../index.css';
 import '../App.css';
 
+// Project Images
 import portfolioImage1 from '../assets/portfolio-image-1.png';
 import portfolioImage2 from '../assets/portfolio-image-2.png';
 import portfolioImage3 from '../assets/portfolio-image-3.png';
@@ -58,28 +61,30 @@ const Portfolio = () => {
 
   return (
     <Container className="page">
-      <Card className="card-alt">
-        <Form.Group controlId="projectFilter">
-          <Form.Label>Filter By Type</Form.Label>
-          <Form.Select aria-label="Default" onChange={filterProject}>
-            <option value="0">All</option>
-            <option value="1">Websites</option>
-            <option value="2">Games</option>
-            <option value="3">Apps</option>
-          </Form.Select>
-        </Form.Group>
-      </Card>
-
-      {filteredProjects.map((project, index) => (
-        <Card key={index} className="card-alt">
-          <Card.Body>
-            <Card.Img src={project.img} />
-            <Card.Title className="text-center">{project.name}</Card.Title>
-            <Card.Text>{project.technology}</Card.Text>
-            <Card.Text>{project.description}</Card.Text>
-          </Card.Body>
+      <Card>
+        <Card>
+          <Form.Group controlId="projectFilter">
+            <Form.Label>Filter By Type</Form.Label>
+            <Form.Select aria-label="Default" onChange={filterProject}>
+              <option value="0">All</option>
+              <option value="1">Websites</option>
+              <option value="2">Games</option>
+              <option value="3">Apps</option>
+            </Form.Select>
+          </Form.Group>
         </Card>
-      ))}
+
+        {filteredProjects.map((project, index) => (
+          <Card key={index}>
+            <Card.Body>
+              <Card.Img src={project.img} />
+              <Card.Title className="text-center">{project.name}</Card.Title>
+              <Card.Text>{project.technology}</Card.Text>
+              <Card.Text>{project.description}</Card.Text>
+            </Card.Body>
+          </Card>
+        ))}
+      </Card>
     </Container>
   );
 };

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Carousel, Card, Button } from 'react-bootstrap';
+import { Carousel, Container, Button, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import cert1 from '../assets/cert1.png';
@@ -40,30 +40,35 @@ const Certfications = () => {
   }, [certifications.length]);
 
   return (
-    <Card className="container">
-      <Card.Title className="container-title">Certifications</Card.Title>
+    <Container>
+      <Card.Title className="text-center">Certifications</Card.Title>
       <Carousel
         activeIndex={currentCertification}
         onSelect={(selectedIndex) => setCurrentCertification(selectedIndex)}
       >
         {certifications.map((certification, index) => (
           <Carousel.Item key={index}>
-            <Card className="card-general card-alt cert-card">
+            <Card style={{ marginTop: '2rem' }}>
               <Card.Img
                 variant="top"
                 src={certification.img}
                 alt={certification.alt}
-                className="cert-image"
               />
-              <Card.Title className="card-title-general card-title-alt text-center">
+              <Card.Title className="text-center">
                 {certification.title}
               </Card.Title>
-              <Button variant="primary">View pdf</Button>
+              <Button
+                variant="dark"
+                className="border-white col-10 align-self-center"
+                style={{ fontSize: '2rem' }}
+              >
+                View pdf
+              </Button>
             </Card>
           </Carousel.Item>
         ))}
       </Carousel>
-    </Card>
+    </Container>
   );
 };
 

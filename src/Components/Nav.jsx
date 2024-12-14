@@ -9,7 +9,7 @@ import '../Components/Nav.jsx';
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   const themeBtnRef = useRef(null);
 

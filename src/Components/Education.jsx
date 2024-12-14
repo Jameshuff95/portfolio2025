@@ -24,7 +24,7 @@ const Education = () => {
 
   return (
     <Card id="education-container">
-      <Card.Title className="container-title">Education</Card.Title>
+      <Card.Title>Education</Card.Title>
       {schools.map((school, index) => {
         return (
           <Card key={index} className="card-alt">

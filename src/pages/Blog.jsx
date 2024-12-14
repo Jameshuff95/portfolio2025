@@ -100,26 +100,27 @@ const Blog = () => {
             </Carousel.Item>
           ))}
         </Carousel>
+        <Row className="mt-4">
+          <Col md={8}>
+            <Card>
+              <Card.Title className="container-title">Recent Posts</Card.Title>
+              {recentPosts.map((post, index) => (
+                <Card key={index} className="card-general card-alt">
+                  <Card.Body className="recent-post">
+                    <Card.Title className="text-center">
+                      {post.title}
+                    </Card.Title>
+                    <Card.Text className="card-text-alt">{`"${post.excerpt}"`}</Card.Text>
+                    <Button variant="primary" href={`/post/${post.id}`}>
+                      Read More
+                    </Button>
+                  </Card.Body>
+                </Card>
+              ))}
+            </Card>
+          </Col>
+        </Row>
       </Card>
-
-      <Row className="mt-4">
-        <Col md={8}>
-          <Card>
-            <Card.Title className="container-title">Recent Posts</Card.Title>
-            {recentPosts.map((post, index) => (
-              <Card key={index} className="card-general card-alt">
-                <Card.Body className="recent-post">
-                  <Card.Title className="text-center">{post.title}</Card.Title>
-                  <Card.Text className="card-text-alt">{`"${post.excerpt}"`}</Card.Text>
-                  <Button variant="primary" href={`/post/${post.id}`}>
-                    Read More
-                  </Button>
-                </Card.Body>
-              </Card>
-            ))}
-          </Card>
-        </Col>
-      </Row>
     </Container>
   );
 };

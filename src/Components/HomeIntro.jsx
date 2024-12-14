@@ -6,7 +6,7 @@ import '../App.css';
 
 const HomeIntro = () => {
   return (
-    <Card className="card-general card-alt">
+    <Card className="card-general card">
       <Card.Title className="card-title-general card-title-alt">
         Driven by Curiosity, Empowered by MERN:
       </Card.Title>

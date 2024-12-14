@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { Carousel, Card, Button } from 'react-bootstrap';
+import { Carousel, Card, Button, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../App.css';
@@ -48,32 +48,49 @@ const FeaturedWork = () => {
 
   return (
     <Card className="card">
-      <Card.Title className="container-title">Featured Work</Card.Title>
+      <Card.Title>Featured Work</Card.Title>
       <Carousel
         activeIndex={currentProject}
         onSelect={(selectedIndex) => setCurrentProject(selectedIndex)}
       >
         {featuredProjects.map((project, index) => (
           <Carousel.Item key={index}>
-            <Card className="card-alt featured-project">
-              <Card.Img
-                variant="top"
-                src={project.img}
-                alt={project.imgAlt}
-                className="featured-image"
-              />
-              <Card.Title className="card-title-general card-title-alt">
+            <Card
+              className="card-alt"
+              style={{
+                gap: '1rem',
+                marginTop: '2rem',
+              }}
+            >
+              <Row className="justify-content-center">
+                <Col xs={10} md={4}>
+                  <Card.Img
+                    variant="top"
+                    src={project.img}
+                    alt={project.imgAlt}
+                    className="featured-image"
+                  />
+                </Col>
+              </Row>
+
+              <Card.Title className="card-title-alt">
                 {project.title}
               </Card.Title>
-              <Card.Subtitle className="card-title-general card-title-alt">
+              <Card.Subtitle className="card-title-alt text-center">
                 {project.technology}
               </Card.Subtitle>
-              <Card className="card-general featured-description">
-                <Card.Text className="featured-description">
+              <Card>
+                <Card.Text
+                  style={{
+                    textAlign: 'left',
+                    padding: '2%',
+                    height: '5rem',
+                  }}
+                >
                   {project.description}
                 </Card.Text>
               </Card>
-              <Button variant="primary">Learn More</Button>
+              <Button variant="dark">Learn More</Button>
             </Card>
           </Carousel.Item>
         ))}
