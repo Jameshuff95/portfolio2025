@@ -120,8 +120,6 @@ const Blog = () => {
           </Card>
         </Col>
       </Row>
-
-      <Footer />
     </Container>
   );
 };

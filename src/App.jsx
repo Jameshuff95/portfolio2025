@@ -8,6 +8,7 @@ import Portfolio from './pages/Portfolio.jsx';
 import Contact from './pages/Contact.jsx';
 import Resume from './pages/Resume.jsx';
 import Services from './pages/Services.jsx';
+import Footer from './Components/Footer.jsx';
 
 import './index.css';
 import './App.css';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/services" element={<Services />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

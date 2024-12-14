@@ -27,7 +27,6 @@ const About = () => {
       <Achievements />
       <Experience />
       <PersonalInterests />
-      <Footer />
     </Container>
   );
 };

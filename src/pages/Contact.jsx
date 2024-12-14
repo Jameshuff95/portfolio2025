@@ -29,7 +29,6 @@ const Contact = () => {
           Submit
         </Button>
       </Form>
-      <Footer />
     </Container>
   );
 };

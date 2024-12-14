@@ -96,7 +96,6 @@ const resume = () => {
           <Card.Subtitle>Issuing Organization and Date</Card.Subtitle>
         </Card.Body>
       </Card>
-      <Footer />
     </Container>
   );
 };

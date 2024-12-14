@@ -80,7 +80,6 @@ const Portfolio = () => {
           </Card.Body>
         </Card>
       ))}
-      <Footer />
     </Container>
   );
 };

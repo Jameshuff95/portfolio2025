@@ -60,7 +60,6 @@ const Services = () => {
           </ul>
         </Card>
       ))}
-      <Footer />
     </Container>
   );
 };
