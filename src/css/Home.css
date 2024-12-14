@@ -33,6 +33,43 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 !important;
+
+  /* individual social icon colors*/
+  .bi-github {
+    color: var(--card-text);
+  }
+
+  .bi-linkedin {
+    color: navy;
+  }
+
+  .bi-facebook {
+    color: blue;
+  }
+
+  .bi-instagram {
+    color: hotpink;
+  }
+
+  .bi-reddit {
+    color: orangered;
+  }
+
+  .bi-youtube {
+    color: red;
+  }
+
+  .bi-stack-overflow {
+    color: orange;
+  }
+
+  .bi-dribbble {
+    color: navy;
+  }
+
+  #x2 {
+    color: var(--card-text);
+  }
 }
 
 .home-social {

@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
-import { Container, Card, Row, Col } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../index.css';
+import '../css/Footer.css';
 
 const Footer = () => {
   return (

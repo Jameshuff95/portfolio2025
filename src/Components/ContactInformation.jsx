@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../index.css';
 import '../App.css';
-import '../css/ContactInformation.css';
 
 const ContactInformation = () => {
   return (

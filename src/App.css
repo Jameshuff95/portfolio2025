@@ -9,11 +9,10 @@
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  position: sticky;
   padding: 0 !important;
   margin: 0;
+  overflow: auto;
+  height: 80vh;
 }
 
 #page-title {
@@ -27,7 +26,6 @@
   background: transparent;
   padding: 0 !important;
   margin: 0 !important;
-  height: 100%;
 }
 
 .container-title {
@@ -109,26 +107,4 @@
 
 .card-alt-2 .card-title {
   color: var(--card-title-alt-2);
-}
-
-#footer {
-  width: 100%;
-  height: 5rem;
-  border: 0 !important;
-  background: var(--card-bg-alt);
-  padding: 0;
-  align-items: center;
-  position: relative;
-  bottom: 0;
-  color: var(--card-text-alt);
-}
-
-#footer p {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0;
-  font-size: 1.25rem;
 }
