@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from '../Components/Footer.jsx';
@@ -14,21 +14,16 @@ const Contact = () => {
   };
 
   return (
-    <Container className="page">
+    <Container id="contact-page" className="page">
       <Form id="form-container" onSubmit={handleSubmit} className="card-alt">
-        <Form.Group controlId="formBasicFirstName">
-          <Form.Label>First Name</Form.Label>
-          <Form.Control type="text" />
-        </Form.Group>
-        <Form.Group controlId="formBasicLastName">
-          <Form.Label>Last Name</Form.Label>
-          <Form.Control type="text" />
-        </Form.Group>
+        <Form.Control type="text" placeholder="First Name" maxLength={25} />
+        <Form.Control type="text" placeholder="Last Name" maxLength={25} />
         <Form.Control
           id="message-input"
           as="textarea"
           rows={3}
-          placeholder="Your message here..."
+          maxLength={200}
+          placeholder="200 character maximum message here..."
         />
         <Button variant="primary" type="submit" id="contact-submit">
           Submit
