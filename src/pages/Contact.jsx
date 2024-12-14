@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Card, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -5,31 +6,34 @@ import Footer from '../Components/Footer.jsx';
 
 import '../index.css';
 import '../App.css';
+import '../css/Contact.css';
 
 const Contact = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <Container className="page">
-      <Card className="text-center">
-        <Card>
-          <Card.Body>
-            <Form>
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-
-              <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
-            </Form>
-          </Card.Body>
-        </Card>
-      </Card>
+      <Form id="form-container" onSubmit={handleSubmit} className="card-alt">
+        <Form.Group controlId="formBasicFirstName">
+          <Form.Label>First Name</Form.Label>
+          <Form.Control type="text" />
+        </Form.Group>
+        <Form.Group controlId="formBasicLastName">
+          <Form.Label>Last Name</Form.Label>
+          <Form.Control type="text" />
+        </Form.Group>
+        <Form.Control
+          id="message-input"
+          as="textarea"
+          rows={3}
+          placeholder="Your message here..."
+        />
+        <Button variant="primary" type="submit" id="contact-submit">
+          Submit
+        </Button>
+      </Form>
       <Footer />
     </Container>
   );

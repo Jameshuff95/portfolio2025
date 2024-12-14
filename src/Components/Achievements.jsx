@@ -25,14 +25,18 @@ const Achievements = () => {
   return (
     <Card>
       <Card.Title className="container-title">Achievements</Card.Title>
-      {achievements.map((achievement, index) => (
-        <Card key={index} className="card-alt">
-          <Card.Title className="card-text-alt">{achievement.title}</Card.Title>
-          <Card.Text className="card-text-alt">
-            {achievement.description}
-          </Card.Text>
-        </Card>
-      ))}
+      <Card.Body id="achievements-container">
+        {achievements.map((achievement, index) => (
+          <Card key={index} className="card-general card-alt">
+            <Card.Title className="card-text-alt">
+              {achievement.title}
+            </Card.Title>
+            <Card.Text className="card-text-alt">
+              {achievement.description}
+            </Card.Text>
+          </Card>
+        ))}
+      </Card.Body>
     </Card>
   );
 };

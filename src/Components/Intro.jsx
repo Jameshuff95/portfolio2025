@@ -8,7 +8,7 @@ const Intro = () => {
   return (
     // prettier-ignore
     <Card className="card-general card">
-        <Card.Title className="card-title-general card-title">
+        <Card.Title className="container-title-general container-title">
           More about who I am
         </Card.Title>
         <Card.Text className="card-text-general">

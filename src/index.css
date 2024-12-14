@@ -27,6 +27,8 @@ body.light {
   --card-text-alt-2: #01579b;
   --carousel-indicators: #01579b;
   --carousel-indicators-alt: #b3e5fc;
+  --button-color: #4fc3f7;
+  --button-text: #01579b;
 }
 
 body.dark {
@@ -45,6 +47,9 @@ body.dark {
   --card-text-alt-2: #7209b7;
   --carousel-indicators: #7209b7;
   --carousel-indicators-alt: #e0e0e0;
+  --button-color: #3a0ca3;
+
+  --button-text: #e0e0e0;
 }
 
 /* modal themes */

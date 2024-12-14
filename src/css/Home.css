@@ -71,7 +71,7 @@
   margin-top: 2rem;
   background: var(--card-bg-alt);
   box-shadow: inset 0 0 0.5rem var(--card-text-alt);
-  color: var(--card-text-alt-2);
+  color: var(--card-text-alt);
   border: 1px solid var(--card-text-alt);
   padding: 2%;
 }
@@ -92,13 +92,8 @@
     display: grid;
     place-items: center;
     padding: 0;
-  }
-
-  button,
-  button:hover,
-  button:active {
-    background: var(--card-bg-alt-2);
-    color: var(--card-text-alt-2);
+    background: var(--button-color);
+    color: var(--button-text);
   }
 }
 

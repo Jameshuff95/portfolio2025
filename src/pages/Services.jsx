@@ -48,18 +48,16 @@ const Services = () => {
   ];
 
   return (
-    <Container className="page">
+    <Container id="services-container" className="page">
       {tiers.map((tier, index) => (
-        <Card key={index}>
-          <Card.Body>
-            <Card.Title>{tier.name}</Card.Title>
-            <Card.Text>Price: {tier.price}</Card.Text>
-            <ul>
-              {tier.includes.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-          </Card.Body>
+        <Card key={index} className="card-alt">
+          <Card.Title className="text-center">{tier.name}</Card.Title>
+          <Card.Text className="text-center">Price: {tier.price}</Card.Text>
+          <ul id="perk-list">
+            {tier.includes.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
         </Card>
       ))}
       <Footer />

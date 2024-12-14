@@ -5,6 +5,7 @@ import MeImg from '../assets/me.png';
 
 import '../css/About.css';
 import '../index.css';
+import '../App.css';
 
 const Hero = () => {
   return (
@@ -16,9 +17,9 @@ const Hero = () => {
         id="heroImg"
       />
       <Card.Body>
-        <Card.Title className="container-title">
+        <Card.Text className="container-title">
           My name is James Huff.
-        </Card.Title>
+        </Card.Text>
         <Card.Text className="card-text-general">
           I am inclined to prioritize functionality and simplicity, as they
           offer a more straightforward and effective approach compared to the

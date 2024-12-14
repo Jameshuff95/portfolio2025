@@ -21,18 +21,18 @@ const PersonalInterests = () => {
   ];
 
   return (
-    <Card className="container">
-      <Card.Body className="body">
-        <Card.Title className="container-title">Personal Interests</Card.Title>
-        {interests.map((interest, index) => {
-          return (
-            <Card key={index} className="card">
-              <Card.Title>{interest.name}</Card.Title>
-              <Card.Subtitle>{interest.description}</Card.Subtitle>
-            </Card>
-          );
-        })}
-      </Card.Body>
+    <Card id="hobbies-container" className="container">
+      <Card.Title className="container-title">Personal Interests</Card.Title>
+      {interests.map((interest, index) => {
+        return (
+          <Card key={index} className="card-alt">
+            <Card.Title className="card-title-alt">{interest.name}</Card.Title>
+            <Card.Text className="card-text-alt">
+              {interest.description}
+            </Card.Text>
+          </Card>
+        );
+      })}
     </Card>
   );
 };

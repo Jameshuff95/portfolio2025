@@ -48,13 +48,14 @@ const Certfications = () => {
       >
         {certifications.map((certification, index) => (
           <Carousel.Item key={index}>
-            <Card>
+            <Card className="card-general card-alt cert-card">
               <Card.Img
                 variant="top"
                 src={certification.img}
                 alt={certification.alt}
+                className="cert-image"
               />
-              <Card.Title className="container-title">
+              <Card.Title className="card-title-general card-title-alt text-center">
                 {certification.title}
               </Card.Title>
               <Button variant="primary">View pdf</Button>

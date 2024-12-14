@@ -1,0 +1,47 @@
+#form-container {
+  height: 85vh;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#form-container div {
+  display: flex;
+  align-items: center;
+  max-height: 2.5rem;
+}
+
+#form-div-container:active {
+  border: 1px solid red !important;
+}
+
+#form-container div:last-of-type {
+  height: 10rem;
+  min-width: 95% !important;
+}
+
+#form-container label {
+  width: 35%;
+}
+
+#form-container .form-control {
+  width: 75%;
+  outline: none;
+  padding: 2%;
+  overflow: hidden;
+}
+
+#message-input {
+  min-width: 100%;
+  height: 50%;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+}
+
+#form-container button {
+  width: 100%;
+  height: 4rem;
+  align-self: center;
+  font-size: 2rem;
+}

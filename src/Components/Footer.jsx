@@ -7,9 +7,7 @@ import '../index.css';
 const Footer = () => {
   return (
     <Container id="footer">
-      <Card.Text className="card-text-alt">
-        &copy; 2024 James Huff. All rights reserved.
-      </Card.Text>
+      <Card.Text>&copy; 2024 James Huff. All rights reserved.</Card.Text>
     </Container>
   );
 };
