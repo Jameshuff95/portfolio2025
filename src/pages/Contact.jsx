@@ -12,7 +12,7 @@ const Contact = () => {
 
   return (
     <Container id="contact-page" className="page">
-      <Card.Title className="container-title-alt">
+      <Card.Title className="container-title">
         Let's get in touch and build something great!
       </Card.Title>
       <Form id="form-container" onSubmit={handleSubmit} className="card-alt">
