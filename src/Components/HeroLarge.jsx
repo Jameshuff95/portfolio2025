@@ -5,10 +5,10 @@ import MeImg from '../assets/me.png';
 const HeroLarge = () => {
   return (
     <Container className="d-flex" style={{ padding: '2%' }}>
-      <Row className="align-items-center" style={{ border: '1px solid red' }}>
+      <Row className="align-items-center">
         {/*prettier-ignore */}
         <Col>
-          <Card.Img src={MeImg} alt="An image of James." id="heroImg" className="img-fluid"
+          <Card.Img src={MeImg} alt="An image of James." className="img-fluid"
             style={{
               borderRadius: '50%',
               backgroundColor: 'var(--nav-bg)',
