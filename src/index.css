@@ -12,45 +12,44 @@
 
 /* body themes */
 body.light {
-  --bg-gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cfcfcf, #ffffff);
+  --bg-gradient: linear-gradient(135deg, #ffffff, #f8f8f8, #e0e0e0, #cfcfcf);
   --nav-bg: #ffffff;
-  --container-title: #333333;
-  --container-title-alt: #333333;
+  --container-title: #c5a300;
+  --container-title-alt: #b08e00;
   --card-bg: #ffffff;
-  --card-bg-alt: #e0e0e0;
-  --card-bg-alt-2: #f5f5f5;
-  --card-title: #333333;
-  --card-title-alt: #333333;
-  --card-title-alt-2: #555555;
+  --card-bg-alt: #f8f8f8;
+  --card-bg-alt-2: #e0e0e0;
+  --card-title: #c5a300;
+  --card-title-alt: #b08e00;
+  --card-title-alt-2: #d4af37;
   --card-text: #333333;
   --card-text-alt: #555555;
   --card-text-alt-2: #e0e0e0;
-  --carousel-indicators: #3a0ca3;
-  --carousel-indicators-alt: #333333;
-  --button-color: #7209b7;
+  --carousel-indicators: #c5a300;
+  --carousel-indicators-alt: #b08e00;
+  --button-color: #c5a300;
   --button-text: #ffffff;
 }
 
 body.dark {
-  --bg-gradient: linear-gradient(135deg, #121212, #3a0ca3, #7209b7, #f72585);
-  --nav-bg: #333333;
-  --container-title: #e0e0e0;
-  --container-title-alt: #cccccc;
-  --card-bg: #333333;
-  --card-bg-alt: #444444;
-  --card-bg-alt-2: #555555;
-  --card-title: #e0e0e0;
-  --card-title-alt: #cccccc;
-  --card-title-alt-2: #bbbbbb;
-  --card-text: #e0e0e0;
-  --card-text-alt: #cccccc;
-  --card-text-alt-2: #7209b7;
-  --carousel-indicators: #7209b7;
-  --carousel-indicators-alt: #e0e0e0;
-  --button-color: #3a0ca3;
-  --button-text: #e0e0e0;
+  --bg-gradient: linear-gradient(135deg, #000000, #3a3a3a, #787878, #b1b1b1);
+  --nav-bg: #000000;
+  --container-title: #ffd700;
+  --container-title-alt: #e5c100;
+  --card-bg: #1e1e1e;
+  --card-bg-alt: #2e2e2e;
+  --card-bg-alt-2: #3a3a3a;
+  --card-title: #ffd700;
+  --card-title-alt: #e5c100;
+  --card-title-alt-2: #ffc400;
+  --card-text: #ffd700;
+  --card-text-alt: #e5c100;
+  --card-text-alt-2: #ffc400;
+  --carousel-indicators: #ffd700;
+  --carousel-indicators-alt: #ffc400;
+  --button-color: #ffd700;
+  --button-text: #000000;
 }
-
 /* modal themes */
 .modal {
   --modal-header-bg: var(--card-bg-alt);
