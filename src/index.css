@@ -13,31 +13,31 @@
 /* body themes */
 body.light {
   --bg-gradient: linear-gradient(
-    155deg,
-    #e0f7fa,
+    60deg,
     #80deea,
-    #26c6da,
     #00acc1,
-    #ffa726,
+    #00897b,
+    #009688,
+    #ffb74d,
     #fb8c00,
     #f57c00,
     #ef6c00
   );
-  --nav-bg: linear-gradient(135deg, #e0f7fa, #26c6da, #ffa726);
-  --container-title: #00acc1;
-  --container-title-alt: #00796b;
+  --nav-bg: #00acc1;
+  --container-title: #009688;
+  --container-title-alt: #00695c;
   --card-bg: transparent;
   --card-bg-alt: #80deea;
   --card-bg-alt-2: #26c6da;
-  --card-title: #00acc1;
-  --card-title-alt: #00796b;
-  --card-title-alt-2: #009688;
-  --card-text: #333333;
+  --card-title: #009688;
+  --card-title-alt: #00695c;
+  --card-title-alt-2: #00bfa5;
+  --card-text: #004d40;
   --card-text-alt: #555555;
-  --card-text-alt-2: #26c6da;
-  --carousel-indicators: #00acc1;
-  --carousel-indicators-alt: #00796b;
-  --button-color: #00acc1;
+  --card-text-alt-2: #00bfa5;
+  --carousel-indicators: #009688;
+  --carousel-indicators-alt: #004d40;
+  --button-color: #ef6c00;
   --button-text: #ffffff;
 }
 
