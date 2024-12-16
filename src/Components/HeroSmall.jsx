@@ -6,7 +6,7 @@ import MeImg from '../assets/me.png';
 const HeroSmall = () => {
   return (
     <Container
-      style={{ padding: '2%', border: '1px solid red', height: '80vh' }}
+      style={{ padding: '2%', border: '1px solid red', height: '82vh' }}
     >
       <Col
         className=" d-flex flex-column justify-content-space-evenly "
