@@ -50,6 +50,7 @@
 .card-text {
   overflow: hidden;
   text-align: center;
+  color: var(--card-text);
 }
 
 .card-alt {

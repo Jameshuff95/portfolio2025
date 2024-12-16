@@ -5,7 +5,7 @@ import MeImg from '../assets/me.png';
 const HeroLarge = () => {
   return (
     <Container className="d-flex" style={{ padding: '2%' }}>
-      <Row className="align-items-center">
+      <Row className="align-items-center" style={{ border: '1px solid red' }}>
         {/*prettier-ignore */}
         <Col>
           <Card.Img src={MeImg} alt="An image of James." id="heroImg" className="img-fluid"
@@ -14,13 +14,12 @@ const HeroLarge = () => {
               backgroundColor: 'var(--nav-bg)',
               border: '1px solid var(--nav-bg)',
               boxShadow: 'inset 0 0 1rem var(--card-text)',
-              margin: '1rem auto 0',
             }}
           />
           </Col>
         <Col>
           <Card.Title>My name is James Huff.</Card.Title>
-          <Card.Text style={{ color: 'var(--card-text)' }}>
+          <Card.Text>
             I am inclined to prioritize functionality and simplicity, as they
             offer a more straightforward and effective approach compared to the
             unnecessary complications of complexity.
