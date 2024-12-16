@@ -1,6 +1,6 @@
 /* Base Nav Styles */
 nav {
-  background-color: var(--nav-bg);
+  background: var(--nav-bg);
   border-bottom: 2px solid var(--card-text-alt);
   padding: 3%;
   display: flex;
