@@ -12,7 +12,7 @@ import Testimonials from '../Components/Testimonials.jsx';
 
 const Home = () => {
   return (
-    <Container className="page">
+    <Container>
       <Hero />
       <HomeIntro />
       <FeaturedWork />

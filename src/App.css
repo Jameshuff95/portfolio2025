@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin-top: 10vh;
@@ -6,6 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: var(--nav-bg);
 }
 
@@ -13,7 +19,7 @@
   padding: 0 !important;
   margin: 0;
   overflow: auto;
-  height: 85vh;
+  height: 83vh;
 }
 
 #page-title {
@@ -23,9 +29,21 @@
   padding: 2%;
 }
 
+.card {
+  border: 0 !important;
+  background: var(--card-bg);
+  color: var(--card-text);
+}
+
+.card-title,
+.card-subtitle {
+  overflow: hidden;
+  padding: 0.5rem;
+  color: var(--card-text);
+}
+
 .card-title {
   font-size: 2rem;
-  margin: 1rem;
   text-align: center;
 }
 
@@ -34,34 +52,11 @@
   text-align: center;
 }
 
-.card {
-  border: 0 !important;
-  box-shadow: none !important;
-  background: var(--card-bg);
-  color: var(--card-text);
-  border: 1px solid var(--card-text);
-  box-shadow: inset 0 0 0.5rem var(--card-text);
-  width: 100%;
-  color: var(--card-title);
-}
-
-.card-title,
-.card-subtitle {
-  overflow: hidden;
-}
-
 .card-alt {
-  padding: 0.5rem;
-  width: 95%;
-  margin: 0.5rem auto;
   background: var(--card-bg-alt);
   color: var(--card-text-alt);
-  border: 1px solid var(--card-text-alt-2);
+  border: 1px solid var(--card-text);
   box-shadow: inset 0 0 0.5rem var(--card-text-alt) !important;
-}
-
-.card-alt .card-title {
-  color: var(--card-title-alt);
 }
 
 .card-alt-2 {

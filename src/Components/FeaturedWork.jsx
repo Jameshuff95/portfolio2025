@@ -1,40 +1,45 @@
 import { useState, useEffect } from 'react';
-
-import { Carousel, Card, Button, Row, Col } from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive';
+import { Container, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import '../App.css';
 import '../index.css';
+
+import MobileOrTabletView from './FeaturedMobile.jsx';
+import DeskOrLaptopView from './FeaturedDesktop.jsx';
 
 import FeaturedImg1 from '../assets/logo-1.png';
 import FeaturedImg2 from '../assets/logo-2.png';
 import FeaturedImg3 from '../assets/logo-3.png';
 
-const FeaturedWork = () => {
-  const featuredProjects = [
-    {
-      title: 'Project 1',
-      technology: 'Tech 1',
-      img: FeaturedImg1,
-      imgAlt: 'image alt 1',
-      description: 'Description 1',
-    },
-    {
-      title: 'Project 2',
-      technology: 'Tech 2',
-      img: FeaturedImg2,
-      imgAlt: 'image alt 2',
-      description: 'Description 2',
-    },
-    {
-      title: 'Project 3',
-      technology: 'Tech 3',
-      img: FeaturedImg3,
-      imgAlt: 'image alt 3',
-      description: 'Description 3',
-    },
-  ];
+const featuredProjects = [
+  // Tech 1
+  {
+    title: 'Project 1',
+    technology: 'Tech 1',
+    img: FeaturedImg1,
+    imgAlt: 'image alt 1',
+    description: 'Description 1',
+  },
+  // Tech 2
+  {
+    title: 'Project 2',
+    technology: 'Tech 2',
+    img: FeaturedImg2,
+    imgAlt: 'image alt 2',
+    description: 'Description 2',
+  },
+  // Tech 3
+  {
+    title: 'Project 3',
+    technology: 'Tech 3',
+    img: FeaturedImg3,
+    imgAlt: 'image alt 3',
+    description: 'Description 3',
+  },
+];
 
+const FeaturedWork = () => {
   const [currentProject, setCurrentProject] = useState(0);
 
   useEffect(() => {
@@ -44,58 +49,25 @@ const FeaturedWork = () => {
       );
     }, 5000);
     return () => clearInterval(interval);
-  }, [featuredProjects.length]);
+  }, []);
+
+  const isMobileOrTablet = useMediaQuery({ maxWidth: 767 });
+  const isDeskOrLaptop = useMediaQuery({ minWidth: 768 });
 
   return (
-    <Card className="card">
-      <Card.Title>Featured Work</Card.Title>
-      <Carousel
-        activeIndex={currentProject}
-        onSelect={(selectedIndex) => setCurrentProject(selectedIndex)}
-      >
-        {featuredProjects.map((project, index) => (
-          <Carousel.Item key={index}>
-            <Card
-              className="card-alt"
-              style={{
-                gap: '1rem',
-                marginTop: '2rem',
-              }}
-            >
-              <Row className="justify-content-center">
-                <Col xs={10} md={4}>
-                  <Card.Img
-                    variant="top"
-                    src={project.img}
-                    alt={project.imgAlt}
-                    className="featured-image"
-                  />
-                </Col>
-              </Row>
-
-              <Card.Title className="card-title-alt">
-                {project.title}
-              </Card.Title>
-              <Card.Subtitle className="card-title-alt text-center">
-                {project.technology}
-              </Card.Subtitle>
-              <Card>
-                <Card.Text
-                  style={{
-                    textAlign: 'left',
-                    padding: '2%',
-                    height: '5rem',
-                  }}
-                >
-                  {project.description}
-                </Card.Text>
-              </Card>
-              <Button variant="dark">Learn More</Button>
-            </Card>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </Card>
+    <Container>
+      <Card.Title className="text-center">Featured Work</Card.Title>
+      {isMobileOrTablet && (
+        <MobileOrTabletView
+          featuredProjects={featuredProjects}
+          currentProject={currentProject}
+          setCurrentProject={setCurrentProject}
+        />
+      )}
+      {isDeskOrLaptop && (
+        <DeskOrLaptopView featuredProjects={featuredProjects} />
+      )}
+    </Container>
   );
 };
 

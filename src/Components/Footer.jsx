@@ -7,7 +7,6 @@ import '../App.css';
 const Footer = () => {
   return (
     <Card
-      id="footer"
       style={{
         width: '100%',
         background: 'var(--nav-bg)',
@@ -20,13 +19,15 @@ const Footer = () => {
     >
       <Card.Text
         style={{
-          textAlign: 'center',
           display: 'flex',
-          justifyContent: 'flex-start',
-          padding: '2% 0',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: '0',
           margin: '0',
           fontSize: '1.25rem',
           borderTop: '2px solid var(--card-text)',
+          width: '100%',
+          height: '3rem',
         }}
       >
         &copy; 2024 James Huff. All rights reserved.

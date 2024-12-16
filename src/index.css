@@ -52,18 +52,18 @@ body.dark {
 }
 
 /* modal themes */
-.modal-light {
-  --modal-header-bg: #01579b;
-  --modal-header-text: #b3e5fc;
-  --modal-text: #01579b;
-  --modal-close: #b3e5fc;
+.modal {
+  --modal-header-bg: var(--card-bg-alt);
+  --modal-header-text: var(--card-text);
+  --modal-text: var(--card-text);
+  --modal-close: var(--card-bg-alt);
 }
 
 .modal-dark {
-  --modal-header-bg: #333333;
-  --modal-header-text: #e0e0e0;
-  --modal-text: #333333;
-  --modal-close: #e0e0e0;
+  --modal-header-bg: var(--nav-bg);
+  --modal-header-text: var(--card-text);
+  --modal-text: var(--nav-bg);
+  --modal-close: var(--card-text);
 }
 
 /*html*/

@@ -58,59 +58,65 @@ const ContactInformation = () => {
   ];
 
   return (
-    <Card>
-      <Card.Title>Contact Me</Card.Title>
-      <Card.Body>
-        <Container>
-          <Row
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
-            }}
-          >
-            {links.map((link, index) => (
-              <Col
-                xs={12}
-                md={4}
-                key={index}
-                className="d-flex justify-content-center mb-3"
+    <Container>
+      <Row md={10}>
+        <Col>
+          <Card>
+            <Card.Title>Contact Me</Card.Title>
+            <Card.Body>
+              <Row
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  placeItems: 'center',
+                }}
               >
-                <Link
-                  to={link.href}
-                  style={{
-                    color: link.color,
-                    height: '8rem',
-                    width: '100%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                  }}
-                >
-                  <i
-                    className={link.icon}
-                    style={{
-                      fontSize: '2.5rem',
-                      overflow: 'hidden',
-                    }}
-                  />
-                  <legend
-                    style={{
-                      color: 'var(--card-text)',
-                      overflow: 'hidden',
-                      fontSize: '1.25rem',
-                      textAlign: 'center',
-                    }}
+                {links.map((link, index) => (
+                  <Col
+                    xs={12}
+                    md={10}
+                    key={index}
+                    className="d-flex justify-content-center mb-3"
                   >
-                    {link.legend}
-                  </legend>
-                </Link>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </Card.Body>
-    </Card>
+                    <Link
+                      to={link.href}
+                      style={{
+                        color: link.color,
+                        height: '8rem',
+                        width: '100%',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        cursor: 'pointer',
+                      }}
+                    >
+                      <i
+                        className={link.icon}
+                        style={{
+                          fontSize: '2.5rem',
+                          overflow: 'hidden',
+                        }}
+                      />
+                      <legend
+                        style={{
+                          color: 'var(--card-text)',
+                          overflow: 'hidden',
+                          fontSize: '1.25rem',
+                          textAlign: 'center',
+                        }}
+                      >
+                        {link.legend}
+                      </legend>
+                    </Link>
+                  </Col>
+                ))}
+              </Row>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

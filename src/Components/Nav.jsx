@@ -90,8 +90,20 @@ const Nav = () => {
         onHide={toggleMenu}
         dialogClassName={`modal-${theme}`}
       >
-        <Modal.Header closeButton>
+        <Modal.Header
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+        >
           <Modal.Title>Explore my website!</Modal.Title>
+          <Button
+            variant="secondary"
+            onClick={toggleMenu}
+            style={{ border: '5px solid var(--card-bg)' }}
+          >
+            X
+          </Button>
         </Modal.Header>
         <Modal.Body className={`modal-${theme}`}>
           <NavLink to="/" className="nav-link" onClick={toggleMenu}>
