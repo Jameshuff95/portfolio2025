@@ -9,7 +9,7 @@ const HeroSmall = () => {
       style={{ padding: '2%', border: '1px solid red', height: '84vh' }}
     >
       <Col
-        className=" d-flex flex-column justify-content-space-evenly "
+        className=" d-flex flex-column justify-content-evenly "
         style={{ border: '1px solid gold', height: '100%' }}
       >
         {/*prettier-ignore */}
