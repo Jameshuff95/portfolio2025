@@ -35,15 +35,15 @@
   color: var(--card-text);
 }
 
+.card-title {
+  font-size: 2rem;
+}
+
 .card-title,
 .card-subtitle {
   overflow: hidden;
   padding: 0.5rem;
   color: var(--card-text);
-}
-
-.card-title {
-  font-size: 2rem;
   text-align: center;
 }
 
