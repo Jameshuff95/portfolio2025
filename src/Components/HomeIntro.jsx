@@ -7,9 +7,7 @@ import '../App.css';
 const HomeIntro = () => {
   return (
     <Container>
-      <Card.Title style={{ margin: '0 0 1rem' }}>
-        Driven by Curiosity, Empowered by MERN:
-      </Card.Title>
+      <Card.Title>Driven by Curiosity, Empowered by MERN:</Card.Title>
       <Card.Body style={{}}>
         <Card.Text>
           Hello! I'm James, a passionate self-taught web developer with a strong

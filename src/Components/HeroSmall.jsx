@@ -35,15 +35,15 @@ const HeroSmall = () => {
         />
       </Col>
       <Col
-        className="d-flex flex-column justify-content-around"
-        style={{ height: '35%' }}
+        className="d-flex flex-column justify-content-between"
+        style={{ gap: '1rem' }}
       >
-        <Row>
+        <Row style={{ margin: '1rem' }}>
           <Card.Subtitle>My name is</Card.Subtitle>
           <Card.Title>James Huff</Card.Title>
         </Row>
 
-        <Card.Text style={{ margin: '1rem 0' }}>
+        <Card.Text>
           I am inclined to prioritize functionality and simplicity, as they
           offer a more straightforward and effective approach.
         </Card.Text>

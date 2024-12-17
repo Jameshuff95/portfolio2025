@@ -12,7 +12,14 @@ import Testimonials from '../Components/Testimonials.jsx';
 
 const Home = () => {
   return (
-    <Container>
+    <Container
+      style={{
+        border: '1px solid green',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1rem',
+      }}
+    >
       <Hero />
       <HomeIntro />
       <FeaturedWork />
