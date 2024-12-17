@@ -10,14 +10,10 @@ const HeroSmall = () => {
         overflow: 'visible',
         padding: '2%',
         border: '1px solid gold',
-        height: '84vh',
       }}
     >
-      <Col
-        className=" d-flex flex-column justify-content-evenly align-items-center"
-        style={{ overflow: 'visible', height: '100%' }}
-      >
-        <Col xs={8} style={{ border: '1px solid red' }}>
+      <Col style={{ overflow: 'visible', height: '100%' }}>
+        <Col xs={8} style={{ border: '1px solid red', margin: 'auto' }}>
           {/*prettier-ignore */}
           <Card.Img src={MeImg} alt="An image of James." className="img-fluid"
             style={{
