@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Modal, Button, Card } from 'react-bootstrap';
+import { Modal, Button, Card, Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../index.css';
 import '../App.css';
 import '../Components/Nav.jsx';
 
-const Nav = () => {
+const NavigationBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [theme, setTheme] = useState('light');
 
@@ -77,7 +77,7 @@ const Nav = () => {
   const currentPage = getPageName(location.pathname);
 
   return (
-    <nav>
+    <Navbar bg={theme === 'dark' ? 'dark' : 'light'} variant={theme}>
       <i
         id="themeBtn"
         className={`bi bi-${theme === 'dark' ? 'moon' : 'sun'}-fill`}
@@ -85,6 +85,31 @@ const Nav = () => {
       />
       <Card.Title>{currentPage}</Card.Title>
       <i id="menu-btn" className="bi bi-list" onClick={toggleMenu} />
+      <Navbar.Collapse>
+        <Nav className="ml-auto">
+          <NavLink to="/" className="nav-link" onClick={toggleMenu}>
+            Home
+          </NavLink>
+          <NavLink to="/About" className="nav-link" onClick={toggleMenu}>
+            About
+          </NavLink>
+          <NavLink to="/Blog" className="nav-link" onClick={toggleMenu}>
+            Blog
+          </NavLink>
+          <NavLink to="/Contact" className="nav-link" onClick={toggleMenu}>
+            Contact
+          </NavLink>
+          <NavLink to="/Portfolio" className="nav-link" onClick={toggleMenu}>
+            Portfolio
+          </NavLink>
+          <NavLink to="/Resume" className="nav-link" onClick={toggleMenu}>
+            Resumé
+          </NavLink>
+          <NavLink to="/Services" className="nav-link" onClick={toggleMenu}>
+            Services
+          </NavLink>
+        </Nav>
+      </Navbar.Collapse>
       <Modal
         show={showMenu}
         onHide={toggleMenu}
@@ -134,8 +159,8 @@ const Nav = () => {
           </Button>
         </Modal.Footer>
       </Modal>
-    </nav>
+    </Navbar>
   );
 };
 
-export default Nav;
+export default NavigationBar;

@@ -38,7 +38,7 @@ const HeroSmall = () => {
           className="img-fluid"
           style={{
             borderRadius: '50%',
-            backgroundColor: 'var(--nav-bg)',
+            backgroundColor: 'var(--theme-btn-color)',
             border: '1px solid var(--nav-bg)',
             boxShadow: 'inset 0 0 1rem var(--card-text)',
             margin: '0 auto',

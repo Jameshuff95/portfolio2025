@@ -11,8 +11,8 @@ import HeroSmall from './HeroSmall.jsx';
 import HeroLarge from './HeroLarge.jsx';
 
 const Hero = () => {
-  const isMobileOrTablet = useMediaQuery({ maxWidth: 551 });
-  const isDeskOrLaptop = useMediaQuery({ minWidth: 551 });
+  const isMobileOrTablet = useMediaQuery({ maxWidth: 721 });
+  const isDeskOrLaptop = useMediaQuery({ minWidth: 721 });
 
   return (
     <Container

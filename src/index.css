@@ -14,6 +14,7 @@
 body.light {
   --bg-gradient: linear-gradient(135deg, #e0f7fa, #b2ebf2, #80deea, #4dd0e1);
   --nav-bg: linear-gradient(135deg, #b2ebf2, #80deea, #4dd0e1);
+  --theme-btn-color: #37474f;
   --container-title: #80deea;
   --container-title-alt: #4dd0e1;
   --card-bg: transparent;
@@ -34,6 +35,7 @@ body.light {
 body.dark {
   --bg-gradient: linear-gradient(135deg, #263238, #37474f, #455a64, #546e7a);
   --nav-bg: linear-gradient(135deg, #37474f, #455a64, #546e7a);
+  --theme-btn-color: #80deea;
   --container-title: #80deea;
   --container-title-alt: #4dd0e1;
   --card-bg: transparent;
