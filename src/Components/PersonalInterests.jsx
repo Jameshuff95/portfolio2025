@@ -21,7 +21,14 @@ const PersonalInterests = () => {
   ];
 
   return (
-    <Card id="hobbies-container">
+    <Card
+      id="hobbies-container"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1rem',
+      }}
+    >
       <Card.Title>Personal Interests</Card.Title>
       {interests.map((interest, index) => {
         return (

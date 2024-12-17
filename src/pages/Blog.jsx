@@ -1,21 +1,9 @@
 import { useState, useEffect } from 'react';
-import {
-  Card,
-  Container,
-  Carousel,
-  Row,
-  Col,
-  ListGroup,
-  Button,
-} from 'react-bootstrap';
+import { Card, Container, Carousel, Row, Col, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Footer from '../Components/Footer.jsx';
 
 import '../index.css';
 import '../App.css';
-import '../css/Nav.css';
-import '../css/Blog.css';
 
 const Blog = () => {
   const highlightedPosts = [
@@ -52,6 +40,7 @@ const Blog = () => {
   ];
 
   const categories = ['JavaScript', 'React', 'CSS', 'Web Development'];
+
   const [categoryIndex, setCategoryIndex] = useState(0);
 
   const category = () => {
@@ -88,8 +77,23 @@ const Blog = () => {
         >
           {highlightedPosts.map((post, index) => (
             <Carousel.Item key={index}>
-              <Card id="featured-post-container" className="card-alt">
-                <Card.Body className="featured-post">
+              <Card
+                id="featured-post-container"
+                className="card-alt"
+                style={{ marginTop: '2rem' }}
+              >
+                <Card.Body
+                  className="featured-post"
+                  style={{
+                    padding: '2%',
+                    background: 'var(--card-bg)',
+                    color: 'var(--card-text)',
+                    minHheight: '8rem',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                  }}
+                >
                   <Card.Title className="text-center">{post.title}</Card.Title>
                   <Card.Text>{`"${post.text}."`}</Card.Text>
                   <Button variant="primary" href={`/post/${index}`}>
@@ -106,7 +110,14 @@ const Blog = () => {
               <Card.Title className="container-title">Recent Posts</Card.Title>
               {recentPosts.map((post, index) => (
                 <Card key={index} className="card-general card-alt">
-                  <Card.Body className="recent-post">
+                  <Card.Body
+                    className="recent-post"
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                    }}
+                  >
                     <Card.Title className="text-center">
                       {post.title}
                     </Card.Title>

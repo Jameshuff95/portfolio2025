@@ -11,10 +11,12 @@ const Footer = () => {
         width: '100%',
         background: 'var(--nav-bg)',
         padding: '0',
-        position: 'relative',
+        position: 'fixed',
+        bottom: '0',
         color: 'var(--card-text-alt)',
         display: 'grid',
         placeItems: 'center',
+        zIndex: '10',
       }}
     >
       <Card.Text

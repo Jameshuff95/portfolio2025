@@ -1,7 +1,7 @@
 import { Card, Container, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import MeImg from '../assets/me.png';
+import MeImg from '../../assets/me.png';
 
 const HeroSmall = () => {
   return (

@@ -25,7 +25,14 @@ const Achievements = () => {
   return (
     <Card>
       <Card.Title className="container-title">Achievements</Card.Title>
-      <Card.Body id="achievements-container">
+      <Card.Body
+        id="achievements-container"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem',
+        }}
+      >
         {achievements.map((achievement, index) => (
           <Card key={index} className="card-general card-alt">
             <Card.Title className="card-text-alt">

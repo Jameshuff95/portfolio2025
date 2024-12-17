@@ -18,6 +18,7 @@
 .page {
   overflow: auto;
   height: 83vh;
+  z-index: 1;
 }
 
 .card {
@@ -87,4 +88,22 @@
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   display: none;
+}
+
+.bi {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 1%;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  border: 1px solid black;
 }

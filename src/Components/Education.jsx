@@ -23,7 +23,12 @@ const Education = () => {
   ];
 
   return (
-    <Card id="education-container">
+    <Card
+      id="education-container"
+      style={{
+        gap: '1rem',
+      }}
+    >
       <Card.Title>Education</Card.Title>
       {schools.map((school, index) => {
         return (

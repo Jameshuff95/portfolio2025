@@ -53,6 +53,13 @@ const Certfications = () => {
                 variant="top"
                 src={certification.img}
                 alt={certification.alt}
+                style={{
+                  border: '1px solid var(--card-text-alt)',
+                  width: '90%',
+                  height: '15rem',
+                  borderRadius: '5px',
+                  margin: '1rem auto',
+                }}
               />
               <Card.Title className="text-center">
                 {certification.title}

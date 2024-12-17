@@ -55,17 +55,10 @@ body.dark {
 
 /* modal themes */
 .modal {
-  --modal-header-bg: var(--card-bg-alt);
+  --modal-header-bg: var(--nav-bg);
   --modal-header-text: var(--card-text);
   --modal-text: var(--card-text);
   --modal-close: var(--card-bg-alt);
-}
-
-.modal-dark {
-  --modal-header-bg: var(--nav-bg);
-  --modal-header-text: var(--card-text);
-  --modal-text: var(--nav-bg);
-  --modal-close: var(--card-text);
 }
 
 /*html*/

@@ -1,11 +1,10 @@
 import { Card, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import '../Components/Nav.jsx';
+import '../Components/Nav/Nav.jsx';
 
 import '../index.css';
 import '../App.css';
-import '../css/Resume.css';
 
 const resume = () => {
   const workExperience = [
@@ -53,7 +52,15 @@ const resume = () => {
           Download
         </Button>
         <Card id="resume-container">
-          <Card.Body id="resume-top">
+          <Card.Body
+            id="resume-top"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-evenly',
+              padding: '0',
+            }}
+          >
             <Card.Title className="text-center">James Huff</Card.Title>
             <Card.Subtitle>
               Web Developer / Software Engineering Student

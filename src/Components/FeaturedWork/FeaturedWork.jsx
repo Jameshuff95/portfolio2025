@@ -2,15 +2,15 @@ import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Container, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../App.css';
-import '../index.css';
+import '../../App.css';
+import '../../index.css';
 
 import MobileOrTabletView from './FeaturedMobile.jsx';
 import DeskOrLaptopView from './FeaturedDesktop.jsx';
 
-import FeaturedImg1 from '../assets/logo-1.png';
-import FeaturedImg2 from '../assets/logo-2.png';
-import FeaturedImg3 from '../assets/logo-3.png';
+import FeaturedImg1 from '../../assets/logo-1.png';
+import FeaturedImg2 from '../../assets/logo-2.png';
+import FeaturedImg3 from '../../assets/logo-3.png';
 
 const featuredProjects = [
   // Tech 1
@@ -55,7 +55,7 @@ const FeaturedWork = () => {
   const isDeskOrLaptop = useMediaQuery({ minWidth: 551 });
 
   return (
-    <Container>
+    <Container style={{ zIndex: '1' }}>
       <Card.Title className="text-center">Featured Work</Card.Title>
       {isMobileOrTablet && (
         <MobileOrTabletView
