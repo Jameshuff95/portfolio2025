@@ -10,7 +10,7 @@ const HeroSmall = () => {
         overflow: 'visible',
         padding: '2%',
         height: '85vh',
-        margin: '1rem auto',
+        margin: 'auto',
       }}
     >
       <Col
@@ -19,6 +19,7 @@ const HeroSmall = () => {
           margin: 'auto',
           overflow: 'visible',
           margin: '0 auto',
+          padding: '1rem',
         }}
       >
         <Card.Img
