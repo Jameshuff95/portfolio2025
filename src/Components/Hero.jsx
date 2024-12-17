@@ -17,7 +17,6 @@ const Hero = () => {
   return (
     <Container
       style={{
-        height: '75vh',
         overflow: 'visible',
         padding: '0',
       }}

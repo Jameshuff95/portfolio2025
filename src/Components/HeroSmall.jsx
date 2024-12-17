@@ -43,7 +43,7 @@ const HeroSmall = () => {
           <Card.Title>James Huff</Card.Title>
         </Row>
 
-        <Card.Text>
+        <Card.Text style={{ margin: '1rem 0' }}>
           I am inclined to prioritize functionality and simplicity, as they
           offer a more straightforward and effective approach.
         </Card.Text>
