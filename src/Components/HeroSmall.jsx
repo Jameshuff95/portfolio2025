@@ -9,14 +9,12 @@ const HeroSmall = () => {
       style={{
         overflow: 'visible',
         padding: '2%',
-        border: '1px solid gold',
       }}
     >
       <Col
         className="d-flex flex-column justify-content-evenly"
         style={{
           height: '100%',
-          border: '1px solid green',
         }}
       >
         <Col xs={10} style={{ margin: 'auto' }}>
