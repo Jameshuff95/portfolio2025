@@ -5,14 +5,11 @@ import MeImg from '../assets/me.png';
 const HeroLarge = () => {
   return (
     <Container>
-      <Card.Title style={{ margin: '0 0 .5rem', fontSize: '3rem' }}>
+      <Card.Title style={{ margin: '0 0 .5rem' }}>
         My name is James Huff.
       </Card.Title>
 
-      <Row
-        className="align-items-center"
-        style={{ border: '1px solid red', height: '70vh' }}
-      >
+      <Row className="align-items-center" style={{}}>
         <Col md={5}>
           <Card.Img
             src={MeImg}
