@@ -19,6 +19,7 @@ const HeroSmall = () => {
 
       <Col
         xs={10}
+        sm={10}
         style={{
           margin: 'auto',
           overflow: 'visible',
