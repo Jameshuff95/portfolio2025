@@ -12,8 +12,6 @@ const HeroSmall = () => {
         margin: '0',
         padding: '0',
         height: '100%',
-        border: '1px solid red',
-        gap: '.25rem',
       }}
     >
       <Row className="d-flex flex-column">
@@ -47,10 +45,7 @@ const HeroSmall = () => {
           }}
         />
       </Col>
-      <Col
-        className="d-flex flex-column justify-content-between"
-        style={{ gap: '1rem' }}
-      >
+      <Col className="d-flex flex-column justify-content-between">
         <Card.Text>
           I am a web developer inclined to prioritize functionality and
           simplicity, as they offer a more straightforward and effective

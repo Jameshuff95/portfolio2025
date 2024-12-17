@@ -9,7 +9,7 @@ const HeroLarge = () => {
         My name is James Huff.
       </Card.Title>
 
-      <Row className="align-items-center" style={{}}>
+      <Row className="align-items-center">
         <Col md={5}>
           <Card.Img
             src={MeImg}
@@ -24,7 +24,7 @@ const HeroLarge = () => {
           />
         </Col>
         <Col>
-          <Card.Text style={{ fontSize: '2.25rem' }}>
+          <Card.Text style={{ fontSize: '1.5rem' }}>
             I am inclined to prioritize functionality and simplicity, as they
             offer a more straightforward and effective approach.
           </Card.Text>
