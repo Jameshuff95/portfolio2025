@@ -5,7 +5,7 @@ import MeImg from '../assets/me.png';
 const HeroLarge = () => {
   return (
     <Container>
-      <Card.Title style={{ margin: '1rem 0' }}>
+      <Card.Title style={{ margin: '0 0 .5rem' }}>
         My name is James Huff.
       </Card.Title>
 
