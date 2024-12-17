@@ -13,7 +13,10 @@ const HeroSmall = () => {
         height: '84vh',
       }}
     >
-      <Col style={{ overflow: 'visible', height: '100%' }}>
+      <Col
+        className="d-flex flex-column justify-content-around"
+        style={{ overflow: 'visible', height: '100%' }}
+      >
         <Col xs={8} style={{ border: '1px solid red', margin: 'auto' }}>
           {/*prettier-ignore */}
           <Card.Img src={MeImg} alt="An image of James." className="img-fluid"
