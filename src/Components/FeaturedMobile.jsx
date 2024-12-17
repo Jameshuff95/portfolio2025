@@ -31,19 +31,25 @@ const MobileOrTabletView = ({
                   className="featured-image"
                   style={{ height: '10rem', marginTop: '1rem' }}
                 />
-                <Card.Body className="d-flex flex-column align-items-center justify-content-space-evenly">
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Subtitle>{project.technology}</Card.Subtitle>
+                <Card.Body
+                  className="d-flex flex-column align-items-center justify-content-between"
+                  style={{ flex: '1' }}
+                >
+                  <Row>
+                    <Card.Title>{project.title}</Card.Title>
+                    <Card.Subtitle>{project.technology}</Card.Subtitle>
+                  </Row>
+
                   <Card.Text
                     style={{
                       textAlign: 'left',
-                      border: '1px solid var(--card-text)',
                       color: 'var(--card-bg-alt)',
                       width: '100%',
-                      height: '5rem',
                       borderRadius: '5px',
                       padding: '2%',
                       background: 'var(--card-text)',
+                      flex: '1',
+                      overflow: 'auto',
                     }}
                   >
                     {project.description}
@@ -56,6 +62,7 @@ const MobileOrTabletView = ({
                       fontSize: '2rem',
                       background: 'var(--card-text)',
                       color: 'var(--card-bg-alt)',
+                      marginTop: '1rem',
                     }}
                   >
                     Learn More
