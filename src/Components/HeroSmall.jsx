@@ -10,6 +10,7 @@ const HeroSmall = () => {
         overflow: 'visible',
         padding: '2%',
         border: '1px solid gold',
+        height: '84vh',
       }}
     >
       <Col style={{ overflow: 'visible', height: '100%' }}>
