@@ -6,15 +6,21 @@ import MeImg from '../assets/me.png';
 const HeroSmall = () => {
   return (
     <Container
+      className="d-flex flex-column"
       style={{
         overflow: 'visible',
         margin: '0',
+        padding: '0',
         height: '100%',
+        border: '1px solid red',
+        gap: '.25rem',
       }}
     >
-      <Row style={{ margin: '1rem' }}>
-        <Card.Subtitle>Hello, my name is</Card.Subtitle>
-        <Card.Title>James Huff</Card.Title>
+      <Row className="d-flex flex-column">
+        <Card.Subtitle style={{ padding: '0' }}>
+          Hello, my name is
+        </Card.Subtitle>
+        <Card.Title style={{ padding: '0' }}>James Huff</Card.Title>
       </Row>
 
       <Col
