@@ -20,6 +20,7 @@ const HeroSmall = () => {
       <Col
         xs={12}
         sm={6}
+        md={8}
         style={{
           margin: 'auto',
           overflow: 'visible',
