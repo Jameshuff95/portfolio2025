@@ -19,6 +19,7 @@ const Hero = () => {
       style={{
         overflow: 'visible',
         padding: '0',
+        margin: '1.75rem 0',
       }}
     >
       {isMobileOrTablet && <HeroSmall />}
