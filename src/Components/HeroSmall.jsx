@@ -35,7 +35,7 @@ const HeroSmall = () => {
         />
       </Col>
       <Col
-        className="d-flex flex-column justify-content-between"
+        className="d-flex flex-column justify-content-around"
         style={{ height: '35%' }}
       >
         <Row>
