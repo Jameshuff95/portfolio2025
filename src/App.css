@@ -36,7 +36,11 @@
 }
 
 .card-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.card-subtitle {
+  font-size: 1.5rem;
 }
 
 .card-title,
@@ -51,6 +55,7 @@
   overflow: hidden;
   text-align: center;
   color: var(--card-text);
+  font-size: 1.5rem;
 }
 
 .card-alt {
