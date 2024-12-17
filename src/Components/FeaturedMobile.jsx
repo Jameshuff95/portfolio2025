@@ -16,7 +16,7 @@ const MobileOrTabletView = ({
           <Card className="card-alt" style={{ marginTop: '2rem' }}>
             <Row className="justify-content-center">
               <Col
-                xs={10}
+                xs={12}
                 sm={10}
                 style={{
                   display: 'flex',
@@ -29,7 +29,6 @@ const MobileOrTabletView = ({
                   src={project.img}
                   alt={project.imgAlt}
                   className="featured-image"
-                  style={{ height: '10rem', marginTop: '1rem' }}
                 />
                 <Card.Body
                   className="d-flex flex-column align-items-center justify-content-between"
