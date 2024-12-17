@@ -5,12 +5,15 @@ import MeImg from '../assets/me.png';
 const HeroLarge = () => {
   return (
     <Container>
-      <Card.Title style={{ margin: '0 0 .5rem' }}>
+      <Card.Title style={{ margin: '0 0 .5rem', fontSize: '3rem' }}>
         My name is James Huff.
       </Card.Title>
 
-      <Row className="align-items-center">
-        <Col md={6}>
+      <Row
+        className="align-items-center"
+        style={{ border: '1px solid red', height: '70vh' }}
+      >
+        <Col md={4}>
           <Card.Img
             src={MeImg}
             alt="An image of James."
@@ -24,7 +27,7 @@ const HeroLarge = () => {
           />
         </Col>
         <Col>
-          <Card.Text>
+          <Card.Text style={{ fontSize: '2.25rem' }}>
             I am inclined to prioritize functionality and simplicity, as they
             offer a more straightforward and effective approach.
           </Card.Text>
