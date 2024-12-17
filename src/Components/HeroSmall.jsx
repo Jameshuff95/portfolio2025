@@ -19,7 +19,7 @@ const HeroSmall = () => {
 
       <Col
         xs={8}
-        sm={6}
+        sm={8}
         md={8}
         style={{
           margin: 'auto',

@@ -51,8 +51,8 @@ const FeaturedWork = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const isMobileOrTablet = useMediaQuery({ maxWidth: 451 });
-  const isDeskOrLaptop = useMediaQuery({ minWidth: 451 });
+  const isMobileOrTablet = useMediaQuery({ maxWidth: 551 });
+  const isDeskOrLaptop = useMediaQuery({ minWidth: 551 });
 
   return (
     <Container>
