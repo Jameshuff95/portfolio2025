@@ -18,7 +18,7 @@ const HeroSmall = () => {
       </Row>
 
       <Col
-        xs={12}
+        xs={8}
         sm={6}
         md={8}
         style={{
