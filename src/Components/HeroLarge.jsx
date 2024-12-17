@@ -13,7 +13,7 @@ const HeroLarge = () => {
         className="align-items-center"
         style={{ border: '1px solid red', height: '70vh' }}
       >
-        <Col md={4}>
+        <Col md={5}>
           <Card.Img
             src={MeImg}
             alt="An image of James."
