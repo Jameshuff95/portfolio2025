@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../index.css';
@@ -83,7 +83,7 @@ const Nav = () => {
         className={`bi bi-${theme === 'dark' ? 'moon' : 'sun'}-fill`}
         ref={themeBtnRef}
       />
-      <h3 id="page-title">{currentPage}</h3>
+      <Card.Title>{currentPage}</Card.Title>
       <i id="menu-btn" className="bi bi-list" onClick={toggleMenu} />
       <Modal
         show={showMenu}

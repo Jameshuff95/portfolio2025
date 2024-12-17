@@ -8,9 +8,8 @@ const HeroSmall = () => {
     <Container
       style={{
         overflow: 'visible',
-        padding: '2%',
-        height: '85vh',
-        margin: 'auto',
+        margin: '0',
+        height: '100%',
       }}
     >
       <Col
@@ -37,15 +36,11 @@ const HeroSmall = () => {
       </Col>
       <Col
         className="d-flex flex-column justify-content-evenly"
-        style={{ height: '48%' }}
+        style={{ height: '35%' }}
       >
         <Row>
-          <Card.Subtitle style={{ margin: '0', padding: '0' }}>
-            My name is
-          </Card.Subtitle>
-          <Card.Title style={{ margin: '0', padding: '0' }}>
-            James Huff
-          </Card.Title>
+          <Card.Subtitle>My name is</Card.Subtitle>
+          <Card.Title>James Huff</Card.Title>
         </Row>
 
         <Card.Text>
