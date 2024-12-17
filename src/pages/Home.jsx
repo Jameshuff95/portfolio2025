@@ -14,7 +14,6 @@ const Home = () => {
   return (
     <Container
       style={{
-        border: '1px solid green',
         display: 'flex',
         flexDirection: 'column',
         gap: '1rem',
