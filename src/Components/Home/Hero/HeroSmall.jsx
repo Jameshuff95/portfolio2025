@@ -1,23 +1,27 @@
-import { Card, Col } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import MeImg from '../../../assets/me.png';
 
 const HeroSmall = () => {
   return (
-    <Card>
-      <Col>
-        <Card.Subtitle>Hello, my name is</Card.Subtitle>
-        <Card.Title>James Huff</Card.Title>
-      </Col>
+    <Card
+      className="d-flex flex-columm justify-content-evenly"
+      style={{ padding: '2%', height: '100%' }}
+    >
+      <Row className="d-flex justify-content-center align-items-center">
+        <Card.Subtitle style={{ padding: '0' }}>
+          Hello, my name is
+        </Card.Subtitle>
+        <Card.Title style={{ padding: '0 0 2%' }}>James Huff</Card.Title>
+      </Row>
 
       <Col
         xs={10}
         sm={8}
         md={8}
         style={{
-          margin: 'auto',
-          padding: '1rem',
+          margin: '0 auto',
         }}
       >
         <Card.Img
@@ -33,13 +37,13 @@ const HeroSmall = () => {
           }}
         />
       </Col>
-      <Col>
+      <Row>
         <Card.Text>
           I am a web developer inclined to prioritize functionality and
           simplicity, as they offer a more straightforward and effective
           approach.
         </Card.Text>
-      </Col>
+      </Row>
     </Card>
   );
 };

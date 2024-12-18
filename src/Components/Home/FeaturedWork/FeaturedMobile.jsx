@@ -1,4 +1,4 @@
-import { Carousel, Card, Row, Col, Button } from 'react-bootstrap';
+import { Carousel, Card, Row, Col, Button, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MobileOrTabletView = ({
