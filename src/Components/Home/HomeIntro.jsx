@@ -8,7 +8,13 @@ const HomeIntro = () => {
   return (
     <Container>
       <Card.Title>Driven by Curiosity, Empowered by MERN:</Card.Title>
-      <Card.Body>
+      <Card.Body
+        className="d-flex flex-column"
+        style={{
+          padding: '2%',
+          gap: '.5rem',
+        }}
+      >
         <Card.Text>
           Hello! I'm James, a passionate self-taught web developer with a strong
           focus on the MERN stack (MongoDB, Express.js, React, Node.js).

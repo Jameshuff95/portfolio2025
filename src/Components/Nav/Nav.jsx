@@ -1,4 +1,4 @@
-import { Container } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useMediaQuery } from 'react-responsive';
@@ -13,7 +13,7 @@ const Nav = () => {
   const isDesktopOrLaptop = useMediaQuery({ minWidth: '768px' });
 
   return (
-    <Container
+    <Card
       style={{
         margin: '0',
         padding: '0',
@@ -26,7 +26,7 @@ const Nav = () => {
     >
       {isMobileOrTablet && <NavSmall />}
       {isDesktopOrLaptop && <NavLarge />}
-    </Container>
+    </Card>
   );
 };
 

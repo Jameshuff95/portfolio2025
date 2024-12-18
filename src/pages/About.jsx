@@ -18,7 +18,7 @@ import PersonalInterests from '../Components/About/PersonalInterests.jsx';
 
 const About = () => {
   return (
-    <Container className="page">
+    <Container>
       <Intro />
       <Mission />
       <Education />

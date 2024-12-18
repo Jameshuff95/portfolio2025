@@ -13,10 +13,10 @@ const MobileOrTabletView = ({
     >
       {featuredProjects.map((project, index) => (
         <Carousel.Item key={index}>
-          <Card className="card-alt" style={{ marginTop: '2rem' }}>
+          <Card>
             <Row className="justify-content-center">
               <Col
-                xs={12}
+                xs={10}
                 sm={10}
                 style={{
                   display: 'flex',
@@ -28,43 +28,44 @@ const MobileOrTabletView = ({
                   variant="top"
                   src={project.img}
                   alt={project.imgAlt}
-                  className="featured-image"
+                  style={{ height: '20rem' }}
                 />
-                <Card.Body
-                  className="d-flex flex-column align-items-center justify-content-between"
-                  style={{ flex: '1' }}
-                >
-                  <Row>
+                <Card.Body className="d-flex flex-column align-items-center justify-content-between">
+                  <Col
+                    className="d-flex flex-column align-items-center"
+                    style={{
+                      width: '100%',
+                      padding: '2%',
+                    }}
+                  >
                     <Card.Title>{project.title}</Card.Title>
                     <Card.Subtitle>{project.technology}</Card.Subtitle>
-                  </Row>
+                  </Col>
 
                   <Card.Text
                     style={{
                       textAlign: 'left',
                       color: 'var(--card-bg-alt)',
-                      width: '100%',
+                      width: '95%',
+                      minHeight: '8rem',
                       borderRadius: '5px',
                       padding: '2%',
                       background: 'var(--card-text)',
-                      flex: '1',
-                      overflow: 'auto',
+                      fontSize: '1.35rem',
                     }}
                   >
                     {project.description}
                   </Card.Text>
                   <Button
-                    variant="dark"
+                    variant="primary"
                     style={{
-                      height: '4rem',
+                      height: '5rem',
                       width: '100%',
                       fontSize: '2rem',
-                      background: 'var(--card-text)',
-                      color: 'var(--card-bg-alt)',
                       marginTop: '1rem',
                     }}
                   >
-                    Learn More
+                    Visit Github Repo
                   </Button>
                 </Card.Body>
               </Col>

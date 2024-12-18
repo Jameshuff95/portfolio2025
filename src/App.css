@@ -10,37 +10,37 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: var(--bg-gradient);
 }
 
-.page {
-  overflow: auto;
-  height: 83vh;
-  z-index: 1;
-}
-
 .card {
-  border: 0 !important;
+  border: 0;
   background: var(--card-bg);
   color: var(--card-text);
+  padding: 0 2%;
 }
 
 .card-title {
-  font-size: 3em;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card-subtitle {
   font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title,
 .card-subtitle {
+  display: flex;
   overflow: hidden;
-  padding: 0.5rem;
   color: var(--card-text);
-  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 2%;
 }
 
 .card-text {
@@ -48,6 +48,7 @@
   text-align: center;
   color: var(--card-text);
   font-size: 1.75rem;
+  margin: 0;
 }
 
 .card-alt {
@@ -76,18 +77,27 @@
   top: 0;
   height: 3rem;
   display: flex;
-  align-items: start;
+  align-items: center;
 }
 
 .carousel-indicators [data-bs-target] {
   height: 1rem;
-  background-color: var(--card-text);
+  background-color: var(--carousel-indicators-alt);
   margin: 0 0.5rem;
+  border: 1px solid var(--card-bg-alt);
+  border-radius: 2.5px;
 }
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   display: none;
+}
+
+.container {
+  z-index: 1;
+  padding: 0;
+  min-width: 100%;
+  margin: 0;
 }
 
 .bi {

@@ -9,7 +9,6 @@ import '../../App.css';
 import './Nav.jsx';
 
 const NavLarge = () => {
-  const [showMenu, setShowMenu] = useState(false);
   const [theme, setTheme] = useState('light');
 
   const themeBtnRef = useRef(null);

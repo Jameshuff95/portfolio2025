@@ -1,23 +1,15 @@
-import { Card, Container, Col, Row } from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import MeImg from '../../../assets/me.png';
 
 const HeroSmall = () => {
   return (
-    <Container
-      className="d-flex flex-column"
-      style={{
-        overflow: 'visible',
-        margin: '0',
-        padding: '1rem',
-        height: '100%',
-      }}
-    >
-      <Row className="d-flex flex-column">
+    <Card>
+      <Col>
         <Card.Subtitle>Hello, my name is</Card.Subtitle>
         <Card.Title>James Huff</Card.Title>
-      </Row>
+      </Col>
 
       <Col
         xs={10}
@@ -25,8 +17,6 @@ const HeroSmall = () => {
         md={8}
         style={{
           margin: 'auto',
-          overflow: 'visible',
-          margin: '0 auto',
           padding: '1rem',
         }}
       >
@@ -50,7 +40,7 @@ const HeroSmall = () => {
           approach.
         </Card.Text>
       </Col>
-    </Container>
+    </Card>
   );
 };
 

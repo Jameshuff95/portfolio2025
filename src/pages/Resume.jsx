@@ -41,7 +41,7 @@ const resume = () => {
   ];
 
   return (
-    <Container className="page">
+    <Container>
       <Card>
         <Button
           variant="dark"

@@ -48,14 +48,7 @@ const Services = () => {
   ];
 
   return (
-    <Container
-      id="services-container"
-      className="page"
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-      }}
-    >
+    <Container>
       {tiers.map((tier, index) => (
         <Card key={index} className="card-alt">
           <Card.Title className="text-center">{tier.name}</Card.Title>

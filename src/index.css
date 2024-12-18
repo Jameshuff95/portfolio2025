@@ -27,7 +27,7 @@ body.light {
   --card-text-alt: #546e7a;
   --card-text-alt-2: #78909c;
   --carousel-indicators: #80deea;
-  --carousel-indicators-alt: #4dd0e1;
+  --carousel-indicators-alt: #37474f;
   --button-color: #80deea;
   --button-text: #37474f;
 }
@@ -48,7 +48,7 @@ body.dark {
   --card-text-alt: #b2ebf2;
   --card-text-alt-2: #80deea;
   --carousel-indicators: #80deea;
-  --carousel-indicators-alt: #4dd0e1;
+  --carousel-indicators-alt: #e0f7fa;
   --button-color: #80deea;
   --button-text: #37474f;
 }

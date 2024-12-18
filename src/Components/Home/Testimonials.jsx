@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Carousel, Card } from 'react-bootstrap';
+import { Carousel, Card, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../index.css';
@@ -42,27 +42,26 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <Card>
+    <Card style={{ margin: '0 0 1rem' }}>
       <Card.Title>Testimonials</Card.Title>
       <Carousel
         activeIndex={currentTestimonial}
         onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)}
       >
         {testimonials.map((testimonial, index) => (
-          <Carousel.Item key={index}>
-            <Card
-              className="card-alt"
+          <Carousel.Item key={index} style={{ height: '60vh' }}>
+            <Col
+              className="card-alt d-flex flex-column justify-content-around"
               style={{
-                marginTop: '2rem',
-                height: '20rem',
-                display: 'grid',
-                placeItems: 'center',
+                borderRadius: '5px',
+                padding: '6% 2% 0',
+                height: '100%',
               }}
             >
               <Card.Text>{`"${testimonial.message}"`}</Card.Text>
               <Card.Text>{testimonial.author}</Card.Text>
               <Card.Text>{`- ${testimonial.date}`}</Card.Text>
-            </Card>
+            </Col>
           </Carousel.Item>
         ))}
       </Carousel>

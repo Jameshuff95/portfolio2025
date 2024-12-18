@@ -14,13 +14,7 @@ const Hero = () => {
   const isDeskOrLaptop = useMediaQuery({ minWidth: 768 });
 
   return (
-    <Container
-      style={{
-        overflow: 'visible',
-        padding: '0',
-        margin: '1rem 0',
-      }}
-    >
+    <Container>
       {isMobileOrTablet && <HeroSmall />}
       {isDeskOrLaptop && <HeroLarge />}
     </Container>

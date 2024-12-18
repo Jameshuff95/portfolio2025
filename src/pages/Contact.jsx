@@ -11,7 +11,7 @@ const Contact = () => {
   };
 
   return (
-    <Container id="contact-page" className="page">
+    <Container>
       <Card className="card">
         <Card.Title className="container-title">
           Let's build something great!

@@ -58,63 +58,61 @@ const ContactInformation = () => {
   ];
 
   return (
-    <Container>
-      <Row md={10}>
-        <Col>
-          <Card>
-            <Card.Title>Contact Me</Card.Title>
-            <Card.Body>
-              <Row
+    <Container
+      className="d-flex flex-column justify-content-evenly align-items-center"
+      style={{ height: '50vh' }}
+    >
+      <Card.Title>Contact Me</Card.Title>
+      <Row
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          placeItems: 'center',
+          width: '100%',
+          margin: '0',
+          padding: '0',
+          height: '45vh',
+        }}
+      >
+        {links.map((link, index) => (
+          <Col
+            xs={12}
+            md={10}
+            key={index}
+            className="d-flex justify-content-center align-items-center"
+            style={{ padding: '0', height: '100%' }}
+          >
+            <Link
+              className="d-flex flex-column justify-content-evenly align-items-center"
+              to={link.href}
+              style={{
+                color: link.color,
+                width: '100%',
+                height: '100%',
+                cursor: 'pointer',
+                textDecoration: 'none',
+                textAlign: 'center',
+              }}
+            >
+              <i
+                className={link.icon}
                 style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(3, 1fr)',
-                  placeItems: 'center',
+                  fontSize: '2.5rem',
+                  padding: '0',
+                }}
+              />
+              <legend
+                style={{
+                  color: 'var(--card-text)',
+                  fontSize: '1.25rem',
+                  margin: '0',
                 }}
               >
-                {links.map((link, index) => (
-                  <Col
-                    xs={12}
-                    md={10}
-                    key={index}
-                    className="d-flex justify-content-center mb-3"
-                  >
-                    <Link
-                      to={link.href}
-                      style={{
-                        color: link.color,
-                        height: '8rem',
-                        width: '100%',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        cursor: 'pointer',
-                      }}
-                    >
-                      <i
-                        className={link.icon}
-                        style={{
-                          fontSize: '2.5rem',
-                          overflow: 'hidden',
-                        }}
-                      />
-                      <legend
-                        style={{
-                          color: 'var(--card-text)',
-                          overflow: 'hidden',
-                          fontSize: '1.25rem',
-                          textAlign: 'center',
-                        }}
-                      >
-                        {link.legend}
-                      </legend>
-                    </Link>
-                  </Col>
-                ))}
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
+                {link.legend}
+              </legend>
+            </Link>
+          </Col>
+        ))}
       </Row>
     </Container>
   );

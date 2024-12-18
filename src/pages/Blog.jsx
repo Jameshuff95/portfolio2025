@@ -68,7 +68,7 @@ const Blog = () => {
   }, [highlightedPosts.length]);
 
   return (
-    <Container className="page">
+    <Container>
       <Card>
         <Card.Title className="container-title">Featured Posts</Card.Title>
         <Carousel

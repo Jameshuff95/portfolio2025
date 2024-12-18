@@ -11,7 +11,7 @@ const Footer = () => {
         width: '100%',
         background: 'var(--nav-bg)',
         padding: '0',
-        position: 'fixed',
+        position: 'relative',
         bottom: '0',
         color: 'var(--card-text-alt)',
         display: 'grid',

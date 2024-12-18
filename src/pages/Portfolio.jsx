@@ -60,7 +60,7 @@ const Portfolio = () => {
   };
 
   return (
-    <Container className="page">
+    <Container>
       <Card>
         <Card>
           <Form.Group controlId="projectFilter">
