@@ -6,8 +6,8 @@ import MeImg from '../../../assets/me.png';
 const HeroSmall = () => {
   return (
     <Card
-      className="d-flex flex-columm justify-content-evenly"
-      style={{ padding: '2%', height: '100%' }}
+      className="d-flex flex-column justify-content-evenly"
+      style={{ padding: '0 0 2%', height: '100%' }}
     >
       <Row className="d-flex justify-content-center align-items-center">
         <Card.Subtitle style={{ padding: '0' }}>
