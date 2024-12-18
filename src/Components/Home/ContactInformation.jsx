@@ -59,11 +59,11 @@ const ContactInformation = () => {
 
   return (
     <Container
-      className="d-flex flex-column justify-content-evenly align-items-center"
-      style={{ height: '50vh' }}
+      className="d-flex flex-column justify-content-around align-items-center"
+      style={{ height: '75vh' }}
     >
       <Card.Title>Contact Me</Card.Title>
-      <Row
+      <Col
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
@@ -71,7 +71,6 @@ const ContactInformation = () => {
           width: '100%',
           margin: '0',
           padding: '0',
-          height: '45vh',
         }}
       >
         {links.map((link, index) => (
@@ -113,7 +112,7 @@ const ContactInformation = () => {
             </Link>
           </Col>
         ))}
-      </Row>
+      </Col>
     </Container>
   );
 };
