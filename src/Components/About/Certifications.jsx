@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { Carousel, Container, Button, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import cert1 from '../assets/cert1.png';
-import cert2 from '../assets/cert2.png';
-import cert3 from '../assets/cert3.png';
+import cert1 from '../../assets/cert1.png';
+import cert2 from '../../assets/cert2.png';
+import cert3 from '../../assets/cert3.png';
 
-import '../index.css';
-import '../App.css';
+import '../../index.css';
+import '../../App.css';
 
 const Certfications = () => {
   const certifications = [

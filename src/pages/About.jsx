@@ -8,14 +8,13 @@ import { Container } from 'react-bootstrap';
 import '../index.css';
 import '../App.css';
 
-import Achievements from '../Components/Achievements.jsx';
-import Certifications from '../Components/Certifications.jsx';
-import Education from '../Components/Education.jsx';
-import Experience from '../Components/Experience.jsx';
-import Intro from '../Components/Intro.jsx';
-import Mission from '../Components/Mission.jsx';
-import PersonalInterests from '../Components/PersonalInterests.jsx';
-import Footer from '../Components/Footer.jsx';
+import Achievements from '../Components/About/Achievements.jsx';
+import Certifications from '../Components/About/Certifications.jsx';
+import Education from '../Components/About/Education.jsx';
+import Experience from '../Components/About/Experience.jsx';
+import Intro from '../Components/About/Intro.jsx';
+import Mission from '../Components/About/Mission.jsx';
+import PersonalInterests from '../Components/About/PersonalInterests.jsx';
 
 const About = () => {
   return (

@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useMediaQuery } from 'react-responsive';
 
-import '../../index.css';
-import '../../App.css';
+import '../../../index.css';
+import '../../../App.css';
 
 import HeroSmall from './HeroSmall.jsx';
 import HeroLarge from './HeroLarge.jsx';

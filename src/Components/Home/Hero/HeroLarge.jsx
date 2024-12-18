@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
-import MeImg from '../../assets/me.png';
+import MeImg from '../../../assets/me.png';
 
 const HeroLarge = () => {
   return (

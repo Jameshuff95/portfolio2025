@@ -1,7 +1,7 @@
 import { Card, Container, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import MeImg from '../../assets/me.png';
+import MeImg from '../../../assets/me.png';
 
 const HeroSmall = () => {
   return (
@@ -10,15 +10,13 @@ const HeroSmall = () => {
       style={{
         overflow: 'visible',
         margin: '0',
-        padding: '0',
+        padding: '1rem',
         height: '100%',
       }}
     >
       <Row className="d-flex flex-column">
-        <Card.Subtitle style={{ padding: '0' }}>
-          Hello, my name is
-        </Card.Subtitle>
-        <Card.Title style={{ padding: '0' }}>James Huff</Card.Title>
+        <Card.Subtitle>Hello, my name is</Card.Subtitle>
+        <Card.Title>James Huff</Card.Title>
       </Row>
 
       <Col
@@ -45,7 +43,7 @@ const HeroSmall = () => {
           }}
         />
       </Col>
-      <Col className="d-flex flex-column justify-content-between">
+      <Col>
         <Card.Text>
           I am a web developer inclined to prioritize functionality and
           simplicity, as they offer a more straightforward and effective
