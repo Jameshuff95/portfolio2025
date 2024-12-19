@@ -58,7 +58,7 @@ const ContactInformation = () => {
   ];
 
   return (
-    <Container className="d-flex flex-column justify-content-around align-items-center">
+    <Container className="d-flex flex-column ">
       <Card.Title>Contact Me</Card.Title>
       <Col
         style={{
@@ -67,7 +67,6 @@ const ContactInformation = () => {
           placeItems: 'center',
           width: '100%',
           margin: '0',
-          padding: '2%',
         }}
       >
         {links.map((link, index) => (
@@ -76,7 +75,11 @@ const ContactInformation = () => {
             md={10}
             key={index}
             className="d-flex justify-content-center align-items-center"
-            style={{ padding: '0', height: '100%' }}
+            style={{
+              padding: '0',
+              height: '50%',
+              overflow: 'hidden',
+            }}
           >
             <Link
               className="d-flex flex-column justify-content-evenly align-items-center"
@@ -88,6 +91,8 @@ const ContactInformation = () => {
                 cursor: 'pointer',
                 textDecoration: 'none',
                 textAlign: 'center',
+                margin: '1rem',
+                overflow: 'visible',
               }}
             >
               <i
