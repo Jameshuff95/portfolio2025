@@ -46,9 +46,9 @@ const Testimonials = () => {
     <Container className="d-flex flex-column" style={{ margin: '0 0 1rem' }}>
       <Card.Title>Testimonials</Card.Title>
       <Col className="card-alt d-flex flex-column" style={{ borderRadius: '5px', padding: '6% 2% 0', minHeight: '100%' }} >
-        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ height: '82vh' }}>
+        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ height: '75vh' }}>
           {testimonials.map((testimonial, index) => (
-            <Carousel.Item key={index} style={{ height: '81vh' }}>
+            <Carousel.Item key={index} style={{ height: '75vh' }}>
               <Col style={{ height: '100%' }}>
                 <Col className="d-flex flex-column justify-content-evenly" style={{ height: '80%' }}>
                   <Card.Text>{`"${testimonial.message}"`}</Card.Text>
