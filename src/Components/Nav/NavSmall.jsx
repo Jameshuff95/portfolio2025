@@ -80,9 +80,9 @@ const NavSmall = () => {
         width: '100%',
         display: 'flex',
         justifyContent: 'space-between',
-        padding: '1rem 0',
+        padding: '1rem',
         position: 'fixed',
-        Zindex: '10',
+        zIndex: '10',
         background: 'var(--nav-bg)',
         height: '10vh',
         borderBottom: '1px solid var(--card-text)',
@@ -93,6 +93,8 @@ const NavSmall = () => {
         className={`bi bi-${theme === 'dark' ? 'moon' : 'sun'}-fill`}
         style={{
           color: theme === 'dark' ? 'lightblue' : 'gold',
+          padding: '0',
+          width: '4rem',
         }}
         ref={themeBtnRef}
       />

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Carousel, Card, Col, Container } from 'react-bootstrap';
+import { Carousel, Card, Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../index.css';
@@ -43,23 +43,20 @@ const Testimonials = () => {
 
   // prettier-ignore
   return (
-    <Container className="d-flex flex-column" style={{ margin: '0 0 1rem' }}>
+    <Container className="d-flex flex-column" style={{ margin: '0 0 1rem'}}>
       <Card.Title>Testimonials</Card.Title>
-      <Col className="card-alt d-flex flex-column" style={{ borderRadius: '5px', padding: '6% 2% 0', minHeight: '100%' }} >
-        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ height: '75vh' }}>
+      <Col className="card-alt d-flex flex-column justify-content-center" style={{ borderRadius: '5px', padding: '2% 0', width: '90%', margin: '0 auto', justifyContent: 'space-between'}} >
+        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ padding: '2rem 0', height: '75vh'}}>
           {testimonials.map((testimonial, index) => (
-            <Carousel.Item key={index} style={{ height: '75vh' }}>
-              <Col style={{ height: '100%' }}>
-                <Col className="d-flex flex-column justify-content-evenly" style={{ height: '80%' }}>
+            <Carousel.Item key={index} style={{ height: '70vh'}}>
+              <Col className="d-flex flex-column justify-content-around" style={{ height: '100%'}}>
+                <Row>
                   <Card.Text>{`"${testimonial.message}"`}</Card.Text>
-                </Col>
-                <Col className="d-flex flex-column justify-content-center align-items-center" style={{ height: '20%' }}
-                >
-                  <Card.Text style={{ padding: '0', margin: '0'}}>
-                    {testimonial.author}
-                  </Card.Text>
-                  <Card.Text style={{}}>{`- ${testimonial.date}`}</Card.Text>
-                </Col>
+                </Row>
+                <Row>
+                  <Card.Text style={{ padding: '0', margin: '0'}}>{testimonial.author}</Card.Text>
+                  <Card.Text>{`- ${testimonial.date}`}</Card.Text>
+                </Row>
               </Col>
             </Carousel.Item>
           ))}
