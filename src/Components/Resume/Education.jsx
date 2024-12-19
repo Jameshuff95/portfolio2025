@@ -35,7 +35,9 @@ const Education = () => {
               color: 'var(--card-text)',
             }}
           >
-            <Card.Text style={{ textAlign: 'left', fontWeight: 500 }}>
+            <Card.Text
+              style={{ textAlign: 'left', fontSize: '1.3rem', fontWeight: 500 }}
+            >
               {school.name}
             </Card.Text>
             <Card.Text style={{ fontSize: '1.3rem', textAlign: 'left' }}>

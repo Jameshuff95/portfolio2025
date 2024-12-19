@@ -41,14 +41,22 @@ const Certfications = () => {
 
   return (
     <Card>
-      <Card.Title className="text-center">Certifications</Card.Title>
+      <Card.Title>Certifications</Card.Title>
       <Carousel
         activeIndex={currentCertification}
         onSelect={(selectedIndex) => setCurrentCertification(selectedIndex)}
       >
         {certifications.map((certification, index) => (
           <Carousel.Item key={index}>
-            <Card style={{ marginTop: '2rem' }}>
+            <Card
+              className="d-flex flex-column justify-content-evenly"
+              style={{
+                width: '95%',
+                margin: 'auto',
+                padding: '2%',
+                height: '80vh',
+              }}
+            >
               <Card.Img
                 variant="top"
                 src={certification.img}
