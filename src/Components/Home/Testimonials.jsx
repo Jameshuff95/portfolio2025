@@ -43,12 +43,12 @@ const Testimonials = () => {
 
   // prettier-ignore
   return (
-    <Container className="d-flex flex-column" style={{ margin: '0 0 1rem', border: '1px solid white'}}>
-      <Card.Title style={{height: '15%', border: '1px solid red'}}>Testimonials</Card.Title>
-        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ padding: '3rem 0', border: '1px solid gold', height: 
+    <Container className="d-flex flex-column" style={{ margin: '0 0 1rem'}}>
+      <Card.Title style={{height: '15%'}}>Testimonials</Card.Title>
+        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ padding: '3rem 0', height: 
         '80vh', overflow: 'hidden'}}>
           {testimonials.map((testimonial, index) => (
-            <Carousel.Item key={index} style={{ border: '1px solid lime', height: '75vh'}}>
+            <Carousel.Item key={index} style={{ height: '75vh'}}>
               <Card className="card-alt" style={{height: '95%'}}>
                 <Col className="d-flex flex-column justify-content-evenly">
                 <Row>
