@@ -58,15 +58,17 @@ const ContactInformation = () => {
   ];
 
   return (
-    <Container className="d-flex flex-column ">
+    <Container className="d-flex flex-column" style={{ padding: '2%' }}>
       <Card.Title>Contact Me</Card.Title>
-      <Col
+      <Card
+        className="card-alt"
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
           placeItems: 'center',
           width: '100%',
           margin: '0',
+          height: '80vh',
         }}
       >
         {links.map((link, index) => (
@@ -114,7 +116,7 @@ const ContactInformation = () => {
             </Link>
           </Col>
         ))}
-      </Col>
+      </Card>
     </Container>
   );
 };
