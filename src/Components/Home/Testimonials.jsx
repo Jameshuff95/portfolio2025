@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Carousel, Card, Col } from 'react-bootstrap';
+import { Carousel, Card, Col, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../index.css';
@@ -41,31 +41,31 @@ const Testimonials = () => {
     return () => clearInterval(interval); // Clean up interval on unmount
   }, [testimonials.length]);
 
+  // prettier-ignore
   return (
-    <Card style={{ margin: '0 0 1rem' }}>
+    <Container className="d-flex flex-column" style={{ margin: '0 0 1rem' }}>
       <Card.Title>Testimonials</Card.Title>
-      <Carousel
-        activeIndex={currentTestimonial}
-        onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)}
-      >
-        {testimonials.map((testimonial, index) => (
-          <Carousel.Item key={index} style={{ height: '60vh' }}>
-            <Col
-              className="card-alt d-flex flex-column justify-content-around"
-              style={{
-                borderRadius: '5px',
-                padding: '6% 2% 0',
-                height: '100%',
-              }}
-            >
-              <Card.Text>{`"${testimonial.message}"`}</Card.Text>
-              <Card.Text>{testimonial.author}</Card.Text>
-              <Card.Text>{`- ${testimonial.date}`}</Card.Text>
-            </Col>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </Card>
+      <Col className="card-alt d-flex flex-column" style={{ borderRadius: '5px', padding: '6% 2% 0', minHeight: '100%' }} >
+        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ height: '82vh' }}>
+          {testimonials.map((testimonial, index) => (
+            <Carousel.Item key={index} style={{ height: '81vh' }}>
+              <Col style={{ height: '100%' }}>
+                <Col className="d-flex flex-column justify-content-evenly" style={{ height: '80%' }}>
+                  <Card.Text>{`"${testimonial.message}"`}</Card.Text>
+                </Col>
+                <Col className="d-flex flex-column justify-content-center align-items-center" style={{ height: '20%' }}
+                >
+                  <Card.Text style={{ padding: '0', margin: '0'}}>
+                    {testimonial.author}
+                  </Card.Text>
+                  <Card.Text style={{}}>{`- ${testimonial.date}`}</Card.Text>
+                </Col>
+              </Col>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Col>
+    </Container>
   );
 };
 

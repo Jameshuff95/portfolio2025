@@ -58,10 +58,7 @@ const ContactInformation = () => {
   ];
 
   return (
-    <Container
-      className="d-flex flex-column justify-content-around align-items-center"
-      style={{ height: '75vh' }}
-    >
+    <Container className="d-flex flex-column justify-content-around align-items-center">
       <Card.Title>Contact Me</Card.Title>
       <Col
         style={{
@@ -70,7 +67,7 @@ const ContactInformation = () => {
           placeItems: 'center',
           width: '100%',
           margin: '0',
-          padding: '0',
+          padding: '2%',
         }}
       >
         {links.map((link, index) => (
@@ -96,14 +93,14 @@ const ContactInformation = () => {
               <i
                 className={link.icon}
                 style={{
-                  fontSize: '2.5rem',
+                  fontSize: '4.5rem',
                   padding: '0',
                 }}
               />
               <legend
                 style={{
                   color: 'var(--card-text)',
-                  fontSize: '1.25rem',
+                  fontSize: '1.5rem',
                   margin: '0',
                 }}
               >

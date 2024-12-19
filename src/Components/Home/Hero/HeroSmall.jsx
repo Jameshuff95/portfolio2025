@@ -1,11 +1,11 @@
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import MeImg from '../../../assets/me.png';
 
 const HeroSmall = () => {
   return (
-    <Card
+    <Container
       className="d-flex flex-column justify-content-evenly"
       style={{ padding: '0 0 2%', height: '100%' }}
     >
@@ -44,7 +44,7 @@ const HeroSmall = () => {
           approach.
         </Card.Text>
       </Row>
-    </Card>
+    </Container>
   );
 };
 
