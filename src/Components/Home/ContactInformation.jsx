@@ -61,7 +61,6 @@ const ContactInformation = () => {
     <Container className="d-flex flex-column" style={{ padding: '2%' }}>
       <Card.Title>Contact Me</Card.Title>
       <Card
-        className="card-alt"
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
