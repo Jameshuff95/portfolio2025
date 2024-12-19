@@ -43,13 +43,13 @@ const Testimonials = () => {
 
   // prettier-ignore
   return (
-    <Container className="d-flex flex-column" style={{ margin: '0 0 1rem'}}>
+    <Card className="d-flex flex-column" style={{ margin: '0 0 1rem'}}>
       <Card.Title>Testimonials</Card.Title>
       <Col className="card-alt d-flex flex-column justify-content-center" style={{ borderRadius: '5px', padding: '2% 0', width: '90%', margin: '0 auto', justifyContent: 'space-between'}} >
-        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ padding: '2rem 0', height: '75vh'}}>
+        <Carousel activeIndex={currentTestimonial} onSelect={(selectedIndex) => setCurrentTestimonial(selectedIndex)} style={{ padding: '2rem 0'}}>
           {testimonials.map((testimonial, index) => (
-            <Carousel.Item key={index} style={{ height: '70vh'}}>
-              <Col className="d-flex flex-column justify-content-around" style={{ height: '100%'}}>
+            <Carousel.Item key={index}>
+              <Col className="d-flex flex-column justify-content-around">
                 <Row>
                   <Card.Text>{`"${testimonial.message}"`}</Card.Text>
                 </Row>
@@ -62,7 +62,7 @@ const Testimonials = () => {
           ))}
         </Carousel>
       </Col>
-    </Container>
+    </Card>
   );
 };
 
