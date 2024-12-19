@@ -1,20 +1,14 @@
-/*
-
-Provides a more detailed background about you, your journey, your philosophy, and what sets you apart. This helps to build a personal connection.
-
-*/
 import { Container } from 'react-bootstrap';
-
-import '../index.css';
-import '../App.css';
-
-import Achievements from '../Components/About/Achievements.jsx';
+import Achievements from '../Components/About/Achievements/Achievements.jsx';
 import Certifications from '../Components/About/Certifications.jsx';
-import Education from '../Components/About/Education.jsx';
+import Education from '../Components/About/Education/Education.jsx';
 import Experience from '../Components/About/Experience.jsx';
 import Intro from '../Components/About/Intro.jsx';
 import Mission from '../Components/About/Mission.jsx';
-import PersonalInterests from '../Components/About/PersonalInterests.jsx';
+import Interests from '../Components/About/Interests/Interests.jsx';
+
+import '../index.css';
+import '../App.css';
 
 const About = () => {
   return (
@@ -25,7 +19,7 @@ const About = () => {
       <Certifications />
       <Achievements />
       <Experience />
-      <PersonalInterests />
+      <Interests />
     </Container>
   );
 };

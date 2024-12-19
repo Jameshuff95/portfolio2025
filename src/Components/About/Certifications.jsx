@@ -40,7 +40,7 @@ const Certfications = () => {
   }, [certifications.length]);
 
   return (
-    <Container>
+    <Card>
       <Card.Title className="text-center">Certifications</Card.Title>
       <Carousel
         activeIndex={currentCertification}
@@ -75,7 +75,7 @@ const Certfications = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-    </Container>
+    </Card>
   );
 };
 

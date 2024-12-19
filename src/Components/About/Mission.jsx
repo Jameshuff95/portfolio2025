@@ -7,7 +7,12 @@ import '../../App.css';
 const Mission = () => {
   return (
     //prettier-ignore
-    <Card className="card-general card">
+    <Card className="d-flex flex-column justify-content-evenly "
+      style={{
+        gap: '1rem',
+        margin: '2%',
+        padding: '2%',
+      }}>
       <Card.Title className="container-title">
         My Mission
       </Card.Title>

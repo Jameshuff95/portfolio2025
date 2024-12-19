@@ -8,6 +8,7 @@ import '../App.css';
 const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
+    // Add your form submission logic here
   };
 
   return (
@@ -17,25 +18,20 @@ const Contact = () => {
           Let's build something great!
         </Card.Title>
         <Card.Subtitle className="text-center">
-          Send me an emails via the form below to reach out 👇
+          Send me an email via the form below to reach out 👇
         </Card.Subtitle>
         <Form
           id="form-container"
           onSubmit={handleSubmit}
           className="card-alt border-0"
           style={{
-            padding: '0',
-            padding: '0.5rem',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-evenly',
             borderRadius: '5px',
             gap: '1rem',
-            height: '65vh',
-            outline: 'none',
-            overflow: 'hidden',
-            height: '2rem',
             padding: '2%',
+            height: '65vh',
           }}
         >
           <Form.Group controlId="name" className="d-flex flex-column">
@@ -45,12 +41,7 @@ const Contact = () => {
               maxLength={25}
               className="mb-3"
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                overflow: 'hidden',
                 borderRadius: '5px',
-                outline: 'none',
-                overflow: 'hidden',
                 height: '2rem',
                 padding: '2%',
               }}
@@ -62,12 +53,7 @@ const Contact = () => {
               maxLength={25}
               className="mb-3"
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                overflow: 'hidden',
                 borderRadius: '5px',
-                outline: 'none',
-                overflow: 'hidden',
                 height: '2rem',
                 padding: '2%',
               }}
@@ -81,18 +67,10 @@ const Contact = () => {
             maxLength={250}
             placeholder="250 character maximum message here..."
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              overflow: 'hidden',
               borderRadius: '5px',
               height: '10rem',
               minWidth: '95%',
-              outline: 'none',
-              overflow: 'hidden',
-              height: '2rem',
               padding: '2%',
-              minWidth: '100%',
-              minHeight: '55%',
             }}
           />
           <Button
@@ -102,12 +80,10 @@ const Contact = () => {
             style={{
               width: '100%',
               height: '4rem',
-              alignSelf: 'center',
               fontSize: '1.5rem',
               display: 'flex',
               justifyContent: 'center',
-              placeItems: 'center',
-              overflow: 'hidden',
+              alignItems: 'center',
             }}
           >
             Submit
