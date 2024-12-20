@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import '../App.css';
 
-const Blog = () => {
+const BlogMobile = () => {
   const highlightedPosts = [
     {
       title: 'featured-1',
@@ -106,57 +106,50 @@ const Blog = () => {
 
       <Card>
         <Card.Title className="container-title">Featured Posts</Card.Title>
-
         <Carousel
           activeIndex={currentFeaturedPost}
           onSelect={(selectedIndex) => setCurrentFeaturedPost(selectedIndex)}
         >
           {highlightedPosts.map((post, index) => (
-            <Carousel.Item key={index} className="card-alt p-2">
+            <Carousel.Item key={index}>
               <Card
-                className="d-flex flex-column justify-content-evenly"
-                style={{
-                  width: '95%',
-                  margin: 'auto',
-                  padding: '2%',
-                  height: '40vh',
-                }}
+                id="featured-post-container"
+                className="card-alt"
+                style={{ marginTop: '2rem' }}
               >
-                <Card.Body style={{ borderRadius: '10px' }}>
-                  <Card.Title>{post.title}</Card.Title>
-                  <Card.Text
-                    style={{
-                      height: '70%',
-                      textAlign: 'left',
-                    }}
-                  >{`"${post.text}."`}</Card.Text>
+                <Card.Body
+                  className="featured-post"
+                  style={{
+                    padding: '2%',
+                    background: 'var(--card-bg)',
+                    color: 'var(--card-text)',
+                    minHheight: '8rem',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                  }}
+                >
+                  <Card.Title className="text-center">{post.title}</Card.Title>
+                  <Card.Text>{`"${post.text}."`}</Card.Text>
+                  <Button variant="primary" href={`/post/${index}`}>
+                    Read More
+                  </Button>
                 </Card.Body>
-                <Button variant="primary" /*href={`/post/${index}`}*/>
-                  Read More
-                </Button>
               </Card>
             </Carousel.Item>
           ))}
         </Carousel>
-
         <Row className="mt-4">
           <Col md={8}>
-            <Card className="d-flex gap-4">
+            <Card>
               <Card.Title className="container-title">Recent Posts</Card.Title>
               {recentPosts.map((post, index) => (
-                <Card
-                  key={index}
-                  className="card-alt"
-                  style={{
-                    height: '40vh',
-                  }}
-                >
+                <Card key={index} className="card-general card-alt">
                   <Card.Body
                     className="recent-post"
                     style={{
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: '1rem',
                       justifyContent: 'space-between',
                     }}
                   >
@@ -178,4 +171,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogMobile;

@@ -145,9 +145,9 @@ const NavSmall = () => {
           <NavLink to="/About" className="nav-link" onClick={toggleMenu}>
             About
           </NavLink>
-          <NavLink to="/Blog" className="nav-link" onClick={toggleMenu}>
+          {/*<NavLink to="/Blog" className="nav-link" onClick={toggleMenu}>
             Blog
-          </NavLink>
+          </NavLink>*/}
           <NavLink to="/Contact" className="nav-link" onClick={toggleMenu}>
             Contact
           </NavLink>
@@ -157,9 +157,9 @@ const NavSmall = () => {
           <NavLink to="/Resume" className="nav-link" onClick={toggleMenu}>
             Resumé
           </NavLink>
-          <NavLink to="/Services" className="nav-link" onClick={toggleMenu}>
+          {/*<NavLink to="/Services" className="nav-link" onClick={toggleMenu}>
             Services
-          </NavLink>
+          </NavLink>*/}
         </Modal.Body>
         <Modal.Footer className={`modal-${theme}`}>
           <Button variant="secondary" onClick={toggleMenu}>
