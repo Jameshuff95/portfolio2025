@@ -12,8 +12,8 @@ const Contact = () => {
   };
 
   return (
-    <Container>
-      <Card className="card">
+    <Container style={{ marginBottom: '-2.70rem' }}>
+      <Card>
         <Card.Title className="container-title">
           Let's build something great!
         </Card.Title>
@@ -31,7 +31,7 @@ const Contact = () => {
             borderRadius: '5px',
             gap: '1rem',
             padding: '2%',
-            height: '65vh',
+            height: '60vh',
           }}
         >
           <Form.Group controlId="name" className="d-flex flex-column">

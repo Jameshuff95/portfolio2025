@@ -61,9 +61,9 @@ const Portfolio = () => {
 
   return (
     <Container>
-      <Card>
+      <Card className="p-2">
         <Card>
-          <Form.Group controlId="projectFilter">
+          <Form.Group className="d-flex" controlId="projectFilter">
             <Form.Label>Filter By Type</Form.Label>
             <Form.Select aria-label="Default" onChange={filterProject}>
               <option value="0">All</option>
